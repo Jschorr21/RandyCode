@@ -2,3 +2,5 @@ venv/
 chromaDB/
 .DS_Store
 fresh_venv/
+db/
+chroma_db/

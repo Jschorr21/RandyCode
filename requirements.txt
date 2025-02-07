@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain-openai
+langchain-text-splitters
+langgraph
+chromadb
+sentence-transformers
+faiss-cpu
+tiktoken
+numpy
+pandas
+ollama
+together
+python-dotenv
