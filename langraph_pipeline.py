@@ -1,6 +1,9 @@
 from langchain_core.tools import tool
 from vectorstore import catalog_store, courses_store
 from langchain_core.messages import SystemMessage
+from langgraph.prebuilt import ToolNode, tools_condition
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.prebuilt import create_react_agent
 
 
 @tool(response_format="content_and_artifact")
@@ -76,13 +79,32 @@ def generate(state: MessagesState):
     return {"messages": [response]}
 
 
-graph_builder = StateGraph(MessagesState)
-graph_builder.add_node(query_or_respond)
-graph_builder.add_node(retrieve)
-graph_builder.add_node(generate)
+def build_graph():
+    tools = ToolNode([retrieve])
+    graph_builder = StateGraph(MessagesState)
+    graph_builder = StateGraph(MessagesState)
 
-graph_builder.set_entry_point("query_or_respond")
-graph_builder.add_edge("retrieve", "generate")
-graph_builder.add_edge("generate", END)
+    graph_builder.add_node(query_or_respond)
+    graph_builder.add_node(tools)
+    graph_builder.add_node(generate)
 
-graph = graph_builder.compile()
+    graph_builder.set_entry_point("query_or_respond")
+    graph_builder.add_conditional_edges(
+        "query_or_respond",
+        tools_condition,
+        {END: END, "tools": "tools"},
+    )
+    graph_builder.add_edge("tools", "generate")
+    graph_builder.add_edge("generate", END)
+
+    # memory = MemorySaver()
+    graph = graph_builder.compile()
+    
+    return graph
+
+def build_agent_graph():
+    memory = MemorySaver()
+    agent_executor = create_react_agent(llm, [retrieve], checkpointer=memory)
+    return agent_executor
+
+

@@ -6,39 +6,37 @@ db/
 chroma_db/
 
 
-# VS Code settings and workspace-specific configurations
+
 .vscode/
 
-# Python bytecode cache
+
 __pycache__/
 
-# Jupyter Notebook checkpoint files
+
 *.ipynb_checkpoints/
 
-# Environment-specific files
+
 .env
 *.env
 
-# API keys or sensitive config files (if they contain secrets)
+
 config.py  # Only if this file contains API keys, otherwise keep it
 
-# Virtual environment (if inside the project folder)
+
 venv/
 fresh_venv/
 
-# Data files (if dynamically created)
 *.sqlite3
 *.db
 *.json  # If temporary, otherwise remove
 *.csv   # If dynamically generated
 
-# ChromaDB vector store persistence
+
 chroma_db/
 
-# Logs and debugging
+
 logs/
 *.log
 
-# Backup or duplicate files
-* copy*.py
-* copy*.ipynb
+
+
