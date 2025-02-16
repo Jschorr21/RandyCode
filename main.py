@@ -3,14 +3,7 @@ import time
 
 def run_rag_system(input_message, graph, use_agent):
     """Runs the RAG system with user input."""
-    print("🔍 Starting query processing...")  # Debugging print
-    # for step in graph.stream(
-    #     {"messages": [{"role": "user", "content": input_message}]},
-    #     stream_mode="values",
-    # ):
-    #     print("Response received!")  # Debugging print
-    #     print(" Assistant's response:", step["messages"][-1].content) 
-    input_message = "What are the requirements for the computer science major?"
+    print("🔍 Starting query processing...")  
     config = {"configurable": {"thread_id": "abc_123"}}
     if use_agent:
         print("🕵️ Using agent for query processing...")
@@ -18,8 +11,6 @@ def run_rag_system(input_message, graph, use_agent):
     else:
         print("💡 Running standard RAG pipeline...")
         response = graph.invoke({"messages": [{"role": "user", "content": input_message}]})
-    
-
     
 
 # Extract and print the final response

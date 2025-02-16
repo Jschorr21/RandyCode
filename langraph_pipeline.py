@@ -5,14 +5,13 @@ from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import create_react_agent
 
-
 @tool(response_format="content_and_artifact")
 def retrieve(query: str):
     """Retrieve information related to a query."""
     print(f"🔍 Searching for: {query}")  # Debugging print
 
     catalog_docs = catalog_store.similarity_search(query, k=8)
-    courses_docs = courses_store.similarity_search(query, k=4)
+    courses_docs = courses_store.similarity_search(query, k=8)
 
     print(f" Found {len(catalog_docs)} catalog docs, {len(courses_docs)} course docs.")  # Log found docs
 

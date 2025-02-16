@@ -1,0 +1,21 @@
+vanderbilt_ai_chatbot/
+│── data_ingestion/      
+│   │── vector_store.py          # Handles ChromaDB vector storage
+│   │── pdf_loader.py            # Parses PDFs (e.g., undergraduate catalog)
+│   │── json_loader.py           # Loads course data from JSON
+│   │── csv_loader.py            # Loads courses from CSV
+│   │── text_splitter.py         # Splits text into embeddings-friendly chunks
+│   │── ingestion_pipeline.py    # Orchestrates the entire ingestion process
+│
+│── langchain_pipeline/      
+│   │── retrieval.py           # Handles query retrieval from vector stores
+│   │── response_generator.py  # Uses GPT-4 to generate responses
+│   │── langraph_builder.py    # Creates state graph for RAG pipeline
+│   │── agent_graph.py         # Alternative ReAct agent setup
+│   │── langraph_pipeline.py   # Orchestrates the complete RAG pipeline
+│   │── prompts.py             # Stores system prompts
+│
+│── api/                      
+│   │── app.py                 # API for chatbot interaction
+│
+│── main.py                    # CLI interface to interact with the system
