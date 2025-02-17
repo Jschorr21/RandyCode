@@ -28,21 +28,39 @@ class ResponseGenerator:
         # ✅ Get retrieved documents (ensures we extract content properly)
         retrieved_docs = state.get("messages", [])
 
+        recent_tool_messages = []
+        for message in reversed(state["messages"]):
+            if message.type == "tool":
+                recent_tool_messages.append(message)
+            else:
+                break
+        tool_messages = recent_tool_messages[::-1]
+
         # ✅ Ensure retrieved_docs is a list and contains valid content
         if not retrieved_docs:
             print("⚠️ No retrieved documents found! Returning fallback response.")
             return {"messages": ["I couldn't find relevant information. Please rephrase or ask another question."]}
+        
+        docs_content = "\n\n".join(doc.content for doc in tool_messages)
+
 
         # ✅ Extract content from ToolMessages properly
         docs_content = "\n\n".join(
             doc.content if isinstance(doc, ToolMessage) else str(doc) for doc in retrieved_docs
         )
+        print(docs_content)
 
-        system_message_content = SYSTEM_PROMPT_TEMPLATE.format(context=docs_content)
-        conversation_messages = [SystemMessage(system_message_content)]
+        conversation_messages = [
+            message
+            for message in state["messages"]
+            if message.type in ("human", "system")
+            or (message.type == "ai" and not message.tool_calls)
+        ]
 
+        system_message_content = SYSTEM_PROMPT_TEMPLATE.format(context=docs_content, question=conversation_messages[-1].content)
+        prompt = [SystemMessage(system_message_content)] + conversation_messages
+        
         # ✅ Call the LLM
-        response = self.llm.invoke(conversation_messages)
-        print(f"🤖 LLM Response: {response.content}")  # ✅ Debugging print
+        response = self.llm.invoke(prompt)
 
         return {"messages": [response]}
