@@ -59,8 +59,10 @@ class ResponseGenerator:
 
         system_message_content = SYSTEM_PROMPT_TEMPLATE.format(context=docs_content, question=conversation_messages[-1].content)
         prompt = [SystemMessage(system_message_content)] + conversation_messages
-        
-        # ✅ Call the LLM
+
+        print(f"Prompt: {prompt}")
+        print("\n\nCALLING LLM")
         response = self.llm.invoke(prompt)
+        print("\n\nLLM RESPONSE")
 
         return {"messages": [response]}

@@ -26,12 +26,18 @@ class LangGraphPipeline:
 
         if use_agent:
             graph = self.agent_graph.build_agent_graph()
-            response = graph.invoke(
-                {"messages": [{"role": "user", "content": input_message}]},
-                config={"configurable": {"thread_id": "abc_123"}}  # ✅ Pass only here
-            )
+            while input_message != "exit":
+                response = graph.invoke(
+                    {"messages": [{"role": "user", "content": input_message}]},
+                    config={"configurable": {"thread_id": "abc_123"}}  # ✅ Pass only here
+                )
+                print(f"\n\n 📝 Respone: {response["messages"][-1].content}")
+                input_message = input("Enter your query: ")
         else:
             graph = self.langraph_builder.build_graph()
-            response = graph.invoke({"messages": [{"role": "user", "content": input_message}]})  # ✅ Standard RAG
+            while input_message != "exit":
+                response = graph.invoke({"messages": [{"role": "user", "content": input_message}]}, config={"configurable": {"thread_id": "abc_456"}})  # ✅ Standard RAG
+                print(f"\n\n 📝 Respone: {response["messages"][-1].content}")
+                input_message = input("Enter your query: ")
 
         return response["messages"][-1].content

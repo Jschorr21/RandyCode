@@ -4,6 +4,7 @@ from langchain_pipeline.retrieval import retrieve
 from langchain_pipeline.response_generator import ResponseGenerator
 import logging
 from langchain_openai import ChatOpenAI
+from langgraph.checkpoint.memory import MemorySaver
 logging.basicConfig(level=logging.INFO)
 
 class LangGraphBuilder:
@@ -12,16 +13,8 @@ class LangGraphBuilder:
     def __init__(self):
         self.response_generator = ResponseGenerator()
         self.llm = ChatOpenAI(model_name="gpt-4o-mini")
+        self.memory = MemorySaver()
 
-    # def query_or_respond(self, state: MessagesState):
-    #     """Call retrieval tool before generating response."""
-    #     user_message = state["messages"][-1]  # Get last user query
-    #     query = user_message["content"] if isinstance(user_message, dict) else user_message
-        
-    #     logging.info(f"🔍 Running retrieval step for: {query}")
-    #     retrieval_result = retrieve.invoke(query)
-
-    #     return {"messages": [retrieval_result]}  # ✅ Ensure retrieval happens first
     def query_or_respond(self, state: MessagesState):
         """Generate tool call for retrieval or respond."""
         llm_with_tools = self.llm.bind_tools([retrieve])
@@ -47,8 +40,12 @@ class LangGraphBuilder:
         graph_builder.add_node("generate", self.generate_response)
 
         graph_builder.set_entry_point("query_or_respond")
-        graph_builder.add_edge("query_or_respond", "tools")  # ✅ Ensure retrieval tool runs first
+        graph_builder.add_conditional_edges(
+            "query_or_respond",
+            tools_condition,
+            {END: END, "tools": "tools"},
+        )
         graph_builder.add_edge("tools", "generate")
         graph_builder.add_edge("generate", END)
 
-        return graph_builder.compile()
+        return graph_builder.compile(checkpointer=self.memory)
