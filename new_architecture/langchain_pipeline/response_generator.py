@@ -1,6 +1,6 @@
 import logging
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import SystemMessage
+from langchain_core.messages import SystemMessage, ToolMessage
 from langgraph.graph import MessagesState
 from langchain_pipeline.prompts import SYSTEM_PROMPT_TEMPLATE
 
@@ -21,27 +21,28 @@ class ResponseGenerator:
             state (MessagesState): The state containing messages.
 
         Returns:
-            dict: A dictionary with the generated message and sources.
+            dict: A dictionary with the generated message.
         """
-        logging.info("📝 Generating response...")
+        print("Generating response...")  # ✅ Debugging print
 
-        # Get retrieved context and sources
-        retrieved_data = state.get("messages", [{}])[-1]  # Get last retrieved message
-        retrieved_text = retrieved_data.get("content", "")
-        sources = retrieved_data.get("sources", [])
+        # ✅ Get retrieved documents (ensures we extract content properly)
+        retrieved_docs = state.get("messages", [])
 
-        if not retrieved_text:
-            logging.warning("⚠️ No retrieved documents found! Returning fallback response.")
+        # ✅ Ensure retrieved_docs is a list and contains valid content
+        if not retrieved_docs:
+            print("⚠️ No retrieved documents found! Returning fallback response.")
             return {"messages": ["I couldn't find relevant information. Please rephrase or ask another question."]}
 
-        system_message_content = SYSTEM_PROMPT_TEMPLATE.format(context=retrieved_text)
+        # ✅ Extract content from ToolMessages properly
+        docs_content = "\n\n".join(
+            doc.content if isinstance(doc, ToolMessage) else str(doc) for doc in retrieved_docs
+        )
+
+        system_message_content = SYSTEM_PROMPT_TEMPLATE.format(context=docs_content)
         conversation_messages = [SystemMessage(system_message_content)]
 
-        # Call the LLM
+        # ✅ Call the LLM
         response = self.llm.invoke(conversation_messages)
-        logging.info(f"🤖 LLM Response: {response.content}")
+        print(f"🤖 LLM Response: {response.content}")  # ✅ Debugging print
 
-        # Append sources to response
-        sources_text = "\nSources:\n" + "\n".join(sources) if sources else "No sources available."
-
-        return {"messages": [f"{response.content}\n\n{sources_text}"]}
+        return {"messages": [response]}

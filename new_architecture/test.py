@@ -1,18 +1,20 @@
-from data_ingestion.vector_store import VectorStore
+from langchain_pipeline.retrieval import retrieve
+import logging
 
-vector_db = VectorStore()  # ✅ Uses existing database
+logging.basicConfig(level=logging.DEBUG)
 
-# ✅ Check stored data
-catalog_data = vector_db.stores["catalog"].get()
-courses_data = vector_db.stores["courses"].get()
+def test_retriever():
+    """Test the Retriever tool manually."""
 
-print(f"📂 Catalog store contains {len(catalog_data['documents'])} documents")
-print(f"📂 Courses store contains {len(courses_data['documents'])} documents")
 
-# ✅ Try a sample query
-query = "math 1301"
-results = vector_db.search(query, store_type="catalog")
+    print("\n🧪 Running Test: Valid Query")
+    query = "What are the prerequisites for CS 1301?"
+    
+    # ✅ Use `.invoke()` to call the tool correctly
+    response = retrieve.invoke({"query": query})  
+    
+    print(f"📜 Response: {response['content'][:500]}")
+    print(f"📌 Sources: {response['sources']}\n")
 
-print("\n🔍 Sample Search Results:")
-for doc in results:
-    print(f"📜 {doc.page_content}")
+if __name__ == "__main__":
+    test_retriever()
