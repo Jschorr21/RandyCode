@@ -20,7 +20,7 @@ class TextSplitter:
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap,
-            separators=["\n\n", "\n", " ", ""]
+            separators=["\n\n", "\n", ". ", " ", ""]
         )
 
     def extract_text_from_pdf(self, pdf_path):
@@ -54,12 +54,22 @@ class TextSplitter:
         metadatas = []
         ids = []
 
-        for i, page_text in enumerate(text_list):
-            chunks = self.text_splitter.split_text(page_text)
-            for chunk in chunks:
-                chunk_id = str(uuid.uuid4())  # Generate unique ID
+        for doc in text_list:
+            # ✅ Extract source metadata
+            file_name = doc.metadata["source"]  # Extracted filename
+            date_scraped = doc.metadata.get("date_scraped", "Unknown Date")
+
+            # ✅ Ensure the first chunk contains metadata
+            text_chunks = self.text_splitter.split_text(doc.page_content)
+            for i, chunk in enumerate(text_chunks):
+                chunk_id = str(uuid.uuid4())  # Unique chunk ID
+
+                # ✅ First chunk includes metadata
+                if i == 0:
+                    chunk = f"Scraped from: {file_name}\nDate scraped: {date_scraped}\n\n{chunk}"
+
                 documents.append(chunk)
-                metadatas.append({"page": i + 1})  # Store page number as metadata
+                metadatas.append({"source": file_name, "date_scraped": date_scraped, "chunk_number": i + 1})
                 ids.append(chunk_id)
 
         return documents, metadatas, ids

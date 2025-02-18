@@ -52,22 +52,22 @@ class DataIngestionPipeline:
             print("❌ No `.txt` files found in S3.")
             return
 
-        # ✅ Split text into chunks and keep filename metadata
+        print("✅ Processing raw documents...")
+
         website_documents = []
         for doc in raw_documents:
-            file_name = doc.metadata["source"]  # ✅ Extract filename for metadata
-            # documents, metadatas, ids = self.text_splitter.chunk_text(doc.page_content)
+            documents, metadatas, ids = self.text_splitter.chunk_text([doc])  # ✅ Fixed chunking
 
-            # for i in range(len(documents)):
-            #     metadatas[i]["source"] = file_name  # ✅ Keep the filename as metadata
+            print(f"✅ Created {len(documents)} text chunks from {doc.metadata['source']}.")
 
-            # print(f"✅ Created {len(documents)} text chunks.")
-
-            # self.text_splitter.save_chunks_to_json(documents, metadatas, ids, output_file=f"{file_name}.json")
-            json_path = os.path.join(os.path.dirname(__file__), "data", f"{file_name}.json")
+            self.text_splitter.save_chunks_to_json(documents, metadatas, ids, output_file=f"{doc.metadata['source']}.json")
+            
+            json_path = os.path.join(os.path.dirname(__file__), "data", f"{doc.metadata['source']}.json")
             json_loader = JSONLoader(json_path)
             public_documents = json_loader.load_documents()
             website_documents.extend(public_documents)
+
+        print("✅ Text chunking and embedding ready.")
 
         self.vector_store.add_new_store("WebsiteData")
         self.vector_store.add_documents(website_documents, store_type="WebsiteData")

@@ -23,6 +23,7 @@ class VectorStore:
         self.stores = {
             "catalog": self._init_store("Catalog"),
             "courses": self._init_store("Courses"),
+            "websites": self._init_store("WebsiteData")
         }
 
         print(f"✅ ChromaDB initialized at: {self.persist_directory}")

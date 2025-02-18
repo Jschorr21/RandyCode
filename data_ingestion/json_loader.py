@@ -8,15 +8,23 @@ class JSONLoader:
     def __init__(self, file_path):
         self.file_path = os.path.join(os.path.dirname(__file__), file_path)
 
-    def load_documents(self, source="chunks.json"):
+    def load_documents(self):
         """Reads JSON and converts it into a list of Document objects."""
+        
+        # ✅ Extract filename without extension
+        source_filename = os.path.basename(self.file_path).replace(".json", "")
+
         with open(self.file_path, "r", encoding="utf-8") as file:
             chunk_data = json.load(file)
 
         documents = [
             Document(
                 page_content=chunk["text"],
-                metadata={"id": chunk["id"], "page": chunk["metadata"]["page"], "source": source}
+                metadata={
+                    "id": chunk["id"],
+                    "chunk_number": chunk["metadata"]["chunk_number"],
+                    "source": source_filename  # ✅ Use the filename dynamically
+                }
             )
             for chunk in chunk_data
         ]
