@@ -1,4 +1,0 @@
-source fresh_venv/bin/activate
-
-
-export LANGCHAIN_API_KEY="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"
