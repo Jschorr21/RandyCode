@@ -8,7 +8,7 @@ from data_ingestion.vector_store import VectorStore
 from data_ingestion.text_splitter import TextSplitter
 from data_ingestion.json_loader import JSONLoader
 from data_ingestion.csv_loader import CSVLoader
-
+from data_ingestion.s3_loader import S3Loader
 class DataIngestionPipeline:
     """Handles the complete data ingestion process."""
 
@@ -28,18 +28,50 @@ class DataIngestionPipeline:
         # self.text_splitter.save_chunks_to_json(documents, metadatas, ids)
 
         # Step 2: Load catalog data from JSON
-        json_path = os.path.join(os.path.dirname(__file__), "data", "chunks.json")
-        json_loader = JSONLoader(json_path)
-        catalog_documents = json_loader.load_documents()
+        # json_path = os.path.join(os.path.dirname(__file__), "data", "chunks.json")
+        # json_loader = JSONLoader(json_path)
+        # catalog_documents = json_loader.load_documents()
 
-        # Step 3: Load course data from CSV
-        csv_path = os.path.join(os.path.dirname(__file__), "data", "subject_courses.csv")
-        csv_loader = CSVLoader(csv_path)
-        course_documents = csv_loader.load_documents()
+        # # Step 3: Load course data from CSV
+        # csv_path = os.path.join(os.path.dirname(__file__), "data", "subject_courses.csv")
+        # csv_loader = CSVLoader(csv_path)
+        # course_documents = csv_loader.load_documents()
 
-        # Step 4: Store in vector database
-        self.vector_store.add_documents(catalog_documents, store_type="catalog")
-        self.vector_store.add_documents(course_documents, store_type="courses")
+        # # Step 4: Store in vector database
+        # self.vector_store.add_documents(catalog_documents, store_type="catalog")
+        # self.vector_store.add_documents(course_documents, store_type="courses")
+
+        # ✅ Load raw text files from S3
+        bucket_name = "randy-scrape"
+        s3_folder = "scraped_data/"
+
+        print("📥 Loading text files from S3...")
+        raw_documents = S3Loader(bucket_name, s3_folder).load_documents()
+
+        if not raw_documents:
+            print("❌ No `.txt` files found in S3.")
+            return
+
+        # ✅ Split text into chunks and keep filename metadata
+        website_documents = []
+        for doc in raw_documents:
+            file_name = doc.metadata["source"]  # ✅ Extract filename for metadata
+            # documents, metadatas, ids = self.text_splitter.chunk_text(doc.page_content)
+
+            # for i in range(len(documents)):
+            #     metadatas[i]["source"] = file_name  # ✅ Keep the filename as metadata
+
+            # print(f"✅ Created {len(documents)} text chunks.")
+
+            # self.text_splitter.save_chunks_to_json(documents, metadatas, ids, output_file=f"{file_name}.json")
+            json_path = os.path.join(os.path.dirname(__file__), "data", f"{file_name}.json")
+            json_loader = JSONLoader(json_path)
+            public_documents = json_loader.load_documents()
+            website_documents.extend(public_documents)
+
+        self.vector_store.add_new_store("WebsiteData")
+        self.vector_store.add_documents(website_documents, store_type="WebsiteData")
+
 
 # Run pipeline
 if __name__ == "__main__":

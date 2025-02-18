@@ -64,7 +64,7 @@ class TextSplitter:
 
         return documents, metadatas, ids
 
-    def save_chunks_to_json(self, documents, metadatas, ids, output_file="data/chunks.json"):
+    def save_chunks_to_json(self, documents, metadatas, ids, output_file="chunks.json"):
         """
         Saves extracted chunks to a JSON file inside the data folder.
 
@@ -79,7 +79,9 @@ class TextSplitter:
         os.makedirs(data_folder, exist_ok=True)  # Create 'data' folder if it doesn't exist
 
         # Construct full path for output file
-        output_path = os.path.join(data_folder, "chunks.json")
+        output_path = os.path.join(data_folder, output_file)
+        output_dir = os.path.dirname(output_path)  # Extract directory from full path
+        os.makedirs(output_dir, exist_ok=True)  # ✅ Create missing directories
 
         # Save to JSON
         chunk_data = [
