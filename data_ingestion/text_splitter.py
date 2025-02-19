@@ -40,7 +40,7 @@ class TextSplitter:
                 text_by_page.append(text)
         return text_by_page
 
-    def chunk_text(self, text_list):
+    def chunk_scraped_text(self, text_list):
         """
         Splits text into overlapping chunks with metadata.
 
@@ -73,8 +73,32 @@ class TextSplitter:
                 ids.append(chunk_id)
 
         return documents, metadatas, ids
+    
+    def chunk_pdf_text(self, text_list):
+        """
+        Splits text into overlapping chunks with metadata.
 
-    def save_chunks_to_json(self, documents, metadatas, ids, output_file="chunks.json"):
+        Args:
+            text_list (list): List of page-wise text extracted from a document.
+
+        Returns:
+            tuple: (documents, metadatas, ids) for ChromaDB storage.
+        """
+        documents = []
+        metadatas = []
+        ids = []
+
+        for i, page_text in enumerate(text_list):
+            chunks = self.text_splitter.split_text(page_text)
+            for chunk in chunks:
+                chunk_id = str(uuid.uuid4())  # Generate unique ID
+                documents.append(chunk)
+                metadatas.append({"source": "catalog", "chunk_number": i + 1})  # Store page number as metadata
+                ids.append(chunk_id)
+
+        return documents, metadatas, ids
+
+    def save_chunks_to_json(self, documents, metadatas, ids, output_file):
         """
         Saves extracted chunks to a JSON file inside the data folder.
 

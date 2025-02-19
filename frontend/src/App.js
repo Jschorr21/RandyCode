@@ -52,7 +52,7 @@ function App() {
         value={userMessage}
         onChange={(e) => setUserMessage(e.target.value)}
         placeholder="Type a message..."
-        style={{ width: "80%", padding: "10px" }}
+        style={{ width: "80%", padding: "10px", }}
         onSubmit={sendMessage}
       />
       <button onClick={sendMessage} style={{ padding: "10px" }}>Send</button>

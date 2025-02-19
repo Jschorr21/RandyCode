@@ -1,6 +1,6 @@
 [
     {
-        "id": "41fce782-7c3f-4705-86d4-f8e02a04f1a0",
+        "id": "774effb8-b7ea-407d-b26b-0cfa742e2262",
         "text": "Scraped from: scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://it.vanderbilt.edu/sso/\nDate scraped: 2025-02-17 02:45:08\n\nStart and Stop SSO Start SSO Session End SSO Session\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/about-us/\nDate scraped: 2025-02-17 02:45:08\n\nAbout IT\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/home/\nDate scraped: 2025-02-17 02:45:08\n\nVanderbilt IT A new and enhanced help desk system that will offer improved functionality for our campus community has arrived that includes Oracle/SkyVU support. Visit the service portal for a short video and how to resources to get started. Looking for time reporting/Kronos(UKG)? Login to Kronos Password Reset? Storage Retention FAQ DUO Support? Report a Phishing Incident. Need Vanderbilt Wifi? VU Identity VU Software Store View All Resources Just For You Students Researchers Faculty & Staff Need help? Report a Security Incident Report Phishing  On-Campus Support is provided by request : Monday - Friday: 7:00 AM \u2013 6:00 PM Walk-up Support is provided at the Hill Center: Monday - Friday: 9:00 AM - 3:00 PM Phone Support can be reached at 615-343-9999 or by texting us at 1-844-436-1567 : Monday - Thursday: 7:00 AM \u2013 11:00 PM Friday: 7:00 AM - 6:00 PM Saturday: Closed Sunday: 2:00 PM\u2013 11:00 PM News and Events \n================================================================================",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -9,7 +9,7 @@
         }
     },
     {
-        "id": "bbb25bfe-4789-4962-b1d4-874043f3daf8",
+        "id": "aef03563-b5cc-4e44-b83c-bd25eba6f82a",
         "text": "Scraped from: https://it.vanderbilt.edu/services/\nDate scraped: 2025-02-17 02:45:09",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -18,7 +18,7 @@
         }
     },
     {
-        "id": "9675d81c-5ec5-4223-ae80-db810a042c68",
+        "id": "7fdeb13c-ee4e-4926-ad30-c13182121acc",
         "text": "Service Catalog Services Subcategory Service Category Docusign Enterprise Applications Academic & Administrative Systems Oracle Enterprise Applications Academic & Administrative Systems Salesforce Enterprise Applications Academic & Administrative Systems UKG Ready - Kronos Enterprise Applications Academic & Administrative Systems Brightspace Student Systems Academic & Administrative Systems YES Student Systems Academic & Administrative Systems Firewall Access Permissions and Requests Accounts & Access Management Identity Management Access Permissions and Requests Accounts & Access Management MFA (Multi-Factor Authenticaton) Access Permissions and Requests Accounts & Access Management Passwords Access Permissions and Requests Accounts & Access Management Resource Account Access Permissions and Requests Accounts & Access Management SSO (Single Sign On) Access Permissions and Requests Accounts & Access Management VPN (Virtual Private Network) Access Permissions and Requests Accounts & Access Management Authentication Services Access Permissions and Requests Accounts & Access Management Privileged Account Management (PAM) Access Permissions and Requests Accounts & Access Management DigiCert SSL Certificate Access Permissions and Requests Accounts & Access Management Classroom AV Support Classroom Technology Classroom & Research Computing Training Classroom Technology Classroom & Research Computing Equipment Consultation Classroom Technology Classroom & Research Computing Secure",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -27,7 +27,7 @@
         }
     },
     {
-        "id": "5bb887b1-c88a-4112-96a3-2e1a79da1fc9",
+        "id": "84b5f1a8-e169-4b36-a40f-24a8ab631fc6",
         "text": "Accounts & Access Management Classroom AV Support Classroom Technology Classroom & Research Computing Training Classroom Technology Classroom & Research Computing Equipment Consultation Classroom Technology Classroom & Research Computing Secure Research Cloud Research Computing Classroom & Research Computing Gartner Research Research Computing Classroom & Research Computing Box Collaboration Tools Communication & Collaboration Microsoft 365 Collaboration Tools Communication & Collaboration Microsoft 365 Groups Collaboration Tools Communication & Collaboration Microsoft Teams Collaboration Tools Communication & Collaboration Sharepoint Collaboration Tools Communication & Collaboration Zoom Collaboration Tools Communication & Collaboration OneDrive for Business Collaboration Tools Communication & Collaboration Telephony Services Telephony Communication & Collaboration SEM (Shared Exchange Mailbox) Email and Calendaring Communication & Collaboration Email Email and Calendaring Communication & Collaboration LISTSERV Email and Calendaring Communication & Collaboration Endpoint Configuration Hardware Support & Maintenance Software & Computing Devices Printers & Printing Hardware Support & Maintenance Software & Computing Devices Virtual Desktop/Application Streaming Hardware Support & Maintenance Software & Computing Devices Hardware Warranty Repair Hardware Support & Maintenance Software & Computing Devices List of Supported Software Software Installation & Support Software &",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -36,7 +36,7 @@
         }
     },
     {
-        "id": "f75f28c7-d95a-4da3-9c54-4f3a758089ce",
+        "id": "9b56ad21-ff99-4a6b-9546-20e650de8815",
         "text": "Desktop/Application Streaming Hardware Support & Maintenance Software & Computing Devices Hardware Warranty Repair Hardware Support & Maintenance Software & Computing Devices List of Supported Software Software Installation & Support Software & Computing Devices Lifecycle Lifecycle Software & Computing Devices Standard Device Options Lifecycle Software & Computing Devices Peripherals Lifecycle Software & Computing Devices Warranties Lifecycle Software & Computing Devices Asset Inventory Lifecycle Software & Computing Devices Device Returns & Employee offboarding Lifecycle Software & Computing Devices Wi-Fi Connectivity Wired &Wireless Connectivity Internet & Network vuDevices Wireless Network Wired &Wireless Connectivity Internet & Network EduRoam Wired & Wireless Connectivity Internet & Network Activate Ports Network Management Internet & Network Domain Name Service (DNS) Network Management Internet & Network Install Cables Network Management Internet & Network UPS Network Management Internet & Network VLAN Network Management Internet & Network BC/DR Consultation Business Continuity and Disaster Recovery Consulting & Advising Project Requests IT Consulting and Adivsory Services Consulting & Advising Training IT Consulting and Adivsory Services Consulting & Advising IT Vendor Risk Assessment IT Consulting and Adivsory Services Consulting & Advising Workshops IT Consulting and Adivsory Services Consulting & Advising IT Security Consulting IT Consulting and Adivsory Services",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -45,7 +45,7 @@
         }
     },
     {
-        "id": "ed1416c6-12d0-40ec-826e-5e6d97f0f6e0",
+        "id": "a2ab1f1e-1500-4364-9a68-4ad25644e667",
         "text": "Services Consulting & Advising IT Vendor Risk Assessment IT Consulting and Adivsory Services Consulting & Advising Workshops IT Consulting and Adivsory Services Consulting & Advising IT Security Consulting IT Consulting and Adivsory Services Consulting & Advising Data Center System Support and Network Operations Center (NOC) Datacenter Services Servers, Database, and Infrastructure Oracle Analytics Cloud Data Architecture Servers, Database, and Infrastructure Managed Hosting Database Server Servers, Database, and Infrastructure Oracle Database Hosting Database Server Servers, Database, and Infrastructure Virtualization Database Server Servers, Database, and Infrastructure Decommission Server Database Server Servers, Database, and Infrastructure Secure Relay for Servers (SRFS) Database Server Servers, Database, and Infrastructure Managed Storage Storage Management Servers, Database, and Infrastructure Cloud Storage Storage Management Servers, Database, and Infrastructure Cloud Database Services Cloud Services Servers, Database, and Infrastructure Cloud Hosting Monitoring Cloud Services Servers, Database, and Infrastructure Cloud Account Services Cloud Services Servers, Database, and Infrastructure Services Subcategory Service Category Docusign Enterprise Applications Academic & Administrative Systems Oracle Enterprise Applications Academic & Administrative Systems Salesforce Enterprise Applications Academic & Administrative Systems UKG Ready - Kronos Enterprise Applications",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -54,7 +54,7 @@
         }
     },
     {
-        "id": "8db1d912-cef8-41f2-8358-597dfb12a819",
+        "id": "01c8b67f-f301-4a4f-b351-55fee081968b",
         "text": "Docusign Enterprise Applications Academic & Administrative Systems Oracle Enterprise Applications Academic & Administrative Systems Salesforce Enterprise Applications Academic & Administrative Systems UKG Ready - Kronos Enterprise Applications Academic & Administrative Systems Brightspace Student Systems Academic & Administrative Systems YES Student Systems Academic & Administrative Systems Firewall Access Permissions and Requests Accounts & Access Management Identity Management Access Permissions and Requests Accounts & Access Management MFA (Multi-Factor Authenticaton) Access Permissions and Requests Accounts & Access Management Passwords Access Permissions and Requests Accounts & Access Management Resource Account Access Permissions and Requests Accounts & Access Management SSO (Single Sign On) Access Permissions and Requests Accounts & Access Management VPN (Virtual Private Network) Access Permissions and Requests Accounts & Access Management Authentication Services Access Permissions and Requests Accounts & Access Management Privileged Account Management (PAM) Access Permissions and Requests Accounts & Access Management DigiCert SSL Certificate Access Permissions and Requests Accounts & Access Management Classroom AV Support Classroom Technology Classroom & Research Computing Training Classroom Technology Classroom & Research Computing Equipment Consultation Classroom Technology Classroom & Research Computing Secure Research Cloud Research Computing Classroom & Research",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -63,7 +63,7 @@
         }
     },
     {
-        "id": "4f7fcef6-19f5-4aaf-829a-19c907c722e8",
+        "id": "a817bab6-5299-4378-b17c-c770110d0f06",
         "text": "Classroom Technology Classroom & Research Computing Training Classroom Technology Classroom & Research Computing Equipment Consultation Classroom Technology Classroom & Research Computing Secure Research Cloud Research Computing Classroom & Research Computing Gartner Research Research Computing Classroom & Research Computing Box Collaboration Tools Communication & Collaboration Microsoft 365 Collaboration Tools Communication & Collaboration Microsoft 365 Groups Collaboration Tools Communication & Collaboration Microsoft Teams Collaboration Tools Communication & Collaboration Sharepoint Collaboration Tools Communication & Collaboration Zoom Collaboration Tools Communication & Collaboration OneDrive for Business Collaboration Tools Communication & Collaboration Telephony Services Telephony Communication & Collaboration SEM (Shared Exchange Mailbox) Email and Calendaring Communication & Collaboration Email Email and Calendaring Communication & Collaboration LISTSERV Email and Calendaring Communication & Collaboration Endpoint Configuration Hardware Support & Maintenance Software & Computing Devices Printers & Printing Hardware Support & Maintenance Software & Computing Devices Virtual Desktop/Application Streaming Hardware Support & Maintenance Software & Computing Devices Hardware Warranty Repair Hardware Support & Maintenance Software & Computing Devices List of Supported Software Software Installation & Support Software & Computing Devices Lifecycle Lifecycle Software &",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "id": "d536a566-e4e5-4577-8e15-3e6a07c2da32",
+        "id": "2368faf4-3269-4239-9e8e-da491ede04ba",
         "text": "& Maintenance Software & Computing Devices Hardware Warranty Repair Hardware Support & Maintenance Software & Computing Devices List of Supported Software Software Installation & Support Software & Computing Devices Lifecycle Lifecycle Software & Computing Devices Standard Device Options Lifecycle Software & Computing Devices Peripherals Lifecycle Software & Computing Devices Warranties Lifecycle Software & Computing Devices Asset Inventory Lifecycle Software & Computing Devices Device Returns & Employee offboarding Lifecycle Software & Computing Devices Wi-Fi Connectivity Wired &Wireless Connectivity Internet & Network vuDevices Wireless Network Wired &Wireless Connectivity Internet & Network EduRoam Wired & Wireless Connectivity Internet & Network Activate Ports Network Management Internet & Network Domain Name Service (DNS) Network Management Internet & Network Install Cables Network Management Internet & Network UPS Network Management Internet & Network VLAN Network Management Internet & Network BC/DR Consultation Business Continuity and Disaster Recovery Consulting & Advising Project Requests IT Consulting and Adivsory Services Consulting & Advising Training IT Consulting and Adivsory Services Consulting & Advising IT Vendor Risk Assessment IT Consulting and Adivsory Services Consulting & Advising Workshops IT Consulting and Adivsory Services Consulting & Advising IT Security Consulting IT Consulting and Adivsory Services Consulting & Advising Data Center System Support",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -81,7 +81,7 @@
         }
     },
     {
-        "id": "db191685-3fd2-4981-969c-227989a4219b",
+        "id": "521d7e2c-1391-40e5-8b03-38f504a7cee3",
         "text": "Risk Assessment IT Consulting and Adivsory Services Consulting & Advising Workshops IT Consulting and Adivsory Services Consulting & Advising IT Security Consulting IT Consulting and Adivsory Services Consulting & Advising Data Center System Support and Network Operations Center (NOC) Datacenter Services Servers, Database, and Infrastructure Oracle Analytics Cloud Data Architecture Servers, Database, and Infrastructure Managed Hosting Database Server Servers, Database, and Infrastructure Oracle Database Hosting Database Server Servers, Database, and Infrastructure Virtualization Database Server Servers, Database, and Infrastructure Decommission Server Database Server Servers, Database, and Infrastructure Secure Relay for Servers (SRFS) Database Server Servers, Database, and Infrastructure Managed Storage Storage Management Servers, Database, and Infrastructure Cloud Storage Storage Management Servers, Database, and Infrastructure Cloud Database Services Cloud Services Servers, Database, and Infrastructure Cloud Hosting Monitoring Cloud Services Servers, Database, and Infrastructure Cloud Account Services Cloud Services Servers, Database, and Infrastructure",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -90,7 +90,7 @@
         }
     },
     {
-        "id": "cae4402d-945e-4e14-b63b-4853cc7003ce",
+        "id": "962ab875-c040-48fc-8636-75920729f415",
         "text": "================================================================================",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -99,7 +99,7 @@
         }
     },
     {
-        "id": "65092b2f-4577-49f6-a4be-a0477cbaf42c",
+        "id": "35979295-819c-4c3b-8bc4-97c7e6d3cec5",
         "text": "Scraped from: https://it.vanderbilt.edu/students/\nDate scraped: 2025-02-17 02:45:14\n\nStudents Before You Arrive Authorize VUnetID DUO Authentication Get Connected Via Vu Email Vanderbilt Wi-Fi While You Are Here Change Password Duo FAQ vpn access Software Store Classroom Resources Brightspace Zoom YES Library More Information for Students Devices Faculty, staff, and students should use vuDevices for gaming systems, smart devices, AppleTVs, or Roku devices (ChromeCast devices are not supported). Users should register the device by going to Vanderbilt WiFi and selecting \u2018I have a VUnetID\u2019 then connect gaming console. Please note this can only be done on campus. For more information, visit vuDevices . Online Tools and Services There are several online tools available to the Vanderbilt community. For more information, visit the Vanderbilt Software Store and the Communications and Collaboration page. More FAQs Still have a question? Submit a help request My help tickets\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/researchers/\nDate scraped: 2025-02-17 02:45:15",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -108,7 +108,7 @@
         }
     },
     {
-        "id": "254223ca-a0de-40f7-9a52-44f2e84262c8",
+        "id": "dd3c41f3-c032-459e-ac27-ca6f6b2359b3",
         "text": "Scraped from: https://it.vanderbilt.edu/researchers/\nDate scraped: 2025-02-17 02:45:15\n\nResearchers Basic IT Services Set up your IT IT Devices Connect to Wifi Cybersecurity Training Research Technologies Secure File Transfer (SFT) Secure Research Cloud (SRC) Gartner Research Software Store More Resources Still have a question? Submit a help request My help tickets\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/faculty-staff/\nDate scraped: 2025-02-17 02:45:15\n\nFaculty & Staff Top Services Set up your IT Secure File Transfer (SFT) Cybersecurity Training Vanderbilt wi-fi Classroom Resources Zoom YES Brightspace FAQ VPN ACCESS Still have a question? Submit a help ticket My help tickets\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/softwarestore/\nDate scraped: 2025-02-17 02:45:16",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -117,7 +117,7 @@
         }
     },
     {
-        "id": "d187ee16-f2bc-4e34-9b54-734305b74028",
+        "id": "078ccf87-3b3c-4b78-80dd-8b3375a0f0b9",
         "text": "Scraped from: https://it.vanderbilt.edu/softwarestore/\nDate scraped: 2025-02-17 02:45:16\n\nSoftware Store Login Microsoft Office 365 Pro Plus Access Faculty/Staff & Students Other Available Software ChemBioDraw JetBrains JetBrain_PyCharm-Learn Python SAS OnDemand for Academics STATA Zotero OnTheHub.com oXygen XML Editor oXygen XML Editor for Digital Humanities Key Metrics Foldersize Pro Lighthouse Data GPMAW JMP Statistical Discovery More Resources Requesting a Service? Domain Request DigiCert SSL Certificate SPSS Access for Student Lab Contact the VU Software Store software.store@vanderbilt.edu Software Store FAQ Software Store FAQ Knowledge Article Domain Request DigiCert SSL Certificate  software.store@vanderbilt.edu\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/product-services/\nDate scraped: 2025-02-17 02:45:17\n\nProduct & Services\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/wp-login.php/\nDate scraped: 2025-02-17 02:45:19\n\nPowered by WordPress Lost your password? \u2190 Go to VUIT\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/support/\nDate scraped: 2025-02-17 02:45:21",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",
@@ -126,7 +126,7 @@
         }
     },
     {
-        "id": "13693d6e-5743-4935-9697-025dc84c15dc",
+        "id": "4c687576-0f5a-4122-b8b7-3e670ac403e0",
         "text": "Powered by WordPress Lost your password? \u2190 Go to VUIT\n================================================================================\n\nScraped from: https://it.vanderbilt.edu/support/\nDate scraped: 2025-02-17 02:45:21\n\nVanderbilt IT A new and enhanced help desk system that will offer improved functionality for our campus community has arrived that includes Oracle/SkyVU support. Visit the service portal for a short video and how to resources to get started. Looking for time reporting/Kronos(UKG)? Login to Kronos Password Reset? Storage Retention FAQ DUO Support? Report a Phishing Incident. Need Vanderbilt Wifi? VU Identity VU Software Store View All Resources Just For You Students Researchers Faculty & Staff Need help? Report a Security Incident Report Phishing  On-Campus Support is provided by request : Monday - Friday: 7:00 AM \u2013 6:00 PM Walk-up Support is provided at the Hill Center: Monday - Friday: 9:00 AM - 3:00 PM Phone Support can be reached at 615-343-9999 or by texting us at 1-844-436-1567 : Monday - Thursday: 7:00 AM \u2013 11:00 PM Friday: 7:00 AM - 6:00 PM Saturday: Closed Sunday: 2:00 PM\u2013 11:00 PM News and Events \n================================================================================",
         "metadata": {
             "source": "scraped_data/it.vanderbilt.edu/it.vanderbilt.edu_part1.txt",

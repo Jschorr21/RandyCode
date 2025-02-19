@@ -6,4 +6,3 @@ SYSTEM_PROMPT_TEMPLATE = ChatPromptTemplate.from_template(
     "If the answer is not present, respond with: 'That question is outside the scope of my knowledge. Try rephrasing.'"
     "\n\nContext: {context}\n\n This is the latest user question: {question}"
 )
-

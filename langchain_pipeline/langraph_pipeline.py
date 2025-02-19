@@ -11,7 +11,7 @@ class LangGraphPipeline:
         self.langraph_builder = LangGraphBuilder()
         self.agent_graph = AgentGraph()
 
-    def run_pipeline(self, input_message, use_agent=False):
+    def run_pipeline(self, input_message, use_agent=True):
         """
         Runs the RAG pipeline.
 
