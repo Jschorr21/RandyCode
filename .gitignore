@@ -14,7 +14,7 @@ __pycache__/
 
 
 *.ipynb_checkpoints/
-
+RAG_copy.ipynb
 
 .env
 *.env
