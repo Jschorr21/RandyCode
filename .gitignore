@@ -4,8 +4,9 @@ chromaDB/
 fresh_venv/
 db/
 chroma_db/
-data_ingestion/data/scraped_data/
+./data_ingestion/data/scraped_data/
 
+scraped_data/
 
 .vscode/
 
@@ -40,3 +41,4 @@ logs/
 
 
 
+data_ingestion/data/scraped_data/*
