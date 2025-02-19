@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import getpass
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
+import hashlib
 
 class VectorStore:
     """Handles ChromaDB vector storage for multiple collections."""
@@ -64,21 +65,35 @@ class VectorStore:
             self.stores[store_name] = self._init_store(store_name)
             print(f"✅ New store '{store_name}' added.")
 
-    def add_documents(self, documents, store_type):
-        """
-        Adds documents to the specified vector store.
 
-        Args:
-            documents (list): List of LangChain Document objects.
-            store_type (str): Name of the store (e.g., "faculty").
-        """
+
+    def add_documents(self, documents, store_type):
+        """Adds documents to the vector store, avoiding duplicates by assigning unique IDs."""
+        
         if store_type not in self.stores:
             raise ValueError(f"Store '{store_type}' does not exist. Create it first using `add_new_store()`.")
 
         store = self.stores[store_type]
-        store.add_documents(documents=documents)
-        store.persist()
-        print(f"✅ {len(documents)} documents added to {store_type} store.")
+
+        # Retrieve existing metadata (which may contain IDs)
+        existing_docs = store.get(include=["documents", "metadatas"])
+        existing_texts = set(existing_docs.get("documents", []))
+
+        unique_documents = []
+        for doc in documents:
+            doc_hash = hashlib.md5(doc.page_content.encode()).hexdigest()  # Generate unique hash ID
+            if doc.page_content not in existing_texts:
+                doc.metadata["id"] = doc_hash  # Assign a unique ID
+                unique_documents.append(doc)
+
+        if not unique_documents:
+            print(f"✅ No new documents to add in '{store_type}'. Skipping insertion.")
+            return
+
+        store.add_documents(unique_documents)
+        print(f"✅ Added {len(unique_documents)} new documents to '{store_type}'.")
+
+
 
     def search(self, query, store_type, top_k=5):
         """
