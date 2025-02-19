@@ -67,31 +67,44 @@ class VectorStore:
 
 
 
-    def add_documents(self, documents, store_type):
-        """Adds documents to the vector store, avoiding duplicates by assigning unique IDs."""
-        
+  
+
+
+    def add_documents(self, documents, store_type, batch_size=5000):
+        """Efficiently adds unique documents to the vector store in batches."""
+
         if store_type not in self.stores:
             raise ValueError(f"Store '{store_type}' does not exist. Create it first using `add_new_store()`.")
 
         store = self.stores[store_type]
 
-        # Retrieve existing metadata (which may contain IDs)
-        existing_docs = store.get(include=["documents", "metadatas"])
-        existing_texts = set(existing_docs.get("documents", []))
+        # Retrieve existing metadata (fetch only IDs, NOT full documents)
+        existing_metadatas = store.get(include=["metadatas"]).get("metadatas", [])
+        existing_ids = {meta["id"] for meta in existing_metadatas if "id" in meta}  # Store as a set for fast lookup
 
         unique_documents = []
         for doc in documents:
-            doc_hash = hashlib.md5(doc.page_content.encode()).hexdigest()  # Generate unique hash ID
-            if doc.page_content not in existing_texts:
-                doc.metadata["id"] = doc_hash  # Assign a unique ID
+            doc_hash = hashlib.md5(doc.page_content.encode()).hexdigest()  # Generate hash-based unique ID
+            if doc_hash not in existing_ids:  # Faster lookup with a set
+                doc.metadata["id"] = doc_hash
                 unique_documents.append(doc)
 
         if not unique_documents:
-            print(f"✅ No new documents to add in '{store_type}'. Skipping insertion.")
+            print(f"✅ No new unique documents to add in '{store_type}'. Skipping insertion.")
             return
 
-        store.add_documents(unique_documents)
-        print(f"✅ Added {len(unique_documents)} new documents to '{store_type}'.")
+        # ✅ Process documents in batches to avoid exceeding ChromaDB's limit
+        total_docs = len(unique_documents)
+        print(f"📦 Adding {total_docs} unique documents to '{store_type}' in batches of {batch_size}...")
+
+        for i in range(0, total_docs, batch_size):
+            batch = unique_documents[i:i + batch_size]  # Get a chunk of batch_size
+            store.add_documents(batch)
+            print(f"✅ Added batch {i // batch_size + 1}/{(total_docs // batch_size) + 1} ({len(batch)} documents)")
+
+        print(f"✅ Successfully added {total_docs} unique documents to '{store_type}'.")
+
+
 
 
 

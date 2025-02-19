@@ -39,6 +39,6 @@ chroma_db/
 logs/
 *.log
 
+json_clean.ipynb
 
-
-data_ingestion/
+data_ingestion/data/scraped_data/*
