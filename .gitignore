@@ -41,4 +41,4 @@ logs/
 
 
 
-data_ingestion/data/scraped_data/*
+data_ingestion/

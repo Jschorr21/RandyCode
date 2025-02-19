@@ -1,254 +1,191 @@
 [
-    {
-        "id": "73505784-bdf8-4917-a9ff-2b6246bee279",
-        "text": "Scraped from: scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://eecs.vanderbilt.edu/cis/\nDate scraped: 2025-02-17 02:45:10",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 1
-        }
-    },
-    {
-        "id": "3ac0a2ce-3824-4346-8052-314f32610d2d",
-        "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood\u00a0accepted\u00a0the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world\u2019s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. \u201cDan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 2
-        }
-    },
-    {
-        "id": "5d418fa3-f91c-45ed-a971-e6e97c1b50c2",
-        "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine\u2019s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma.\u00a0In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt\u2019s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 3
-        }
-    },
-    {
-        "id": "61288b2e-661e-4888-b0ab-f1bacd19a731",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 4
-        }
-    },
-    {
-        "id": "3d570007-8414-40fb-84a4-f5948e4130db",
-        "text": "Scraped from: https://eecs.vanderbilt.edu/CIS/\nDate scraped: 2025-02-17 02:45:12",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 5
-        }
-    },
-    {
-        "id": "4eb058e9-422c-4b2d-9126-89a55158ec91",
-        "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood\u00a0accepted\u00a0the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world\u2019s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. \u201cDan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 6
-        }
-    },
-    {
-        "id": "56f4f494-a9be-4f33-ad69-fab2fb223c25",
-        "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine\u2019s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma.\u00a0In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt\u2019s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 7
-        }
-    },
-    {
-        "id": "2924959a-237c-4f3f-b164-e6e3008e4a21",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 8
-        }
-    },
-    {
-        "id": "70a24a5d-2afa-4bea-b59f-f4cec82c7f5c",
-        "text": "Scraped from: https://eecs.vanderbilt.edu/postdoc/\nDate scraped: 2025-02-17 02:45:15",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 9
-        }
-    },
-    {
-        "id": "a53c8ee1-0395-4a50-959f-f0c57c540695",
-        "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood\u00a0accepted\u00a0the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world\u2019s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. \u201cDan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 10
-        }
-    },
-    {
-        "id": "f2c46dde-168d-4d0c-ad62-d0595d420bb6",
-        "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine\u2019s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma.\u00a0In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt\u2019s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 11
-        }
-    },
-    {
-        "id": "dd0bae11-d921-42ac-a544-08493b049645",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 12
-        }
-    },
-    {
-        "id": "a5452cf6-d2cf-42e6-9a2f-088e39aa621a",
-        "text": "Scraped from: https://eecs.vanderbilt.edu/people/\nDate scraped: 2025-02-17 02:45:18",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 13
-        }
-    },
-    {
-        "id": "84702c21-20ba-46fa-bb85-bd75148e1736",
-        "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood\u00a0accepted\u00a0the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world\u2019s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. \u201cDan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 14
-        }
-    },
-    {
-        "id": "572ab120-dd1e-418a-acce-28dedce61153",
-        "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine\u2019s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma.\u00a0In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt\u2019s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 15
-        }
-    },
-    {
-        "id": "98ba3e09-cf19-438d-9208-b53bdae84c0c",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 16
-        }
-    },
-    {
-        "id": "8f948a68-3e30-421f-b28a-b00c1288d818",
-        "text": "Scraped from: https://eecs.vanderbilt.edu/staff/\nDate scraped: 2025-02-17 02:45:20",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 17
-        }
-    },
-    {
-        "id": "7e49941e-de41-45a0-b1a5-7cd8599003f5",
-        "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood\u00a0accepted\u00a0the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world\u2019s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. \u201cDan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 18
-        }
-    },
-    {
-        "id": "7c43b047-b822-4726-829e-435a35513a0f",
-        "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine\u2019s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma.\u00a0In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt\u2019s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 19
-        }
-    },
-    {
-        "id": "8b737740-09c5-40e9-9a6c-0f86c151c0ef",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 20
-        }
-    },
-    {
-        "id": "0d85c7d4-ef52-4957-a557-db3f04fe6b7f",
-        "text": "Scraped from: https://eecs.vanderbilt.edu/faculty-openings/\nDate scraped: 2025-02-17 02:45:21",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 21
-        }
-    },
-    {
-        "id": "919bc135-bd23-44c6-8c1e-ea4c0d9ca916",
-        "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood\u00a0accepted\u00a0the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world\u2019s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. \u201cDan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 22
-        }
-    },
-    {
-        "id": "d31a122a-52b4-4e8a-b0c3-4a4e1342293f",
-        "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine\u2019s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma.\u00a0In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt\u2019s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 23
-        }
-    },
-    {
-        "id": "dd4057ae-668b-415d-a734-4e8712daac12",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 24
-        }
-    },
-    {
-        "id": "5b9b58ba-1f2d-49f4-96e4-efde7fd34db6",
-        "text": "Scraped from: https://eecs.vanderbilt.edu/news/\nDate scraped: 2025-02-17 02:45:26",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 25
-        }
-    },
-    {
-        "id": "69593453-35c0-44cd-bbea-6f4d7133baa8",
-        "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood\u00a0accepted\u00a0the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world\u2019s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. \u201cDan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 26
-        }
-    },
-    {
-        "id": "239f0d7d-f5ff-4a5b-8c69-afeffd9b86ea",
-        "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,\u201d said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine\u2019s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma.\u00a0In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt\u2019s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 27
-        }
-    },
-    {
-        "id": "56150eb1-b5ea-442f-b399-f22e8e469e7d",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 28
-        }
+  {
+    "id": "7847cc66-37f3-48cc-af96-5a60de8c0181",
+    "text": "Scraped from: scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://eecs.vanderbilt.edu/cis/\nDate scraped: 2025-02-17 02:45:10",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 1
     }
+  },
+  {
+    "id": "35bda381-e2b2-479a-8f35-c3741062f5a9",
+    "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood accepted the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world’s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. “Dan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 2
+    }
+  },
+  {
+    "id": "ab8d2969-a6b3-4119-bd8e-7e71a68ee828",
+    "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine’s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma. In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt’s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 3
+    }
+  },
+  {
+    "id": "6862fdcb-6810-4fe5-8558-b5bd40b71729",
+    "text": "Scraped from: https://eecs.vanderbilt.edu/CIS/\nDate scraped: 2025-02-17 02:45:12",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 5
+    }
+  },
+  {
+    "id": "b55d31cf-19e2-45f0-b823-17713124b6e9",
+    "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood accepted the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world’s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. “Dan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 6
+    }
+  },
+  {
+    "id": "d876c4c9-bbae-4777-84f8-c45e780d874d",
+    "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine’s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma. In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt’s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 7
+    }
+  },
+  {
+    "id": "8043856f-504e-484e-81b8-0fafe993a8d5",
+    "text": "Scraped from: https://eecs.vanderbilt.edu/postdoc/\nDate scraped: 2025-02-17 02:45:15",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 9
+    }
+  },
+  {
+    "id": "e79d377d-042c-471e-86b3-331415691d3a",
+    "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood accepted the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world’s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. “Dan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 10
+    }
+  },
+  {
+    "id": "24574a5f-635c-44b7-848d-307beffa0ecb",
+    "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine’s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma. In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt’s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 11
+    }
+  },
+  {
+    "id": "6b297242-6838-49f7-a450-f17ed0a7061a",
+    "text": "Scraped from: https://eecs.vanderbilt.edu/people/\nDate scraped: 2025-02-17 02:45:18",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 13
+    }
+  },
+  {
+    "id": "7457d05c-54b6-43f0-9796-a16343dcd5a9",
+    "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood accepted the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world’s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. “Dan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 14
+    }
+  },
+  {
+    "id": "90f7c0de-01e9-4ee1-aaa3-2be235785dc2",
+    "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine’s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma. In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt’s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 15
+    }
+  },
+  {
+    "id": "ec9d0e5b-6f1a-45d9-a7ac-cebac83a8a60",
+    "text": "Scraped from: https://eecs.vanderbilt.edu/staff/\nDate scraped: 2025-02-17 02:45:20",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 17
+    }
+  },
+  {
+    "id": "a97c4524-aeb1-4b57-8625-84d52c6e7cde",
+    "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood accepted the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world’s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. “Dan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 18
+    }
+  },
+  {
+    "id": "7184b4b4-522d-4313-9724-464f65466ab2",
+    "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine’s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma. In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt’s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 19
+    }
+  },
+  {
+    "id": "04b89753-a986-48e6-9700-796c2a926767",
+    "text": "Scraped from: https://eecs.vanderbilt.edu/faculty-openings/\nDate scraped: 2025-02-17 02:45:21",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 21
+    }
+  },
+  {
+    "id": "262c0f82-339d-4868-a6a1-2b9805d2b100",
+    "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood accepted the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world’s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. “Dan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 22
+    }
+  },
+  {
+    "id": "51ea9176-83ee-4426-b136-fc148722fec3",
+    "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine’s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma. In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt’s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 23
+    }
+  },
+  {
+    "id": "2ffee886-ae12-4153-a16c-462df1683c13",
+    "text": "Scraped from: https://eecs.vanderbilt.edu/news/\nDate scraped: 2025-02-17 02:45:26",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 25
+    }
+  },
+  {
+    "id": "f4579d3b-7bea-42aa-9e48-0288e7c48fa6",
+    "text": "EECS chair receives IEEE Nuclear & Plasma Sciences Merit Award Aug 15, 2009, 7:31 PM Twitter Facebook Email LinkedIn Daniel M. Fleetwood, chair of the electrical engineering and computer science department, has received the 2009 IEEE Nuclear & Plasma Sciences Society (NPSS) Merit Award, which recognizes an individual who has made outstanding technical contributions to the fields of nuclear and plasma sciences.  Fleetwood accepted the award, which consists of $5,000, a plaque, and a certificate, at a recent IEEE/NPSS meeting in Quebec, Canada. IEEE originally represented electrical and electronics engineers, but it has expanded its scope and today is the world’s leading professional association for the advancement of technology. Fleetwood is a leader in understanding the effects of radiation on semiconductor materials and devices and he has made fundamental contributions to test methods for integrated circuits. He is the author of more than 335 publications on radiation effects in microelectronics, 10 of which have been recognized with outstanding paper awards. These papers have been cited more than 5,900 times. “Dan is a highly valued colleague who has served his department, the school, and Vanderbilt University with distinction. Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 26
+    }
+  },
+  {
+    "id": "4bb55160-ebe4-4ecb-94c6-120b0f113ad9",
+    "text": ". Without question, he has made significant contributions to a positive national perception of Engineering at Vanderbilt,” said Kenneth F. Galloway, dean of the School of Engineering. In 1997 Fleetwood received R&D 100 and Industry Week Magazine awards for co-invention of a new type of computer memory chip based on mobile protons in SiO2. This chip was also recognized as Discover Magazine’s 1998 Invention of the Year in computer hardware and electronics. He is a Fellow of both the Institute for Electrical and Electronics Engineers and The American Physical Society, and a member of Phi Beta Kappa and Sigma Pi Sigma. In July, Vanderbilt University and the School of Engineering named Fleetwood to the Olin Henry Landreth Chair in Engineering. Landreth was Vanderbilt’s first professor of engineering and its first dean of engineering.  Alumni Electrical Engineering and Computer Science News Research 2009 Daniel M. Fleetwood IEEE IEEE Nuclear & Plasma Sciences Society Merit Award",
+    "metadata": {
+      "source": "scraped_data/eecs.vanderbilt.edu/eecs.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 27
+    }
+  }
 ]

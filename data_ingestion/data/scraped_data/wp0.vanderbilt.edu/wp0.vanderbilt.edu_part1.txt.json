@@ -1,74 +1,56 @@
 [
-    {
-        "id": "006d4d3f-d974-42ff-b96e-b5d1d497d2dc",
-        "text": "Scraped from: scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://wp0.vanderbilt.edu/geo/\nDate scraped: 2025-02-17 02:45:12",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 1
-        }
-    },
-    {
-        "id": "691bdb52-fdf5-4f43-84e1-f44950cf7d3f",
-        "text": "A World of Opportunities Expand your horizons and enrich your academic journey by studying, researching, and engaging globally through Vanderbilt\u2019s Study Abroad programs. Why Study Abroad? Immersive Experience for Immersion Vanderbilt Study Abroad is one of Immersion\u00a0Vanderbilt 's six pathways and qualifies as an immersive experience. World-Class Partnerships Benefit from our partnerships with prestigious universities and institutions worldwide, ensuring high-quality academic experiences wherever you go. Intercultural Experiences Many programs offer cultural engagement opportunities like homestays and language immersion, while others offer plenty of time for self-guided exploration. Personalized Support Our experienced advisors are here to guide you through every step of your journey-from choosing the right program to navigating logistics and cultural adaptation. 150+ Study Abroad Programs 40+ Countries 50% of undergraduates study abroad Study Abroad Programs Countries of undergraduates study abroad Reach Your Global Potential At Vanderbilt, we believe in the transformative power of global education. Study abroad allows you to remain enrolled at Vanderbilt but live and study overseas while completing your Vanderbilt degree requirements.\u00a0 Whether you dream of studying in Paris, conducting research in Tokyo, or interning in Buenos Aires, our programs are designed to broaden your perspectives and deepen your understanding of the world",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 2
-        }
-    },
-    {
-        "id": "99a91480-51d4-420d-9240-23bd657530ad",
-        "text": ". Semester & Year Abroad Programs Immerse yourself in a semester- or academic year-long experience in a global city of your choice while earning credits toward your major or minor and utilizing your current financial package. Maymesters & Summer Programs Join a faculty-led Maymester or partner-led summer program that combines classroom learning with hands-on experiences in diverse cultural settings. Devin Laye | DIS Copenhagen | Fall '23 \u201cMy semester abroad in Denmark was all about discovery \u2014 of the world, of my passions, and most importantly of myself. Through experiential learning, immersing myself, and saying \u2018yes\u2019 to unique opportunities, I learned so much both in the classroom and in my everyday life.\u201d Attend a Study Abroad OverVU Session Before scheduling an appointment with a Study Abroad advisor, attend an OverVU session to learn the basics of the Vanderbilt study abroad process. Connect with the Study Abroad Office Have questions or need more information? Contact our team\u2014we're here to help you make the most of your global education experience at Vanderbilt University.",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 3
-        }
-    },
-    {
-        "id": "38b8abce-220f-4015-8d58-f89db03781e5",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 4
-        }
-    },
-    {
-        "id": "749ba6db-2f5a-4fab-8fde-e2c065abbfb7",
-        "text": "Scraped from: https://wp0.vanderbilt.edu/as-news/\nDate scraped: 2025-02-17 02:45:13",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 5
-        }
-    },
-    {
-        "id": "2b570725-6adb-4fe5-a876-a696a8b5c8ba",
-        "text": "Home Arts and Science News Reducing the risk of \u201cforever chemicals\u201d in Tennessee\u2019s drinking water Faculty members and alumni recognized by the White House for the Presidential Early Career Award Faculty members and alumni honored with Presidential Early Career Award MORE Staff Q&A: Peggy Lucas-McGowan celebrates 50 years in A&S Bringing community to a seemingly solitary endeavor New faculty Q&A: Discovering black holes in dwarf galaxies with Mallory Molina MORE Collector instincts and abstract thinking are behind immunologist James Crowe\u2019s drive to use game-changing technology to prevent infectious disease Students contribute to Nashville\u2019s socially engaged art scene Vanderbilt University launches inaugural public programming in New York City MORE Salon: How a once-fringe theory of presidential power is upending American government The New York Times: As Off Broadway crews unionize, workers see hope, producers peril ABC News: Trump\u2019s record number of executive orders are testing the limits of presidential power Associated Press: Beyonc\u00e9 and Kendrick Lamar led one of the best Grammys in years. Has the awards show transformed? Alabama Public Radio: What might happen to Alabama if the U.S",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 6
-        }
-    },
-    {
-        "id": "d5340e6e-80e1-4736-aaac-4254f6ab290c",
-        "text": ". Has the awards show transformed? Alabama Public Radio: What might happen to Alabama if the U.S. Department of Education is dismantled? Boston Globe: \u2018We really never came back to each other\u2019: Five years after COVID, we\u2019re more divided than ever MORE Celebrating the A&S Community A&S Featured Course: Improv in Science Communication Bridging the gap: Combining music and astrophysics to improve representation in science MORE",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 7
-        }
-    },
-    {
-        "id": "e6ba6383-f190-47c9-9498-a7784a3c3f1e",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 8
-        }
+  {
+    "id": "901c4dcb-02dd-4885-aed5-f9c0bb513751",
+    "text": "Scraped from: scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://wp0.vanderbilt.edu/geo/\nDate scraped: 2025-02-17 02:45:12",
+    "metadata": {
+      "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 1
     }
+  },
+  {
+    "id": "47f1e754-7119-432b-8354-6e050fa8c753",
+    "text": "A World of Opportunities Expand your horizons and enrich your academic journey by studying, researching, and engaging globally through Vanderbilt’s Study Abroad programs. Why Study Abroad? Immersive Experience for Immersion Vanderbilt Study Abroad is one of Immersion Vanderbilt 's six pathways and qualifies as an immersive experience. World-Class Partnerships Benefit from our partnerships with prestigious universities and institutions worldwide, ensuring high-quality academic experiences wherever you go. Intercultural Experiences Many programs offer cultural engagement opportunities like homestays and language immersion, while others offer plenty of time for self-guided exploration. Personalized Support Our experienced advisors are here to guide you through every step of your journey-from choosing the right program to navigating logistics and cultural adaptation. 150+ Study Abroad Programs 40+ Countries 50% of undergraduates study abroad Study Abroad Programs Countries of undergraduates study abroad Reach Your Global Potential At Vanderbilt, we believe in the transformative power of global education. Study abroad allows you to remain enrolled at Vanderbilt but live and study overseas while completing your Vanderbilt degree requirements.  Whether you dream of studying in Paris, conducting research in Tokyo, or interning in Buenos Aires, our programs are designed to broaden your perspectives and deepen your understanding of the world",
+    "metadata": {
+      "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 2
+    }
+  },
+  {
+    "id": "97b2cdb4-e2eb-4dde-8cb6-7109bd5d2490",
+    "text": ". Semester & Year Abroad Programs Immerse yourself in a semester- or academic year-long experience in a global city of your choice while earning credits toward your major or minor and utilizing your current financial package. Maymesters & Summer Programs Join a faculty-led Maymester or partner-led summer program that combines classroom learning with hands-on experiences in diverse cultural settings. Devin Laye | DIS Copenhagen | Fall '23 “My semester abroad in Denmark was all about discovery — of the world, of my passions, and most importantly of myself. Through experiential learning, immersing myself, and saying ‘yes’ to unique opportunities, I learned so much both in the classroom and in my everyday life.” Attend a Study Abroad OverVU Session Before scheduling an appointment with a Study Abroad advisor, attend an OverVU session to learn the basics of the Vanderbilt study abroad process. Connect with the Study Abroad Office Have questions or need more information? Contact our team—we're here to help you make the most of your global education experience at Vanderbilt University.",
+    "metadata": {
+      "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 3
+    }
+  },
+  {
+    "id": "6209a82b-0cca-4554-bdce-db61504514b6",
+    "text": "Scraped from: https://wp0.vanderbilt.edu/as-news/\nDate scraped: 2025-02-17 02:45:13",
+    "metadata": {
+      "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 5
+    }
+  },
+  {
+    "id": "67e6247e-a6c5-41cf-81b9-771d1cd4bcb3",
+    "text": "Home Arts and Science News Reducing the risk of “forever chemicals” in Tennessee’s drinking water Faculty members and alumni recognized by the White House for the Presidential Early Career Award Faculty members and alumni honored with Presidential Early Career Award MORE Staff Q&A: Peggy Lucas-McGowan celebrates 50 years in A&S Bringing community to a seemingly solitary endeavor New faculty Q&A: Discovering black holes in dwarf galaxies with Mallory Molina MORE Collector instincts and abstract thinking are behind immunologist James Crowe’s drive to use game-changing technology to prevent infectious disease Students contribute to Nashville’s socially engaged art scene Vanderbilt University launches inaugural public programming in New York City MORE Salon: How a once-fringe theory of presidential power is upending American government The New York Times: As Off Broadway crews unionize, workers see hope, producers peril ABC News: Trump’s record number of executive orders are testing the limits of presidential power Associated Press: Beyoncé and Kendrick Lamar led one of the best Grammys in years. Has the awards show transformed? Alabama Public Radio: What might happen to Alabama if the U.S",
+    "metadata": {
+      "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 6
+    }
+  },
+  {
+    "id": "16625931-9a57-4903-adc3-830d0133b550",
+    "text": ". Has the awards show transformed? Alabama Public Radio: What might happen to Alabama if the U.S. Department of Education is dismantled? Boston Globe: ‘We really never came back to each other’: Five years after COVID, we’re more divided than ever MORE Celebrating the A&S Community A&S Featured Course: Improv in Science Communication Bridging the gap: Combining music and astrophysics to improve representation in science MORE",
+    "metadata": {
+      "source": "scraped_data/wp0.vanderbilt.edu/wp0.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 7
+    }
+  }
 ]

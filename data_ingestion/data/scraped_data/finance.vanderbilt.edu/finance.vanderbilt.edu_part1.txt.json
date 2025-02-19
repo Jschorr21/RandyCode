@@ -1,299 +1,236 @@
 [
-    {
-        "id": "b35e47af-680b-4720-bad3-f4cbd465036f",
-        "text": "Scraped from: scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://finance.vanderbilt.edu/accounting/\nDate scraped: 2025-02-17 02:45:08\n\nFinance Home Financial Accounting Accounting Accounting Resources Chart of Accounts COA & Organizational Structure Quick Reference Guide Narrative Chart of Accounts and Account to PPM Expense Type Crosswalk Chart of Accounts Segment Values Functional Expense Code Training (NEW for FY25!) VU Function Code FAQ Function Code for Requisitions & Expense Reports Period Close Day-by-Day Timeline Monthly Close Schedule FY24 Year End Close Calendar FY25 Year End Close Schedule Capital Asset Training Introduction to Capital Assets Life Cycle of a Capital Asset Tagging a Capital Asset Depreciation of Capital Assets Requisitions for Capital Assets Inventory of a Capital Asset Introduction to Fabrications Fabricated Equipment Request Form Financial Reporting University Financial Report and Disclosure OMB Uniform Guidance Report Tax Sales & Use Tax Certificates of Exemption Federal Tax-Exempt Status - Affirmation Letter Form 990 Requests Sales Tax Compliance Taxpayer Identification Number and Certification (W-9) Unrelated Business Income Tax (UBIT) VU Marketplace \u2013 Tax Responsibility Agreement General Accounts Receivable (GAR) Training Introduction to General Accounts Receivable (GAR) How to Request a New Customer How to Complete the Auto Invoice Master Template How to Fill Out and Submit an AR Receipt \n================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 1
-        }
-    },
-    {
-        "id": "1bbdb2c2-35a1-4c09-9693-782d1165c871",
-        "text": "Scraped from: https://finance.vanderbilt.edu/disbursements/\nDate scraped: 2025-02-17 02:45:09\n\nFinance Home Purchasing & Payment Services Payment Services Payment Services As part of the Procure-To-Pay process, Payment Services manages Supplier purchase order payments and Non-Purchase Payment Requests(NPO) for the university. Payment Methods Small Supplier Payment Term Options New Supplier Information W-8 & W-9 Information 1099-MISC Reporting of Taxable Gifts, Awards, Prizes and Other \"Perks\" Tax Forms & Certificates International Tax Contact Payment Services For Payment Services questions: Email PaymentServices@vanderbilt.edu. For Invoice Submission ONLY : Email Invoices@vanderbilt.edu.\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/report/\nDate scraped: 2025-02-17 02:45:14\n\nFinance Home Financial Accounting Financial Report   FY24 Financial Report Financial Report 2024 Financial Report 2023 Financial Report 2022 Financial Report 2024 Financial Report 2023 Financial Report 2022 Financial Report  2021 Financial Report 2020 Financial Report 2019 Financial Report 2021 Financial Report 2020 Financial Report 2019 Financial Report \n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/travel/\nDate scraped: 2025-02-17 02:45:14",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 2
-        }
-    },
-    {
-        "id": "13720888-3b68-4e7d-8854-3c7d3e44ebf8",
-        "text": "Finance Home Purchasing & Payment Services Travel Vanderbilt University Travel Vanderbilt\u2019s travel agency of record is World Travel Service (WTS). Their dedicated professionals will help faculty and staff with travel needs by providing personalized support via phone or email. Vanderbilt employees must use World Travel Service to book business travel. Employees may book directly with an agent or through the Concur online booking tool . World Travel is fully integrated with the Concur online travel booking tool. Please contact a World Travel agent when making complex domestic air or any international air reservations, and when changing existing, ticketed reservations. Think you've found a lower fare? World Travel Service has a price match guarantee on identical U.S. Domestic flights. We'll match the fare or pay the difference. Just provide a screen-shot or verification in real-time, same day and email it to a World Travel agent. Consolidator and auction websites not included. Please click here to download the low domestic fare guarantee. World Travel Agent Assistance: During business hours (7:00am-5:00pm CST) dial (877) 271-9258 or email vanderbilt.travel@worldtrav.com After business hours or for ticketing emergencies dial (877) 271-9258",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 3
-        }
-    },
-    {
-        "id": "0c5e1985-cb14-4cca-8b1f-3f12c186cf87",
-        "text": ". Login Assistance: Email travel@vanderbilt.edu Concur Travel Technical Support: Email online@worldtrav.com Travel Policy and Booking Questions: Email Travel@vanderbilt.edu Airfare Pricing Comparison Expense Reporting FAQ Ground Transportation Group Travel Guest Travel Coordinators Hotels (Vanderbilt Partnered) International Travel Lost Airfare Receipt Nashville International Airport Newsletter Plan Your Travel Vanderbilt Incident Response for Travel(VIRT) Visit the Vanderbilt Global Safety website for information regarding what to expect when traveling Visit the Vanderbilt International and Domestic Travel & Benefits FAQ s for information regarding healthcare and other benefits while traveling Visit the Vanderbilt Global Safety website for information regarding what to expect when traveling Visit the Vanderbilt International and Domestic Travel & Benefits FAQ s for information regarding healthcare and other benefits while traveling Assign a Travel Assistant Global Entry & TSA Pre-Check Guest Travel Reservations Updating Profile Global Education Office Green Transportation Initiatives and Tips - SustainVU Office of Active Citizenship and Service for Student Organizations International Security Provider Vanderbilt Export Compliance International Travel Advisories and Related Information Global Entry TSA - Travel Security Administration Travel Warnings - Issued by US Dept of State US Department of State, Bureau of Consular Affairs",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 4
-        }
-    },
-    {
-        "id": "ee0b4413-b73c-437a-893a-b5db3beeba27",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 5
-        }
-    },
-    {
-        "id": "5d92225a-34c8-475f-aea0-5a5a06fc74f0",
-        "text": "Scraped from: https://finance.vanderbilt.edu/ebiz/\nDate scraped: 2025-02-17 02:45:14",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 6
-        }
-    },
-    {
-        "id": "04ca8ee1-bf9a-43f5-b987-b6319bbeb202",
-        "text": "Logins  Email & Password Links VU Student Gmail Office 365 Change Your ePassword  Frequently Used Logins Anchor Link Brightspace Box Faculty & Staff Directory Office365 Oracle Cloud UKG Single Sign-On YES Students YES Your Enrollment Services, including academic record, view/print current term grades, order an official transcript, class schedule, and catalog search Login Brightspace Vanderbilt's course management system Login Card Office Add funds, check your balance, suspend a lost or stolen card, review your account activity Login Student Accounts Online payment information Login YES Your Enrollment Services, including academic record, view/print current term grades, order an official transcript, class schedule, and catalog search Login Brightspace Vanderbilt's course management system Login Card Office Add funds, check your balance, suspend a lost or stolen card, review your account activity Login Student Accounts Online payment information Login Faculty & Staff Faculty & Staff Directory View directory information for faculty, staff and students (e-password required for some information) Login SkyVU and other HR Logins Access to Oracle Cloud, Fundriver, ECRT, Concur, MyVU Benefits, Fidelity, and EdAssist Login Box Web-enabled file distribution Login Traffic and Parking Register for parking passes and pay citations Login Faculty & Staff Directory View directory information for faculty, staff and students (e-password required for some information) Login SkyVU and other HR",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 7
-        }
-    },
-    {
-        "id": "6275950a-3df5-4652-9df0-e0d9fa3f4901",
-        "text": "file distribution Login Traffic and Parking Register for parking passes and pay citations Login Faculty & Staff Directory View directory information for faculty, staff and students (e-password required for some information) Login SkyVU and other HR Logins Access to Oracle Cloud, Fundriver, ECRT, Concur, MyVU Benefits, Fidelity, and EdAssist Login Box Web-enabled file distribution Login Traffic and Parking Register for parking passes and pay citations Login Twitter Facebook Email LinkedIn",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 8
-        }
-    },
-    {
-        "id": "9d1a41e7-2631-434d-a109-9061e5f1de94",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 9
-        }
-    },
-    {
-        "id": "089980dd-0ee4-46b4-8e8c-6a104d463bf6",
-        "text": "Scraped from: https://finance.vanderbilt.edu/fop/\nDate scraped: 2025-02-17 02:45:16",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 10
-        }
-    },
-    {
-        "id": "24c6fec6-1b61-473f-aced-eb61e1fea932",
-        "text": "Finance Home Financial Operations and Planning Financial Operations and Planning ePBCS Login Capital Plan guidance Capital Project NPV Model Template Style guide for variance explanations ePBCS resources How to download SmartView PBCS Data Intersections Financials Period Dimension Breakdown Financials Plan Element Dimension Breakdown How to download SmartView PBCS Data Intersections Financials Period Dimension Breakdown Financials Plan Element Dimension Breakdown The Business of VU program began in 2017 as a course for faculty, staff, and students to learn about the business operations of the university and higher education as a whole. A cohort of about 35 participants are carefully selected through an application process. Participants are selected based on interest level, background of experience, and commitment to Vanderbilt University. They learn from a diverse set of presenters who are among the most integral in making Vanderbilt a university rooted in excellence. Topics include a higher education overview, VU governance, global impacts on higher education, the economics of Vanderbilt, and many more. Applications for the Fall 2024 cohort are available here . Nomination forms for the Fall 2024 cohort are available here . The application period closes April 30, 2024",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 11
-        }
-    },
-    {
-        "id": "24b1faba-714a-46b1-ad37-63d78abd0093",
-        "text": ". Applications for the Fall 2024 cohort are available here . Nomination forms for the Fall 2024 cohort are available here . The application period closes April 30, 2024. Contact Financial Operations & Planning For Business of VU questions: Email BusinessofVU@vanderbilt.edu For budgeting & forecasting questions: Email vufpa@vanderbilt.edu For ESA & NSBA questions: Email vu-esa_nsba@vanderbilt.edu",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 12
-        }
-    },
-    {
-        "id": "b5342204-2739-49bc-b6ea-707fc124c651",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 13
-        }
-    },
-    {
-        "id": "77af2f5c-b741-42dd-8286-78812493a502",
-        "text": "Scraped from: https://finance.vanderbilt.edu/researchfinance/\nDate scraped: 2025-02-17 02:45:16\n\nFinance Home Research Finance Home Vanderbilt Research Finance Welcome to the Vanderbilt University Research Finance home page. Primary functions of Research Finance include:  post-award financial administration related to sponsored programs within the University, and development and negotiation of fringe benefit and facilities and administrative cost rates for the University. financial oversight of VU Core Facilities Research Finance is a service-oriented team dedicated to Vanderbilt University\u2019s research and academic missions. We are committed to excellence in performing functions that support both sponsored projects and cost accounting, which promote and ensure the accountability of sponsored funds. Through professionalism, effective communication and responsive service, we contribute to Vanderbilt\u2019s continuing success as a top research institution.\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/procedures-forms/\nDate scraped: 2025-02-17 02:45:18",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 14
-        }
-    },
-    {
-        "id": "aea680f6-1615-4dbd-8228-40308bb09d94",
-        "text": "Finance Procedures & Forms  Accounting & Financial Reporting Auto Invoice Import Master Template (Example: Non-VUMC Billing) (Example: VUMC Billing) Accounts Receivable Receipt Template Customer Account & Site Numbers New Customer Request Form (Example: Non-VUMC Billing) (Example: VUMC Billing) (Note: Fillable pdf form must be downloaded and saved) General Accounts Receivable (GAR) FAQs Fabricated Equipment Form Property Transmittal Form Lease Analysis Form RFID Tagging Procedures Intercompany Transaction Master Template (Example: Intercompany Transaction) (Example: Intercompany Transaction) Journal Entry Master Template (Example: Journal Entry) (Example: Journal Entry) Petty Cash - Application Form Petty Cash - Close Form Petty Cash - Reconciliation Worksheet Petty Cash - Revision Request Retro Costing Procedures Retro Costing FAQs Cost Sharing on Sponsored Awards Procedures Research Finance Foreign Currency Procedures VU Marketplace \u2013 Tax Responsibility Agreement Financial Operations & Planning ESA Template NSBA Template Purchasing & Payment Services Cash Advance & Gift Card Request Form Cash Advance & Gift Card Tax Tracking Corporate Card Cardholder Agreement Fuel Card\u00a0Checkout Log Human Subject Participation Procedure One Card Application Student Checkout Card\u00a0Log Professional Services Request Form Supplier Selection Justification Form Lease Analysis Form Procurement Contract Responsibilities Supplier ACH Form International Wire Form Guest Travel Coordinator Application",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 15
-        }
-    },
-    {
-        "id": "3c56a9eb-7758-448a-a6e9-d5bb947f0759",
-        "text": "Application Student Checkout Card\u00a0Log Professional Services Request Form Supplier Selection Justification Form Lease Analysis Form Procurement Contract Responsibilities Supplier ACH Form International Wire Form Guest Travel Coordinator Application Treasury External Transaction Procedures External Transaction Import Master Template (Example: Auxiliary and Affiliation Payments) (Example: Mellon Disbursements) (Example: Mellon Misc",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 16
-        }
-    },
-    {
-        "id": "529f5d69-9a3c-42cf-b99b-d8931f90225e",
-        "text": ". Wires and ACH) (Example: University Deposits) (Example: Auxiliary and Affiliation Payments) (Example: Mellon Disbursements) (Example: Mellon Misc. Wires and ACH) (Example: University Deposits)",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 17
-        }
-    },
-    {
-        "id": "1c890f00-ce48-409a-a9ea-b3be481b58e2",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 18
-        }
-    },
-    {
-        "id": "09815744-1d8f-486c-876f-dec9eae191b7",
-        "text": "Scraped from: https://finance.vanderbilt.edu/procurement/\nDate scraped: 2025-02-17 02:45:19",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 19
-        }
-    },
-    {
-        "id": "5a342f97-f838-4c31-b417-da5c214a58d8",
-        "text": "Finance Home Purchasing & Payment Services Purchasing Services Purchasing Services Purchasing Services purchases the supplies, equipment and services which support the educational and research\u00a0missions at Vanderbilt University. Our mission is to cooperatively develop and execute sourcing strategies products and services that meet or exceed university requirements and to perform our services to the highest ethical and professional standards.\u00a0Our team is committed to promoting small, disadvantaged and minority owned businesses through our supplier diversity program and supports the university's commitments to environmental responsibility and outreach to the local business community. General Purchasing Policy Contractor Background Check Policy Independent Contractor Policy Supplier Diversity & Small Businesses Federal PI Resources for Small Business Plans Green Purchasing Export Compliance Federally Debarred Suppliers Fleet Management Program Independent Contractors / External Consultants (Professional Services) Lease Analysis Form Purchase Order Terms and Conditions Supplier Selection Justification Form New Supplier Information Preferred Suppliers Procurement Contract Responsibilities Request for Proposal Opportunities Contact Purchasing Services For general Purchasing Services questions: Email PurchasingServices@vanderbilt.edu.\n================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 20
-        }
-    },
-    {
-        "id": "9c5d4f2f-967a-4da4-9ec4-d42abcf7cec0",
-        "text": "Scraped from: https://finance.vanderbilt.edu/purchasingandpaymentservices/\nDate scraped: 2025-02-17 02:45:20\n\nFinance Home Purchasing & Payment Services Purchasing & Payment Services Payment Cards & Expense Reports Payment Services Purchasing Services Suppliers Travel\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/index.php/\nDate scraped: 2025-02-17 02:45:20\n\nFinance Financial Accounting Purchasing & Payment Services Research Finance Travel Treasury Finance Training Financial Ops & Planning\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/stuaccts/\nDate scraped: 2025-02-17 02:45:24",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 21
-        }
-    },
-    {
-        "id": "42edef0f-1bcf-4306-a4a6-cc38b26c59b4",
-        "text": "Student Accounts  The Office of Student Accounts is the centralized billing and collection point for student accounts. The primary function of the Student Accounts office is to issue bills, receive payments and provide information to help understand the aspects of a Vanderbilt account. Student Accounts posts miscellaneous charges and credits by the department from which they originate. All Vanderbilt University students will be required to acknowledge the terms and conditions of an online Student Account Agreement form when logging into the YES portal. Please note that the acceptance of these terms and conditions is mandatory, and will be required on an annual basis. Failure to agree to these terms will prevent access to the YES landing page. Once the terms have been accepted, a copy of the most recently accepted form will be available for viewing and printing within the YES portal. Please read these terms and conditions carefully. A separate stand-alone document exists\u00a0in order to add a guarantor(s) to an individual student account. Click here to download a copy of the new Guarantor Authorization and Agreement form. Please note that this paper document will be required in order to disclose any financial information to anyone other than the student and existing guarantors. Do not hesitate to contact us if you have any questions or concerns. Thank you! IMPORTANT DATES AND NEWS The quickest and most secure method of payment remains online via the Student Billing Portal",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 22
-        }
-    },
-    {
-        "id": "ddb930a8-e01e-4f11-91db-eac9dbb3931f",
-        "text": ". Do not hesitate to contact us if you have any questions or concerns. Thank you! IMPORTANT DATES AND NEWS The quickest and most secure method of payment remains online via the Student Billing Portal. We understand that transaction fees are unfavorable; therefore, there is no fee for ACH/e-check payments. A transaction fee will be charged for all online debit and credit card transactions. Initial Spring 2025 e-bills will be available on December 1, 2024 and due by December 31, 2024. Invoices are created at the beginning of each month If other payers are not set up in the system, these individuals may not receive notification of balances due or have access to make payments in our system. To add an \u201cOther Payer\u201d, please follow the simple instructions on the Student E-Bill Information page. Additional payers will also have the ability to enroll in the Spring 2025 Vandy Plan, an interest-free monthly installment option available for enrollment, beginning October 1st, 2024. There is no Vandy Plan for the Summer 2024 semester. If other payers are not set up in the system, these individuals may not receive notification of balances due or have access to make payments in our system. To add an \u201cOther Payer\u201d, please follow the simple instructions on the Student E-Bill Information page. Additional payers will also have the ability to enroll in the Spring 2025 Vandy Plan, an interest-free monthly installment option available for enrollment, beginning October 1st, 2024",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 23
-        }
-    },
-    {
-        "id": "58041f1d-6e21-4698-82d3-3aad1327b1de",
-        "text": ". Additional payers will also have the ability to enroll in the Spring 2025 Vandy Plan, an interest-free monthly installment option available for enrollment, beginning October 1st, 2024. There is no Vandy Plan for the Summer 2024 semester. As a reminder, the Transact online payment system is down for maintenance at 6 p.m. Central Time the last day of each month and will then reopen at 6 a.m.the next business day. 1098-T forms may be found on the Student Accounts link from the student's YES landing page . Form 1098-T reports amounts paid for qualified tuition and scholarships and grants processed in the tax year for students enrolled in courses at Vanderbilt University for which they receive academic credit. Vanderbilt does not issue a 1098-T form if the student is enrolled in not-for-credit courses. To prevent any delays or penalties with regards to your 1098-T, be sure you have a valid SSN on file with the university. For frequently asked 1098T questions click here . Protecting your privacy",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 24
-        }
-    },
-    {
-        "id": "be74b069-539e-45f1-8a85-cb404b8df39d",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 25
-        }
-    },
-    {
-        "id": "7c1e2328-5ba1-4513-8849-c6e0a8dccba5",
-        "text": "Scraped from: https://finance.vanderbilt.edu/policies/\nDate scraped: 2025-02-17 02:45:26\n\nFinance Home Financial Report Policies Policies  Accounting, Financial Reporting, & Tax Account Reconciliations Fixed Assets Capitalization Fabrication of Equipment Funding Entries General Accounts Receivable (Non-student accounts) General Accounts Receivable Allowance for Doubtful Accounts and Bad Debt Write-Off General Ledger Journal Entries Intracompany Transactions Petty Cash Retroactive Reallocation of Costs Revenue Recognition Academic Year Revenue Recognition Summer Term Service Level Agreements (SLA) Updating Chart of Accounts Gift Acceptance Capitalization Fabrication of Equipment Financial Reporting Financial Statement Consolidation Property Tax Required Tax Reporting - Form 990 Sales and Business Tax Tax Authority Communications Property Tax Required Tax Reporting - Form 990 Sales and Business Tax Tax Authority Communications Purchasing & Payment Services Accounts Payable Corrections Invoice Processing Non-Purchase Order (Non-PO) Payment Contractor Background Check General Purchasing Independent Contractor Expense One Card Human Subject Participation Supplier Maintenance Policy Travel Treasury Cash Management External Transaction Cash Management User Access Debt Policy Interest Rate Risk Management\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/treasury/\nDate scraped: 2025-02-17 02:45:27",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 26
-        }
-    },
-    {
-        "id": "8f2d8804-bdb1-4cd9-b4bf-af3bd2c2bdfd",
-        "text": "Finance Home Treasury Treasury Home Vanderbilt University\u00a0Treasury Department Mission: To serve as stewards of the university's working capital assets and debt, and to provide treasury services and solutions to the university in a professional and client-centered manner, thereby facilitating Vanderbilt's broader mission of worldwide leadership in scholarship and research. Cash Management Cash Management Program Banking Holidays Banking Services Deposits Unclaimed Receipts Accepting Credit Cards at Vanderbilt University Payments Paying Vendors (ACH, Checks) Wire Transfers Wire Signatories List Wire Transfer Template - Generic Wire Transfer Template - to VUMC Paying Vendors (ACH, Checks) Wire Transfers Wire Signatories List Wire Transfer Template - Generic Wire Transfer Template - to VUMC Debt Management Debt Program Capital Bank Program Bondholder Information Annual Financial Report and Continuing Disclosure Information Credit Ratings & Credit References Credit Rating Agency Reports Electronic Municipal Market Access(EMMA) Liquidity Information Annual Financial Report and Continuing Disclosure Information Credit Ratings & Credit References Credit Rating Agency Reports Electronic Municipal Market Access(EMMA) Liquidity Information Contact Treasury For general Treasury inquiries, please email: treasury@vanderbilt.edu For Treasury inquiries specific to Oracle, please email: treasuryoracle@vanderbilt.edu",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 27
-        }
-    },
-    {
-        "id": "a70f2e92-466d-4764-a976-3dc6c2a6bdf5",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 28
-        }
-    },
-    {
-        "id": "ff128796-34d7-44e7-8045-e74717350003",
-        "text": "Scraped from: https://finance.vanderbilt.edu/training/\nDate scraped: 2025-02-17 02:45:27",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 29
-        }
-    },
-    {
-        "id": "a28821dc-2e18-408c-8622-a72017fc1c05",
-        "text": "Finance Home training Training Training  Finance Learning & Development Training Content Creation Tools and Process Using the FLD Training Presentation Template FLD Training Presentation Template Recording Training Videos Using PowerPoint Using Microsoft Stream to Record Training Videos If you have any questions or need help creating videos, please contact finance learning at financelearning@vanderbilt.edu Accounting, Financial Reporting, & Tax Introduction to Capital Assets Life Cycle of a Capital Asset Tagging a Capital Asset Depreciation of Capital Assets Requisitions for Capital Assets Inventory of a Capital Asset Introduction to Fabrications Capitalization of Fabricated Equipment Fabricated Equipment Request Form & Requisitions Introduction to General Accounts Receivable (GAR) How to Request a New Customer How to Complete the Auto Invoice Master Template How to Fill Out and Submit an AR Receipt Functional Expense Code Training (NEW for FY25!) Function Code for Requisitions & Expense Reports Sales Tax (coming soon) Unrelated Business Income Tax (UBIT) ( coming soon) Property Tax (coming soon) Purchasing Services Documenting Supplier Selection Employee vs",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 30
-        }
-    },
-    {
-        "id": "22f0677b-8037-4758-8514-16395c4e3d7b",
-        "text": ". Contractor Locating and Inviting Suppliers to Oracle Identification and Risks Who Can Sign a Contract Setting Up Your Requestor Profile Delivery Location What Are the Most Common Methods in Which We Can Pay a Vendor? Ordering From a Catalog Supplier Editing Catalog Order Requisition Lines Creating a Non-Catalog Requisition Entering and Editing Billing Information NPO: Appropriate Use Capital Asset Purchases Managing Requisitions Reviewing Your Purchase Order Status Understanding Encumbrances and Commitments Payment Services Training Videos Updating Your Expense Bank Account Viewing the Status of Your Expense Report Updating or Selecting an Expense Delegate Quick Guides Creating & Submitting an Expense Report Expense Delegate Assignment in Oracle Expense Module \u2013 Verifying and Updating Banking Information Expense Type \u2013 Oracle Account Mapping Reimbursement of Aged Expenses Oracle Expense Mobile App What Are Vanderbilt's Requirements for Supplier's to Use When Invoicing Vanderbilt? How Do I See if an Invoice Has Been Received? How and Why Do I Approve or Reject an Invoice? What is an Invoice Hold? How Do I Correct a Billed Invoice and What is a Retro Cost Transfer? How Do I Pay Subject Participants? What is an Accrual and How Does it Impact My Budget? What Additional Steps Should be Considered when Paying an international Payee? How Do I Pay Someone with an International Bank Account? Research Finance Effort Certification/Reporting (coming soon) Facilities and Administrative",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 31
-        }
-    },
-    {
-        "id": "284d97f7-ae94-4fb9-9864-86d4ff1a5cd0",
-        "text": "it Impact My Budget? What Additional Steps Should be Considered when Paying an international Payee? How Do I Pay Someone with an International Bank Account? Research Finance Effort Certification/Reporting (coming soon) Facilities and Administrative Rates (coming soon) Subaward Monitoring (coming soon) NIH Salary Cap (coming soon) PPM Unprocessed Costs (coming soon)",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 32
-        }
-    },
-    {
-        "id": "8a8e0c5d-959a-4c2d-8295-9f5217e0181e",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 33
-        }
+  {
+    "id": "778b40f2-a7d4-490b-83b2-bda3294a9542",
+    "text": "Scraped from: scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://finance.vanderbilt.edu/accounting/\nDate scraped: 2025-02-17 02:45:08\n\nFinance Home Financial Accounting Accounting Accounting Resources Chart of Accounts COA & Organizational Structure Quick Reference Guide Narrative Chart of Accounts and Account to PPM Expense Type Crosswalk Chart of Accounts Segment Values Functional Expense Code Training (NEW for FY25!) VU Function Code FAQ Function Code for Requisitions & Expense Reports Period Close Day-by-Day Timeline Monthly Close Schedule FY24 Year End Close Calendar FY25 Year End Close Schedule Capital Asset Training Introduction to Capital Assets Life Cycle of a Capital Asset Tagging a Capital Asset Depreciation of Capital Assets Requisitions for Capital Assets Inventory of a Capital Asset Introduction to Fabrications Fabricated Equipment Request Form Financial Reporting University Financial Report and Disclosure OMB Uniform Guidance Report Tax Sales & Use Tax Certificates of Exemption Federal Tax-Exempt Status - Affirmation Letter Form 990 Requests Sales Tax Compliance Taxpayer Identification Number and Certification (W-9) Unrelated Business Income Tax (UBIT) VU Marketplace – Tax Responsibility Agreement General Accounts Receivable (GAR) Training Introduction to General Accounts Receivable (GAR) How to Request a New Customer How to Complete the Auto Invoice Master Template How to Fill Out and Submit an AR Receipt \n================================================================================",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 1
     }
+  },
+  {
+    "id": "4a8d8859-91af-42bd-8160-ed0f3459e858",
+    "text": "Scraped from: https://finance.vanderbilt.edu/disbursements/\nDate scraped: 2025-02-17 02:45:09\n\nFinance Home Purchasing & Payment Services Payment Services Payment Services As part of the Procure-To-Pay process, Payment Services manages Supplier purchase order payments and Non-Purchase Payment Requests(NPO) for the university. Payment Methods Small Supplier Payment Term Options New Supplier Information W-8 & W-9 Information 1099-MISC Reporting of Taxable Gifts, Awards, Prizes and Other \"Perks\" Tax Forms & Certificates International Tax Contact Payment Services For Payment Services questions: Email PaymentServices@vanderbilt.edu. For Invoice Submission ONLY : Email Invoices@vanderbilt.edu.\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/report/\nDate scraped: 2025-02-17 02:45:14\n\nFinance Home Financial Accounting Financial Report   FY24 Financial Report Financial Report 2024 Financial Report 2023 Financial Report 2022 Financial Report 2024 Financial Report 2023 Financial Report 2022 Financial Report  2021 Financial Report 2020 Financial Report 2019 Financial Report 2021 Financial Report 2020 Financial Report 2019 Financial Report \n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/travel/\nDate scraped: 2025-02-17 02:45:14",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 2
+    }
+  },
+  {
+    "id": "1b063afb-9518-42ea-ab90-a9a6c6c15a3d",
+    "text": "Finance Home Purchasing & Payment Services Travel Vanderbilt University Travel Vanderbilt’s travel agency of record is World Travel Service (WTS). Their dedicated professionals will help faculty and staff with travel needs by providing personalized support via phone or email. Vanderbilt employees must use World Travel Service to book business travel. Employees may book directly with an agent or through the Concur online booking tool . World Travel is fully integrated with the Concur online travel booking tool. Please contact a World Travel agent when making complex domestic air or any international air reservations, and when changing existing, ticketed reservations. Think you've found a lower fare? World Travel Service has a price match guarantee on identical U.S. Domestic flights. We'll match the fare or pay the difference. Just provide a screen-shot or verification in real-time, same day and email it to a World Travel agent. Consolidator and auction websites not included. Please click here to download the low domestic fare guarantee. World Travel Agent Assistance: During business hours (7:00am-5:00pm CST) dial (877) 271-9258 or email vanderbilt.travel@worldtrav.com After business hours or for ticketing emergencies dial (877) 271-9258",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 3
+    }
+  },
+  {
+    "id": "fd51a45b-e8d5-44aa-88b1-f94914b20721",
+    "text": ". Login Assistance: Email travel@vanderbilt.edu Concur Travel Technical Support: Email online@worldtrav.com Travel Policy and Booking Questions: Email Travel@vanderbilt.edu Airfare Pricing Comparison Expense Reporting FAQ Ground Transportation Group Travel Guest Travel Coordinators Hotels (Vanderbilt Partnered) International Travel Lost Airfare Receipt Nashville International Airport Newsletter Plan Your Travel Vanderbilt Incident Response for Travel(VIRT) Visit the Vanderbilt Global Safety website for information regarding what to expect when traveling Visit the Vanderbilt International and Domestic Travel & Benefits FAQ s for information regarding healthcare and other benefits while traveling Visit the Vanderbilt Global Safety website for information regarding what to expect when traveling Visit the Vanderbilt International and Domestic Travel & Benefits FAQ s for information regarding healthcare and other benefits while traveling Assign a Travel Assistant Global Entry & TSA Pre-Check Guest Travel Reservations Updating Profile Global Education Office Green Transportation Initiatives and Tips - SustainVU Office of Active Citizenship and Service for Student Organizations International Security Provider Vanderbilt Export Compliance International Travel Advisories and Related Information Global Entry TSA - Travel Security Administration Travel Warnings - Issued by US Dept of State US Department of State, Bureau of Consular Affairs",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 4
+    }
+  },
+  {
+    "id": "ab77335f-e818-4d47-a518-22d86431a069",
+    "text": "Scraped from: https://finance.vanderbilt.edu/ebiz/\nDate scraped: 2025-02-17 02:45:14",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 6
+    }
+  },
+  {
+    "id": "5d928cd8-ff0e-4d42-9599-7aca732639c7",
+    "text": "Logins  Email & Password Links VU Student Gmail Office 365 Change Your ePassword  Frequently Used Logins Anchor Link Brightspace Box Faculty & Staff Directory Office365 Oracle Cloud UKG Single Sign-On YES Students YES Your Enrollment Services, including academic record, view/print current term grades, order an official transcript, class schedule, and catalog search Login Brightspace Vanderbilt's course management system Login Card Office Add funds, check your balance, suspend a lost or stolen card, review your account activity Login Student Accounts Online payment information Login YES Your Enrollment Services, including academic record, view/print current term grades, order an official transcript, class schedule, and catalog search Login Brightspace Vanderbilt's course management system Login Card Office Add funds, check your balance, suspend a lost or stolen card, review your account activity Login Student Accounts Online payment information Login Faculty & Staff Faculty & Staff Directory View directory information for faculty, staff and students (e-password required for some information) Login SkyVU and other HR Logins Access to Oracle Cloud, Fundriver, ECRT, Concur, MyVU Benefits, Fidelity, and EdAssist Login Box Web-enabled file distribution Login Traffic and Parking Register for parking passes and pay citations Login Faculty & Staff Directory View directory information for faculty, staff and students (e-password required for some information) Login SkyVU and other HR",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 7
+    }
+  },
+  {
+    "id": "6074c9ef-c17d-411b-85b2-c60cf1e04adb",
+    "text": "file distribution Login Traffic and Parking Register for parking passes and pay citations Login Faculty & Staff Directory View directory information for faculty, staff and students (e-password required for some information) Login SkyVU and other HR Logins Access to Oracle Cloud, Fundriver, ECRT, Concur, MyVU Benefits, Fidelity, and EdAssist Login Box Web-enabled file distribution Login Traffic and Parking Register for parking passes and pay citations Login Twitter Facebook Email LinkedIn",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 8
+    }
+  },
+  {
+    "id": "6721e1b2-67b7-4788-966e-c1d0ce906977",
+    "text": "Scraped from: https://finance.vanderbilt.edu/fop/\nDate scraped: 2025-02-17 02:45:16",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 10
+    }
+  },
+  {
+    "id": "6d792b8f-4e7b-48f1-8b90-9eaccd1c2d1d",
+    "text": "Finance Home Financial Operations and Planning Financial Operations and Planning ePBCS Login Capital Plan guidance Capital Project NPV Model Template Style guide for variance explanations ePBCS resources How to download SmartView PBCS Data Intersections Financials Period Dimension Breakdown Financials Plan Element Dimension Breakdown How to download SmartView PBCS Data Intersections Financials Period Dimension Breakdown Financials Plan Element Dimension Breakdown The Business of VU program began in 2017 as a course for faculty, staff, and students to learn about the business operations of the university and higher education as a whole. A cohort of about 35 participants are carefully selected through an application process. Participants are selected based on interest level, background of experience, and commitment to Vanderbilt University. They learn from a diverse set of presenters who are among the most integral in making Vanderbilt a university rooted in excellence. Topics include a higher education overview, VU governance, global impacts on higher education, the economics of Vanderbilt, and many more. Applications for the Fall 2024 cohort are available here . Nomination forms for the Fall 2024 cohort are available here . The application period closes April 30, 2024",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 11
+    }
+  },
+  {
+    "id": "ebcc9dbf-bb76-414b-ab95-43bb92e2c593",
+    "text": ". Applications for the Fall 2024 cohort are available here . Nomination forms for the Fall 2024 cohort are available here . The application period closes April 30, 2024. Contact Financial Operations & Planning For Business of VU questions: Email BusinessofVU@vanderbilt.edu For budgeting & forecasting questions: Email vufpa@vanderbilt.edu For ESA & NSBA questions: Email vu-esa_nsba@vanderbilt.edu",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 12
+    }
+  },
+  {
+    "id": "dd089837-98b1-49ba-acac-bea9e9e0c66c",
+    "text": "Scraped from: https://finance.vanderbilt.edu/researchfinance/\nDate scraped: 2025-02-17 02:45:16\n\nFinance Home Research Finance Home Vanderbilt Research Finance Welcome to the Vanderbilt University Research Finance home page. Primary functions of Research Finance include:  post-award financial administration related to sponsored programs within the University, and development and negotiation of fringe benefit and facilities and administrative cost rates for the University. financial oversight of VU Core Facilities Research Finance is a service-oriented team dedicated to Vanderbilt University’s research and academic missions. We are committed to excellence in performing functions that support both sponsored projects and cost accounting, which promote and ensure the accountability of sponsored funds. Through professionalism, effective communication and responsive service, we contribute to Vanderbilt’s continuing success as a top research institution.\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/procedures-forms/\nDate scraped: 2025-02-17 02:45:18",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 14
+    }
+  },
+  {
+    "id": "fe4d6cd7-756f-46a0-aeac-88dc13607d59",
+    "text": "Finance Procedures & Forms  Accounting & Financial Reporting Auto Invoice Import Master Template (Example: Non-VUMC Billing) (Example: VUMC Billing) Accounts Receivable Receipt Template Customer Account & Site Numbers New Customer Request Form (Example: Non-VUMC Billing) (Example: VUMC Billing) (Note: Fillable pdf form must be downloaded and saved) General Accounts Receivable (GAR) FAQs Fabricated Equipment Form Property Transmittal Form Lease Analysis Form RFID Tagging Procedures Intercompany Transaction Master Template (Example: Intercompany Transaction) (Example: Intercompany Transaction) Journal Entry Master Template (Example: Journal Entry) (Example: Journal Entry) Petty Cash - Application Form Petty Cash - Close Form Petty Cash - Reconciliation Worksheet Petty Cash - Revision Request Retro Costing Procedures Retro Costing FAQs Cost Sharing on Sponsored Awards Procedures Research Finance Foreign Currency Procedures VU Marketplace – Tax Responsibility Agreement Financial Operations & Planning ESA Template NSBA Template Purchasing & Payment Services Cash Advance & Gift Card Request Form Cash Advance & Gift Card Tax Tracking Corporate Card Cardholder Agreement Fuel Card Checkout Log Human Subject Participation Procedure One Card Application Student Checkout Card Log Professional Services Request Form Supplier Selection Justification Form Lease Analysis Form Procurement Contract Responsibilities Supplier ACH Form International Wire Form Guest Travel Coordinator Application",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 15
+    }
+  },
+  {
+    "id": "73016f1e-d82c-4e14-aaf5-36e56dfff900",
+    "text": "Application Student Checkout Card Log Professional Services Request Form Supplier Selection Justification Form Lease Analysis Form Procurement Contract Responsibilities Supplier ACH Form International Wire Form Guest Travel Coordinator Application Treasury External Transaction Procedures External Transaction Import Master Template (Example: Auxiliary and Affiliation Payments) (Example: Mellon Disbursements) (Example: Mellon Misc",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 16
+    }
+  },
+  {
+    "id": "f8c92eb3-5fee-4db1-88db-6e2bd7bafce1",
+    "text": ". Wires and ACH) (Example: University Deposits) (Example: Auxiliary and Affiliation Payments) (Example: Mellon Disbursements) (Example: Mellon Misc. Wires and ACH) (Example: University Deposits)",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 17
+    }
+  },
+  {
+    "id": "2424e2f3-5f36-4e90-92a2-68986dae1b3f",
+    "text": "Scraped from: https://finance.vanderbilt.edu/procurement/\nDate scraped: 2025-02-17 02:45:19",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 19
+    }
+  },
+  {
+    "id": "93292114-db4a-4571-bfe7-abe11f8af726",
+    "text": "Finance Home Purchasing & Payment Services Purchasing Services Purchasing Services Purchasing Services purchases the supplies, equipment and services which support the educational and research missions at Vanderbilt University. Our mission is to cooperatively develop and execute sourcing strategies products and services that meet or exceed university requirements and to perform our services to the highest ethical and professional standards. Our team is committed to promoting small, disadvantaged and minority owned businesses through our supplier diversity program and supports the university's commitments to environmental responsibility and outreach to the local business community. General Purchasing Policy Contractor Background Check Policy Independent Contractor Policy Supplier Diversity & Small Businesses Federal PI Resources for Small Business Plans Green Purchasing Export Compliance Federally Debarred Suppliers Fleet Management Program Independent Contractors / External Consultants (Professional Services) Lease Analysis Form Purchase Order Terms and Conditions Supplier Selection Justification Form New Supplier Information Preferred Suppliers Procurement Contract Responsibilities Request for Proposal Opportunities Contact Purchasing Services For general Purchasing Services questions: Email PurchasingServices@vanderbilt.edu.\n================================================================================",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 20
+    }
+  },
+  {
+    "id": "6761f41b-8784-4eae-9910-5f6c3c7b4907",
+    "text": "Scraped from: https://finance.vanderbilt.edu/purchasingandpaymentservices/\nDate scraped: 2025-02-17 02:45:20\n\nFinance Home Purchasing & Payment Services Purchasing & Payment Services Payment Cards & Expense Reports Payment Services Purchasing Services Suppliers Travel\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/index.php/\nDate scraped: 2025-02-17 02:45:20\n\nFinance Financial Accounting Purchasing & Payment Services Research Finance Travel Treasury Finance Training Financial Ops & Planning\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/stuaccts/\nDate scraped: 2025-02-17 02:45:24",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 21
+    }
+  },
+  {
+    "id": "32915418-c0c4-4b34-91ba-2ad00d3da609",
+    "text": "Student Accounts  The Office of Student Accounts is the centralized billing and collection point for student accounts. The primary function of the Student Accounts office is to issue bills, receive payments and provide information to help understand the aspects of a Vanderbilt account. Student Accounts posts miscellaneous charges and credits by the department from which they originate. All Vanderbilt University students will be required to acknowledge the terms and conditions of an online Student Account Agreement form when logging into the YES portal. Please note that the acceptance of these terms and conditions is mandatory, and will be required on an annual basis. Failure to agree to these terms will prevent access to the YES landing page. Once the terms have been accepted, a copy of the most recently accepted form will be available for viewing and printing within the YES portal. Please read these terms and conditions carefully. A separate stand-alone document exists in order to add a guarantor(s) to an individual student account. Click here to download a copy of the new Guarantor Authorization and Agreement form. Please note that this paper document will be required in order to disclose any financial information to anyone other than the student and existing guarantors. Do not hesitate to contact us if you have any questions or concerns. Thank you! IMPORTANT DATES AND NEWS The quickest and most secure method of payment remains online via the Student Billing Portal",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 22
+    }
+  },
+  {
+    "id": "91cd3c07-5c4b-4f6f-aab6-5cd90099f0c9",
+    "text": ". Do not hesitate to contact us if you have any questions or concerns. Thank you! IMPORTANT DATES AND NEWS The quickest and most secure method of payment remains online via the Student Billing Portal. We understand that transaction fees are unfavorable; therefore, there is no fee for ACH/e-check payments. A transaction fee will be charged for all online debit and credit card transactions. Initial Spring 2025 e-bills will be available on December 1, 2024 and due by December 31, 2024. Invoices are created at the beginning of each month If other payers are not set up in the system, these individuals may not receive notification of balances due or have access to make payments in our system. To add an “Other Payer”, please follow the simple instructions on the Student E-Bill Information page. Additional payers will also have the ability to enroll in the Spring 2025 Vandy Plan, an interest-free monthly installment option available for enrollment, beginning October 1st, 2024. There is no Vandy Plan for the Summer 2024 semester. If other payers are not set up in the system, these individuals may not receive notification of balances due or have access to make payments in our system. To add an “Other Payer”, please follow the simple instructions on the Student E-Bill Information page. Additional payers will also have the ability to enroll in the Spring 2025 Vandy Plan, an interest-free monthly installment option available for enrollment, beginning October 1st, 2024",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 23
+    }
+  },
+  {
+    "id": "3d642f9d-c5b8-4da2-bd90-ec99badd54b7",
+    "text": ". Additional payers will also have the ability to enroll in the Spring 2025 Vandy Plan, an interest-free monthly installment option available for enrollment, beginning October 1st, 2024. There is no Vandy Plan for the Summer 2024 semester. As a reminder, the Transact online payment system is down for maintenance at 6 p.m. Central Time the last day of each month and will then reopen at 6 a.m.the next business day. 1098-T forms may be found on the Student Accounts link from the student's YES landing page . Form 1098-T reports amounts paid for qualified tuition and scholarships and grants processed in the tax year for students enrolled in courses at Vanderbilt University for which they receive academic credit. Vanderbilt does not issue a 1098-T form if the student is enrolled in not-for-credit courses. To prevent any delays or penalties with regards to your 1098-T, be sure you have a valid SSN on file with the university. For frequently asked 1098T questions click here . Protecting your privacy",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 24
+    }
+  },
+  {
+    "id": "4ac1bb99-c908-4e72-b601-72f32b8a38de",
+    "text": "Scraped from: https://finance.vanderbilt.edu/policies/\nDate scraped: 2025-02-17 02:45:26\n\nFinance Home Financial Report Policies Policies  Accounting, Financial Reporting, & Tax Account Reconciliations Fixed Assets Capitalization Fabrication of Equipment Funding Entries General Accounts Receivable (Non-student accounts) General Accounts Receivable Allowance for Doubtful Accounts and Bad Debt Write-Off General Ledger Journal Entries Intracompany Transactions Petty Cash Retroactive Reallocation of Costs Revenue Recognition Academic Year Revenue Recognition Summer Term Service Level Agreements (SLA) Updating Chart of Accounts Gift Acceptance Capitalization Fabrication of Equipment Financial Reporting Financial Statement Consolidation Property Tax Required Tax Reporting - Form 990 Sales and Business Tax Tax Authority Communications Property Tax Required Tax Reporting - Form 990 Sales and Business Tax Tax Authority Communications Purchasing & Payment Services Accounts Payable Corrections Invoice Processing Non-Purchase Order (Non-PO) Payment Contractor Background Check General Purchasing Independent Contractor Expense One Card Human Subject Participation Supplier Maintenance Policy Travel Treasury Cash Management External Transaction Cash Management User Access Debt Policy Interest Rate Risk Management\n================================================================================\n\nScraped from: https://finance.vanderbilt.edu/treasury/\nDate scraped: 2025-02-17 02:45:27",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 26
+    }
+  },
+  {
+    "id": "08ff0347-1c21-414f-8578-ff01afcc4349",
+    "text": "Finance Home Treasury Treasury Home Vanderbilt University Treasury Department Mission: To serve as stewards of the university's working capital assets and debt, and to provide treasury services and solutions to the university in a professional and client-centered manner, thereby facilitating Vanderbilt's broader mission of worldwide leadership in scholarship and research. Cash Management Cash Management Program Banking Holidays Banking Services Deposits Unclaimed Receipts Accepting Credit Cards at Vanderbilt University Payments Paying Vendors (ACH, Checks) Wire Transfers Wire Signatories List Wire Transfer Template - Generic Wire Transfer Template - to VUMC Paying Vendors (ACH, Checks) Wire Transfers Wire Signatories List Wire Transfer Template - Generic Wire Transfer Template - to VUMC Debt Management Debt Program Capital Bank Program Bondholder Information Annual Financial Report and Continuing Disclosure Information Credit Ratings & Credit References Credit Rating Agency Reports Electronic Municipal Market Access(EMMA) Liquidity Information Annual Financial Report and Continuing Disclosure Information Credit Ratings & Credit References Credit Rating Agency Reports Electronic Municipal Market Access(EMMA) Liquidity Information Contact Treasury For general Treasury inquiries, please email: treasury@vanderbilt.edu For Treasury inquiries specific to Oracle, please email: treasuryoracle@vanderbilt.edu",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 27
+    }
+  },
+  {
+    "id": "00a398e5-5eaa-4668-9787-c846a1a7dcf0",
+    "text": "Scraped from: https://finance.vanderbilt.edu/training/\nDate scraped: 2025-02-17 02:45:27",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 29
+    }
+  },
+  {
+    "id": "8f592e72-7f2e-4b78-8ed0-917175f33181",
+    "text": "Finance Home training Training Training  Finance Learning & Development Training Content Creation Tools and Process Using the FLD Training Presentation Template FLD Training Presentation Template Recording Training Videos Using PowerPoint Using Microsoft Stream to Record Training Videos If you have any questions or need help creating videos, please contact finance learning at financelearning@vanderbilt.edu Accounting, Financial Reporting, & Tax Introduction to Capital Assets Life Cycle of a Capital Asset Tagging a Capital Asset Depreciation of Capital Assets Requisitions for Capital Assets Inventory of a Capital Asset Introduction to Fabrications Capitalization of Fabricated Equipment Fabricated Equipment Request Form & Requisitions Introduction to General Accounts Receivable (GAR) How to Request a New Customer How to Complete the Auto Invoice Master Template How to Fill Out and Submit an AR Receipt Functional Expense Code Training (NEW for FY25!) Function Code for Requisitions & Expense Reports Sales Tax (coming soon) Unrelated Business Income Tax (UBIT) ( coming soon) Property Tax (coming soon) Purchasing Services Documenting Supplier Selection Employee vs",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 30
+    }
+  },
+  {
+    "id": "7c370bf1-fd82-46c0-a481-9f3eeea8facc",
+    "text": ". Contractor Locating and Inviting Suppliers to Oracle Identification and Risks Who Can Sign a Contract Setting Up Your Requestor Profile Delivery Location What Are the Most Common Methods in Which We Can Pay a Vendor? Ordering From a Catalog Supplier Editing Catalog Order Requisition Lines Creating a Non-Catalog Requisition Entering and Editing Billing Information NPO: Appropriate Use Capital Asset Purchases Managing Requisitions Reviewing Your Purchase Order Status Understanding Encumbrances and Commitments Payment Services Training Videos Updating Your Expense Bank Account Viewing the Status of Your Expense Report Updating or Selecting an Expense Delegate Quick Guides Creating & Submitting an Expense Report Expense Delegate Assignment in Oracle Expense Module – Verifying and Updating Banking Information Expense Type – Oracle Account Mapping Reimbursement of Aged Expenses Oracle Expense Mobile App What Are Vanderbilt's Requirements for Supplier's to Use When Invoicing Vanderbilt? How Do I See if an Invoice Has Been Received? How and Why Do I Approve or Reject an Invoice? What is an Invoice Hold? How Do I Correct a Billed Invoice and What is a Retro Cost Transfer? How Do I Pay Subject Participants? What is an Accrual and How Does it Impact My Budget? What Additional Steps Should be Considered when Paying an international Payee? How Do I Pay Someone with an International Bank Account? Research Finance Effort Certification/Reporting (coming soon) Facilities and Administrative",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 31
+    }
+  },
+  {
+    "id": "d3bd9a44-7e2e-46da-a779-23531de452b6",
+    "text": "it Impact My Budget? What Additional Steps Should be Considered when Paying an international Payee? How Do I Pay Someone with an International Bank Account? Research Finance Effort Certification/Reporting (coming soon) Facilities and Administrative Rates (coming soon) Subaward Monitoring (coming soon) NIH Salary Cap (coming soon) PPM Unprocessed Costs (coming soon)",
+    "metadata": {
+      "source": "scraped_data/finance.vanderbilt.edu/finance.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 32
+    }
+  }
 ]

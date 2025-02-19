@@ -1,614 +1,524 @@
 [
-    {
-        "id": "d62a33d7-1bfc-4f67-bfd7-ee24dcf5925a",
-        "text": "Scraped from: scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://giving.vanderbilt.edu/ways-to-give/\nDate scraped: 2025-02-17 00:29:00",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 1
-        }
-    },
-    {
-        "id": "e1d3e622-951c-4981-ac8e-5debe3e68542",
-        "text": "Ways To Give Thank you for your interest in giving to Vanderbilt. Alumni, parents and friends give to Vanderbilt in a variety of ways including checks, credit cards, electronic fund transfers and gifts of stocks and securities or other assets. You can easily make your contribution to Vanderbilt by choosing any of the following giving options. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF\u2019s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 2
-        }
-    },
-    {
-        "id": "2b247a5a-7a52-448c-987e-63c926cf7a4c",
-        "text": ". Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70\u00bd or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 3
-        }
-    },
-    {
-        "id": "8510c668-a9eb-40f7-8456-b57710f78af5",
-        "text": ". Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt\u2019s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 4
-        }
-    },
-    {
-        "id": "abed6551-bccd-433b-937f-635db2de3de4",
-        "text": ". Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF\u2019s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70\u00bd or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 5
-        }
-    },
-    {
-        "id": "f0370034-fd93-4025-8da6-70ef2c32f5d2",
-        "text": ". Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt\u2019s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 6
-        }
-    },
-    {
-        "id": "96066b02-adcb-4ce2-bb1c-467e99dfb841",
-        "text": ". You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Be a Part of Our Impact  Give. Go. Help. Share. Your contributions\u2014as a supporter, volunteer and ambassador\u2014transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21st century.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 7
-        }
-    },
-    {
-        "id": "029b013e-ba18-4e45-83d0-89435e69931e",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 8
-        }
-    },
-    {
-        "id": "b09715fd-ebfb-4b69-8731-f7d6a541df91",
-        "text": "Scraped from: https://giving.vanderbilt.edu/ways-to-give/\nDate scraped: 2025-02-17 02:45:07",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 9
-        }
-    },
-    {
-        "id": "9568548b-5927-450d-80b8-babe47829cdf",
-        "text": "Ways To Give Thank you for your interest in giving to Vanderbilt. Alumni, parents and friends give to Vanderbilt in a variety of ways including checks, credit cards, electronic fund transfers and gifts of stocks and securities or other assets. You can easily make your contribution to Vanderbilt by choosing any of the following giving options. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF\u2019s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 10
-        }
-    },
-    {
-        "id": "fd5b6efb-0c02-4b1b-8bd3-36e6d9a0d2b3",
-        "text": ". Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70\u00bd or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 11
-        }
-    },
-    {
-        "id": "45f25727-4f2a-4c53-9f59-5d8a02b9a6d0",
-        "text": ". Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt\u2019s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 12
-        }
-    },
-    {
-        "id": "536bb83b-b50f-46e3-92fe-f7a4568f23ad",
-        "text": ". Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF\u2019s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70\u00bd or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 13
-        }
-    },
-    {
-        "id": "945195c4-dc27-45a3-9ef5-b5af45121e7a",
-        "text": ". Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt\u2019s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 14
-        }
-    },
-    {
-        "id": "8498fe8f-cc71-48de-8fb8-8c4c3fa1f4a1",
-        "text": ". You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Be a Part of Our Impact  Give. Go. Help. Share. Your contributions\u2014as a supporter, volunteer and ambassador\u2014transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21st century.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 15
-        }
-    },
-    {
-        "id": "5592a3a0-b848-447e-a01e-6b68a5d488a4",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 16
-        }
-    },
-    {
-        "id": "590af72e-a03a-446f-b274-c2055d8e39c7",
-        "text": "Scraped from: https://giving.vanderbilt.edu/contact-us/\nDate scraped: 2025-02-17 02:45:09",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 17
-        }
-    },
-    {
-        "id": "4e2a0028-1520-4b3e-a04c-efd9cb70af8e",
-        "text": "Contact Us Annual Giving For questions about annual giving to university schools and programs: annualgiving@vanderbilt.edu , (866) 882-3863 MAJOR GIVING TO UNIVERSITY SCHOOLS AND PROGRAMS For questions about major and endowed gifts, please contact the appropriate school or program below",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 18
-        }
-    },
-    {
-        "id": "f59c795a-4b46-4b06-b132-8319cd62eda7",
-        "text": ". College of Arts and Science rachel.wierenga@vanderbilt.edu , (615) 343-3858 Blair School of Music addie.sullivan@vanderbilt.edu , (615) 343-7819 Divinity School kitty.a.norton@vanderbilt.edu , (615) 322-1197 School of Engineering garrett.munro@vanderbilt.edu , (615) 343-1654 Law School clay.cline@vanderbilt.edu , (615) 322-2562 School of Medicine taylor.h.wood@vanderbilt.edu , (615) 343-5648 School of Nursing teresa.rogers@vanderbilt.edu , (615) 322-4934 Owen Graduate School of Management kelli.j.edmond@vanderbilt.edu , (615) 322-5951 Peabody College david.chambliss@vanderbilt.edu , (615) 936-4533 Jean and Alexander Heard Libraries kimberly.boyer@vanderbilt.edu , (615) 343-8998 Athletics mark.carter@vanderbilt.edu , (615) 322-4114 ADDITIONAL PROGRAMS AND AREAS Alumni Relations alumni@vanderbilt.edu , (615) 322-2929 Gift Processing advance.giftupdate@vanderbilt.edu , (615) 322-2979 Opportunity Vanderbilt meghan.backes@vanderbilt.edu , (615) 343-3018 Parents and Family Programs sandra.robinson@vanderbilt.edu , (615) 343-0761 Parents and Grandparents Campaign amy.jarvis@vanderbilt.edu , (615) 343-3121 Philanthropic and Corporate Foundations amanda.alibrandi@vanderbilt.edu , (602) 705-9766 Planned Giving maria.c.kerford@vanderbilt.edu , (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Annual Giving For questions",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 19
-        }
-    },
-    {
-        "id": "22524626-5260-4c31-8084-f6413d1bfccf",
-        "text": ", (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Annual Giving For questions about annual giving to university schools and programs: annualgiving@vanderbilt.edu , (866) 882-3863 MAJOR GIVING TO UNIVERSITY SCHOOLS AND PROGRAMS For questions about major and endowed gifts, please contact the appropriate school or program below",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 20
-        }
-    },
-    {
-        "id": "59684c0d-b514-4278-a014-107888404e7c",
-        "text": ". College of Arts and Science rachel.wierenga@vanderbilt.edu , (615) 343-3858 Blair School of Music addie.sullivan@vanderbilt.edu , (615) 343-7819 Divinity School kitty.a.norton@vanderbilt.edu , (615) 322-1197 School of Engineering garrett.munro@vanderbilt.edu , (615) 343-1654 Law School clay.cline@vanderbilt.edu , (615) 322-2562 School of Medicine taylor.h.wood@vanderbilt.edu , (615) 343-5648 School of Nursing teresa.rogers@vanderbilt.edu , (615) 322-4934 Owen Graduate School of Management kelli.j.edmond@vanderbilt.edu , (615) 322-5951 Peabody College david.chambliss@vanderbilt.edu , (615) 936-4533 Jean and Alexander Heard Libraries kimberly.boyer@vanderbilt.edu , (615) 343-8998 Athletics mark.carter@vanderbilt.edu , (615) 322-4114 ADDITIONAL PROGRAMS AND AREAS Alumni Relations alumni@vanderbilt.edu , (615) 322-2929 Gift Processing advance.giftupdate@vanderbilt.edu , (615) 322-2979 Opportunity Vanderbilt meghan.backes@vanderbilt.edu , (615) 343-3018 Parents and Family Programs sandra.robinson@vanderbilt.edu , (615) 343-0761 Parents and Grandparents Campaign amy.jarvis@vanderbilt.edu , (615) 343-3121 Philanthropic and Corporate Foundations amanda.alibrandi@vanderbilt.edu , (602) 705-9766 Planned Giving maria.c.kerford@vanderbilt.edu , (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Be a Part of Our Impact",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 21
-        }
-    },
-    {
-        "id": "461ac1ae-bc3b-4669-bae7-dda9ff7e0a73",
-        "text": ", (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Be a Part of Our Impact  Your contributions to these campaign pathways can drive bold new levels of growth that will shape our next 150 years.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 22
-        }
-    },
-    {
-        "id": "c60444b6-8e77-447c-9a79-e2bb2a11878e",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 23
-        }
-    },
-    {
-        "id": "b267d81b-a8fc-4f4f-9594-040414c83650",
-        "text": "Scraped from: https://giving.vanderbilt.edu/impact-stories/\nDate scraped: 2025-02-17 02:45:11",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 24
-        }
-    },
-    {
-        "id": "0a3d2d52-b664-4788-9e61-88fa4dc703c9",
-        "text": "Impact Stories Vanderbilt dares to grow. And you\u2014our talented and courageous community of alumni, students, families, faculty, staff and friends\u2014are part of this ambitious journey. Stories of impact demonstrate how your contributions create ripples that transform lives\u2014and will define Vanderbilt as the great university of the 21st century. Dare to Grow campaign reaches $3.2B goal early, establishing launching pad for more far-reaching impact  Advancing breast reconstruction surgery Dedication to advancing breast reconstruction surgery for patients links Perdikis, Maxwell Give to live Charles Donald and Roberta Lemons Miller set a goal to make an impact Connections across a lifetime The power of relationships and shared experiences in alumni engagement Sharing blessings for a healthier tomorrow Dr, Kenneth Chastain and his late wife, Jan, are advancing innovative research A teaching legacy Bess Parks, PhD'78, endows a scholarship in elementary education in honor of her mother All Stories A Meaningful Investment Bob Frutchey, MBA\u201995, reflects on how his experience at Owen fueled his philanthropy Kevin and Gloria Churchwell Honor Parents through Undergraduate Scholarship The legacy of Mary Churchwell and Robert Churchwell Sr. was recently honored by the establishment of the Robert Sr. and Mary Churchwell Undergraduate Scholarship",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 25
-        }
-    },
-    {
-        "id": "a2a9ca13-39b5-40aa-b2a3-d8c2d2aff350",
-        "text": ". was recently honored by the establishment of the Robert Sr. and Mary Churchwell Undergraduate Scholarship. Eight Students selected for new cohort of Ingram Scholars Six incoming first-year students and two rising sophomores have been selected for the Ingram Scholars Program Bold Gift Fuels Future of Vanderbilt Basketball $20 million matching gift supercharges basketball practice facility, seeks to inspire alumni to lead Vandy United\u2019s Dare to Grow phase Vanderbilt to establish a college dedicated to computing, AI and data science Vanderbilt has begun work to establish a transformative college dedicated to computer science, AI, data science and related fields VUSN matching program to inspire philanthropy, drive research and work to ease health inequities In support of its commitment to fighting health inequities, Vanderbilt University School of Nursing has launched an ambitious campaign to raise and match $1 million to support health disparity research. Vanderbilt Launches McGee Applied Research Center for Narrative Studies The center will promote media literacy by providing resources to evaluate the objectivity of news coverage, digital media and other narratives",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 26
-        }
-    },
-    {
-        "id": "548ff44e-c28e-4b87-ad3b-c12efebf482c",
-        "text": ". Vanderbilt Launches McGee Applied Research Center for Narrative Studies The center will promote media literacy by providing resources to evaluate the objectivity of news coverage, digital media and other narratives. Warren Center for Neuroscience Drug Discovery Launches Philanthropic Matching Vanderbilt enhances its commitment to translational neuroscience research with a one-to-one match for new endowed gifts to the Warren Center Lead Gift Launches Hawkins Field Enhancements Anonymous baseball alumnus\u2019 matching pledge challenges fellow alumni to lead the way in reimagination of Vanderbilt baseball home Vandy United Begins Next Chapter After reaching its initial $300 Million Goal, Vandy United launches a new phase, building on its foundation with more facilities and operational enhancements. Vanderbilt University and MNPS launch partnership to boost college admissions from Nashville schools The program, which will launch with the admissions cycle for first-year students entering Vanderbilt in fall 2025, offers a direct cost scholarship to MNPS students who meet certain criteria. Transformational Gift Establishes Roberts Academy and Dyslexia Center A gift from Hal and Marjorie Hollis Roberts will establish a new academy for primary students with dyslexia and an innovative center focused on outreach and dyslexia research",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 27
-        }
-    },
-    {
-        "id": "deda2224-6076-479b-b89d-eb278fb6a5ff",
-        "text": ". Dare to Be First The inside story of Vanderbilt volleyball\u2019s first recruiting class Berg Family Gift to Support the Arts at Vanderbilt The Landmark Gift Will Establish the Berg Global Artist-in-Residence Program to Bring Visiting Artists to Campus, and Two Berg Dean\u2019s Faculty Fellowships in the College of Arts and Science Conway-Welch Family Foundation Gift to Honor Longtime Dean The Conway-Welch Second Degree in Nursing Scholarship is the First Major Gift Made Toward the Master of Nursing Program, Which Was Launched in 2023 to Help Address the Nationwide Shortage of Registered Nurses Opening \u2019Dores in Hollywood A New Scholarship Established by Rich Hull, BA\u201992, Supports Students Pursuing Internships in Hollywood Planned Giving Sparks Creativity in Owen's Deaner Scholarship Bryan Deaner, MBA\u201993, Invests in Future Generations Through Deaner Creativity Scholarship Ingram Scholars Program Celebrates 30 Years A Transformative Scholarship Program at Vanderbilt is Celebrating its 30th Anniversary Unprecedented Impact Jennifer and Billy Frist\u2019s Historic Gift to Be Commemorated with Frist Athletics Village Immersion Vanderbilt Receives $6.8 Million Gift The Education Enhancement Fund Will Provide Funding to Students to Carry Out Creative and Ambitious Projects that Deepen Their Intellect and Broaden Their Horizons Enhanced Experiences Levy Gift Supports Undergraduate Internships Nashville Metro Council to Honor Vanderbilt\u2019s Nichols Humanitarian Fund The Nichols Humanitarian Fund",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 28
-        }
-    },
-    {
-        "id": "555d6309-490e-417f-ae20-fc5397fdcc29",
-        "text": "and Ambitious Projects that Deepen Their Intellect and Broaden Their Horizons Enhanced Experiences Levy Gift Supports Undergraduate Internships Nashville Metro Council to Honor Vanderbilt\u2019s Nichols Humanitarian Fund The Nichols Humanitarian Fund Provides Support for Vanderbilt Students to Pursue Humanitarian Immersive Experiences Locally and Globally From Vanderbilt to the U.S",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 29
-        }
-    },
-    {
-        "id": "0c029a41-c736-4ca4-b452-ef8c8c825270",
-        "text": ". Debate Team Daniel Ardity, Class of 2024, Earned a Place on the U.S. Debate Team Driving Innovation Vanderbilt and Bridgestone Collaborate at Inaugural Innovation Accelerator Twelve at Vanderbilt are Among World\u2019s Highly Cited Researchers Vanderbilt\u2019s Twelve are Among Highly Cited Researchers Around the World Whose Publications Rank in the Top 1 Percent Vanderbilt Named Spoke in ARPA-H Investor Catalyst Hub Vanderbilt\u2019s Partnership with the ARPANET-H Investor Catalyst Hub Will Accelerate the Delivery of Equitable Health Care Solutions to Communities In Need",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 30
-        }
-    },
-    {
-        "id": "9dcd4019-b6b4-41af-ae6b-500a1324ac4f",
-        "text": ". \u2018Nature\u2019 Conference Fosters Radical Collaboration Researchers from around the globe gathered for the inaugural Nature conference \u201cBioengineering for Global Health\u201d at Vanderbilt Vanderbilt Announces Inaugural Literary Prize The New Prize Comes as Vanderbilt Marks its Sesquicentennial by Honoring its Strong Connection to the Arts Fighting Infectious Diseases With AI-Focused Immersion Vanderbilt Project Karen Pu, Class of 2024, Is Expanding the Power of Computer Modeling to Identify Mutating Viruses\u2014And Potentially Improve Vaccines Vanderbilt\u2019s Radical Collaboration With Army Pathfinder Program Vanderbilt Is Moving Tech From the Lab to the Front Lines With Solutions Tailored to Real-World Army Challenges Vanderbilt Unveils Quantum Potential Radiolab Founder and Faculty Member Jad Abumrad Hosts This Marquee Video Series Featuring the Remarkable Research and Innovation Taking Place at Vanderbilt Vanderbilt Launches Center for Research on Inequality and Health The Center Brings Together Deep Scholarly Strengths in Population Health Science; LGBTQ+ Health Policy; Gun Violence; and Economic and Social Inequality\u2014And Explores How They Impact Health",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 31
-        }
-    },
-    {
-        "id": "7d9c157b-69f1-4bdf-87c1-fc134bc93649",
-        "text": ". Vanderbilt Strengthens Partnership with Posse Foundation Vanderbilt Will Add Two Additional Cohorts of Posse Scholars in 2024, Provide Full Tuition Scholarships up to the Cost of Attendance Vanderbilt Launches Innovation Catalyst Fund A New Internal Funding Program is Aimed at Moving Translational Research and Innovation Into Real-world Solutions More Quickly Vanderbilt Joins The Precisionists, Creates Careers for Neurodiverse Individuals The Precisionists Announced the Expansion of its Neurodiversity Employment Program in Nashville at an Event Hosted by Vanderbilt\u2019s Frist Center for Autism and Innovation $52 Million NIH Grant Brings ELVIS to University, Medical Center Biomedical Scientists at VUMC Are Launching a Research Platform Devoted to Molecular Underpinnings of Early-Childhood Determinants of Health Growth Opportunity An Interview With Campaign Co-Chairs and Trustees Steven Madden and Mark Mays J. Michael Campbell Scholarship New VLS Scholarship Endowed in Honor of J",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 32
-        }
-    },
-    {
-        "id": "d15d0919-8053-4bbc-ad73-1b957e260da1",
-        "text": ". Michael Campbell Scholarship New VLS Scholarship Endowed in Honor of J. Michael Campbell \u201968 (BE\u201965) Commitment to a Mission Bob Matthews, MD\u201986, Establishes Planned Gift to Honor Rugby Club\u2019s Impact Black Holes In Our Universe Globally Recognized Astrophysicist Teaches Cutting-Edge Astronomy Concepts to Undergraduates From All Majors From Concept to Reality Sullivan family endows Ideator program at the Wond\u2019ry Major Milestone Start of Vandy United construction marks new phase in $300 million campaign Vandy United Ushers in New Era at Hawkins Field Major Enhancements to Iconic Home of the Two-Time National Champion VandyBoys Will Create Unique Game Day Experience Skyscrapers for the Homeless Alumna Ariana Fowler credits Opportunity Vanderbilt for life-changing college experience Out Of This World Gift Extends Support For Vanderbilt\u2019s Award-Winning Rocket Team Global Impact WATCH: Class of 2023 Students Make An Impact Around the Globe Passionate Curiosity Alumna Brianne Gross is an unlikely lacrosse star and a born engineer The Future of Free Speech Global Think Tank Justitia Opens First U.S",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 33
-        }
-    },
-    {
-        "id": "f7d24203-0013-4a3f-ac88-16ab211e456f",
-        "text": ". Office at Vanderbilt, Expands the Future of Free Speech Project Innovative Programming Vanderbilt Hosts Summit on Modern Conflict and Emerging Threats Interdisciplinary Exploration Weaver Family Program in Law, Brain Sciences, and Behavior Established at VLS with $3.85 Million Endowment From Weaver Foundation Vandy United Progress Initial Goal Reached, Vandy United Begins Next Chapter Pulitzer Prize Winning Faculty Vanderbilt Social, Political Historian Jefferson Cowie Wins Pulitzer for \u2018Freedom\u2019s Dominion: a Saga of White Resistance To Federal Power\u2019 Collaborative Community WATCH: Class of 2023 Students Collaborate, Form Connections Future of Learning and Generative AI New Initiative Will Enhance Research Connected To The Growing Use Of Artificial Intelligence Unique Collaboration Vanderbilt DSI and Women\u2019s Basketball Team Collaborate Using Data Science to Improve Performance While Reducing Risk of Injury Immersion Vanderbilt Student Spotlight Vanderbilt student Shahar Harman discusses his international project with Immersion Vanderbilt and how the work shaped his experiences during college. Class of 2023 Profiles WATCH: Class of 2023 students build belonging, enrich Vanderbilt community VU-Initiated Startup Receives $30M Alumni-Led Zeno Power To Build Nuclear-Powered Satellite For The U.S",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 34
-        }
-    },
-    {
-        "id": "375dace0-e192-45ab-8618-f14d025acf2e",
-        "text": ". Space Force Going Global Three Vanderbilt Graduates Awarded Keegan Travelling Fellowships Opening Doors to All Alumna Joyce Searcy aims to make Nashville\u2019s libraries more accessible Key Resource McGee family gift establishes new center to study media narratives Music as a Pathway Blair Community Scholars Program to provide greater access to music education High-Impact Scholarship Hubbard family gift elevates Vanderbilt\u2019s economic policy research Simple Act of Listening Endowed chair holder Major Jackson named host of celebrated poetry podcast Citizen Science Vanderbilt helps rural Tennessee county solve cancer outbreak mystery Comprehensive Perspective Innovative climate studies major launched Perfect Fit Law student Kristen Smith finds community, opportunities thanks to scholarship Closer to Cures Ancora Innovation collaboration accelerates drug discovery Collaborative Innovation Vanderbilt assumes leadership of NSF Mid-South Innovation Corps Hub Working Together for Social Impact Nashville Community Leaders Came Together at Vanderbilt to Discuss Power Dynamics in Collaborating for Social Impact TEAM TN Collaboration to Advance Next-Generation Transportation Vanderbilt, UT\u2013Knoxville and more than 100 partner organizations join forces to develop mobility solutions Student Startup Bloom Health Wins $120K Investment Prize The Startup\u2019s Mission is to Improve Standards for Women\u2019s Health by Providing Women Around the World with Access to Reproductive Education Novel Device",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 35
-        }
-    },
-    {
-        "id": "89f0e21d-8754-4e62-bba6-fa26d26f783f",
-        "text": "forces to develop mobility solutions Student Startup Bloom Health Wins $120K Investment Prize The Startup\u2019s Mission is to Improve Standards for Women\u2019s Health by Providing Women Around the World with Access to Reproductive Education Novel Device Radically Improves Minimally Invasive Endoscopic Surgery A Medical Device Company Co-Founded by a Vanderbilt Engineering Professor Announces Successful First-in-Human Clinical Study Vanderbilt Generates More Than $96M in Licensing Revenue in FY23 By Continuing to Break Records for Licensing Revenue, Vanderbilt Demonstrates Our Growing Capacity for Making a Difference in the World Summer Bridge Program Helps First-Year Engineers Find Success The All-Expenses Paid Program Builds Skills, Fosters Sense of Belonging Ingram Scholars Program Recognizes Heuser's Service Ingram Scholars Combine Educational Pursuits With A Commitment To Community Service And Philanthropy Vanderbilt Partnership Boosts Financial Aid Packages for Veterans Eligible Veterans Can Attend Vanderbilt at a Significantly Reduced Cost Thanks to Yellow Ribbon GI Educational Enhancement Program Be a Part of Our Impact  Your contributions to these campaign pathways can drive bold new levels of growth that will shape our next 150 years.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 36
-        }
-    },
-    {
-        "id": "ee9b53fb-855c-4f31-a83e-fee781cdd562",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 37
-        }
-    },
-    {
-        "id": "38e4cea0-6f79-41bd-9197-beaa673eedd5",
-        "text": "Scraped from: https://giving.vanderbilt.edu/campaign-pathways/\nDate scraped: 2025-02-17 02:45:13",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 38
-        }
-    },
-    {
-        "id": "cb2ac94f-0159-4c8e-985f-c1ff2314aab1",
-        "text": "Initiatives to Support By coming together around a shared purpose and a drive for excellence, we are achieving more than we ever thought possible. With a focus on three critical areas, you can continue to drive bold new levels of growth that are transforming lives\u2014and will define Vanderbilt as the great university of the 21st century. Access & Empowerment  Help Vanderbilt become a destination for the most talented and ambitious students and faculty across the globe. With your support we can attract this high level of talent through Opportunity Vanderbilt , scholarships, experiential learning and recruitment efforts. Growth & Innovation  Catalyze vital work across our labs, archives and studios by investing in students, faculty and staff that prioritize research, discovery and creative expression. As a visionary philanthropist, you will further our commitment to innovation. Radical Collaboration  Invest in our interdisciplinary model and help Vanderbilt strengthen how we solve complex problems and bring together disparate viewpoints. Gifts that aim to bolster our One Vanderbilt community allow us to maintain our commitment to Radical Collaboration. The potential of our Dare to Grow campaign is limitless. And we are grateful to have you\u2014our dedicated community of supporters\u2014alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 39
-        }
-    },
-    {
-        "id": "eb5ef9f6-3aa8-4c95-90d9-09479e94b37f",
-        "text": ". And we are grateful to have you\u2014our dedicated community of supporters\u2014alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century. Join the thousands of donors who have already contributed and make a gift to support any area of the university. Be a Part of Our Impact  Your contributions to these areas of support can drive bold new levels of growth that will shape our next 150 years.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 40
-        }
-    },
-    {
-        "id": "86e44484-31cc-4e9e-a197-90afec095401",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 41
-        }
-    },
-    {
-        "id": "57998613-9069-4b2d-aa9a-2eb28ed2daff",
-        "text": "Scraped from: https://giving.vanderbilt.edu/events/\nDate scraped: 2025-02-17 02:45:15",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 42
-        }
-    },
-    {
-        "id": "2119b1f4-6e73-4c6f-8202-4870fe2b3b6c",
-        "text": "Events Near You Join Vanderbilt leaders and members of the Vanderbilt community at events across the country to learn about the transformative vision and momentum of the Dare to Grow campaign. Bringing together alumni, parents and friends, these events showcase Vanderbilt\u2019s exciting trajectory as we build our future and claim our place as the great university of this century. Upcoming Events Dare to Grow Boston April 1, 2025 Details coming soon\u2014stay tuned! Dare to Grow London May 21, 2025 Details coming soon\u2014stay tuned! Past Events Dare to Grow Los Angeles Tuesday, October 29 The Academy Museum of Motion Pictures was the perfect backdrop for an impactful evening, bringing together nearly 300 alumni, parents and friends to support Vanderbilt. It was a night to remember as Professor Michael P. Vandenbergh and doctoral candidate Mariah D. Caballero shared the ways Vanderbilt has fueled their environmental research. Trustee and Vanderbilt parent George B. Huber, BA\u201979, along with alumni Jeremy Padawer, MBA\u201901, and Olivia Logan, BS\u201923, shared their dare to grow stories, underscoring the power of a Vanderbilt education and reminding us that our investment in one another changes lives. Dare to Grow Washington, D.C. Monday, September 23 More than 350 alumni, parents and friends gathered for an exciting night of celebration and community in Washington, D.C., at the National Portrait Gallery",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 43
-        }
-    },
-    {
-        "id": "ff18cbda-5ec1-4595-ba57-a2816996266a",
-        "text": ". Dare to Grow Washington, D.C. Monday, September 23 More than 350 alumni, parents and friends gathered for an exciting night of celebration and community in Washington, D.C., at the National Portrait Gallery. The evening featured insightful remarks from Vanderbilt faculty leaders General (Ret.) Paul Nakasone and Erin Calipari, alongside alumnus and trustee David Patterson, BA\u201981, MD\u201985. Exceptional alumni, Sam Feist, BA\u201991, Riti Hegde, BS\u201922, and Renee Iacona, PhD\u201998, MPH\u201999, also shared their stories, followed by a captivating performance by Ben Edquist, BMus\u201913, and Dean Melissa Rose. Dare to Grow Chicago Tuesday, September 17 More than 400 alumni, parents and friends joined Vanderbilt for a memorable evening at the Art Institute of Chicago. The event showcased Vanderbilt faculty leaders Holly Tucker and Jules White; distinguished trustee and Vanderbilt parent Nina Kohler; and inspirational graduates, Carter Hawkins, BS\u201907, Blake-Anthony Johnson, BMus\u201912, and Anana Upton, BS\u201921, MSN\u201923. Guests were also treated to a special message from Cubs shortstop and former VandyBoy Dansby Swanson, \u201916. Dare to Grow San Francisco Monday, May 6 More than 280 Vanderbilt supporters came together for a night to remember at the de Young Museum in San Francisco",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 44
-        }
-    },
-    {
-        "id": "addf64b7-ea61-41ca-9ae6-6a4dde2ff235",
-        "text": ". Dare to Grow San Francisco Monday, May 6 More than 280 Vanderbilt supporters came together for a night to remember at the de Young Museum in San Francisco. The program featured an exciting group of Vanderbilt alumni, staff, and faculty, including Chancellor Diermeier; Provost Raver; Vice Chancellor John Lutz; the School of Engineering\u2019s Jonathan Sprinkle, MS\u201900, PhD\u201903, and Dan Work; Trustees Jeff Rothschild, BA\u201977, MS\u201979, and Shirley Collado, BS\u201994; along with alumni Tristan Gilbert, BE\u201920, MS\u201920, David Barzelay, BA\u201905 and NBA champion Festus Ezeli, BA\u201912; all set to the sound of Blair\u2019s Jazz Combo. Dare to Grow Atlanta Monday, March 18 More than 450 alumni, families and friends joined us for an inspiring evening featuring Chancellor Diermeier, Provost Raver, Vice Chancellor John Lutz, Vanderbilt faculty leaders Sarah Igo and Ganesh Sitaraman; trustee Alex Taylor, BA\u201997; Double \u2018Dore and Vandy parent Dr. Maria Aaron, BA\u201991, MD\u201995; and Sam Carton, BA\u201923, recipient of an Anonymous PAB Scholarship. One of the highlights of the evening was when Athletic Director and Vice Chancellor for Athletics Candice Lee, BS\u201900, MEd\u201902, EDd\u201912 brought out former student-athletes Grace Jackson, BA\u201920, MMARK\u201921; Casey Hayward, BA\u201913; and George Smith, BA\u201907, to lead guests in a fun field goal and soccer shot challenge. The stadium was an incredible setting and made for an unforgettable roadshow",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 45
-        }
-    },
-    {
-        "id": "773337cc-e66e-47c4-b0df-ca347f447704",
-        "text": ". The stadium was an incredible setting and made for an unforgettable roadshow. Dare to Grow Dallas March 4, 2024 More than 250 alumni, parents and friends gathered for an inspiring night of connection and camaraderie in Dallas at the Perot Museum of Nature and Science. Speakers included influential entrepreneur and Vanderbilt parent Mark Cuban; distinguished trustees Suzanne McGee, BS\u201986, Doug Parker, MBA\u201986, and Conner Searcy, BA\u201997; Vanderbilt faculty leaders Tiffiny Tung and Rangaraj Ramanujam; and inspirational recent graduates, Ethan Fournier, MSN\u201923, and Hannah Tsiao, BS\u201923. Dare to Grow Miami January 30, 2024 The impact of Vanderbilt University was on full display when South Florida-area alumni gathered at the P\u00e9rez Art Museum Miami in January. Speakers included faculty members Mar\u00eda Magdalena Campos-Pons and Dr. James E. Crowe, alumni Peter Marshall, BA\u201914, and Jose Garrido, BS\u201903, as well as Bridget Conley, BA\u201921, who treated guests to a musical performance with Blair School Dean Melissa Rose, followed by Blair\u2019s own Vanderbilt Latin Jazz. Dare to Grow Houston October 30, 2023 Alumni, parents and friends gathered at The Menil Collection in Houston to enjoy cocktails and spirited conversation amidst provocative art and to hear from some of Vanderbilt\u2019s most inspiring people, from head baseball coach Tim Corbin to\u00a0Houston\u2019s own Kaylin Haverstock Weber, BA\u201996",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 46
-        }
-    },
-    {
-        "id": "bac9047d-a6b9-40b4-afc0-6906fd503cee",
-        "text": ". Dare to Grow New York City September 13, 2023 More than 300 guests came together at the Shed in Hudson Yards in Manhattan to hear about Vanderbilt\u2019s vision for the future. Willie Geist, BA\u201997, emceed the evening, while Sydney Takemoto, BS\u201923, and Joe Ariel, BA\u201999, shared their inspiring stories. In addition, Jad Abumrad led a discussion on the Vanderbilt Way featuring faculty members Erin S. Calipari and Major Jackson . Be a Part of Our Impact  Give. Go. Help. Share. Your contributions\u2014as a supporter, volunteer and ambassador\u2014transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21 st century.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 47
-        }
-    },
-    {
-        "id": "6b972bc5-a833-454e-821c-a60dc2437b31",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 48
-        }
-    },
-    {
-        "id": "e52ac405-fd59-419e-851f-ca3f4e9014d5",
-        "text": "Scraped from: https://giving.vanderbilt.edu/ways-%20to-give/\nDate scraped: 2025-02-17 02:45:18",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 49
-        }
-    },
-    {
-        "id": "d03b7854-86b8-460c-86fb-74036bbe15b2",
-        "text": "Ways To Give Thank you for your interest in giving to Vanderbilt. Alumni, parents and friends give to Vanderbilt in a variety of ways including checks, credit cards, electronic fund transfers and gifts of stocks and securities or other assets. You can easily make your contribution to Vanderbilt by choosing any of the following giving options. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF\u2019s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 50
-        }
-    },
-    {
-        "id": "17a6bab1-d40c-4493-87d8-539db6249ca9",
-        "text": ". Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70\u00bd or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 51
-        }
-    },
-    {
-        "id": "fdec906f-4617-4133-b68d-8503e560b62e",
-        "text": ". Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt\u2019s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 52
-        }
-    },
-    {
-        "id": "8d73fa58-a584-40eb-aefc-aa8ac32b8d94",
-        "text": ". Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF\u2019s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70\u00bd or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 53
-        }
-    },
-    {
-        "id": "b6419ba2-900d-4d2d-90ec-00c78ef0b6f5",
-        "text": ". Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt\u2019s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 54
-        }
-    },
-    {
-        "id": "9815247c-5f9a-40e2-a803-cead6e117e1d",
-        "text": ". You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Be a Part of Our Impact  Give. Go. Help. Share. Your contributions\u2014as a supporter, volunteer and ambassador\u2014transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21st century.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 55
-        }
-    },
-    {
-        "id": "47be084d-fd0b-4f57-8099-299020b03ceb",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 56
-        }
-    },
-    {
-        "id": "3ba103b4-22a5-4af0-99e1-2f750af87676",
-        "text": "Scraped from: https://giving.vanderbilt.edu/support-opportunity-vanderbilt/\nDate scraped: 2025-02-17 02:45:24",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 57
-        }
-    },
-    {
-        "id": "f90f6f58-9d44-4681-997f-a3883404c79e",
-        "text": "Support Opportunity Vanderbilt Empower Dreams. Ignite Potential. Make History. At Vanderbilt, we believe that nothing should stand between a student and the transformative power of a world-class education. Opportunity Vanderbilt is a bold commitment to our extraordinary students, creating a future where financial circumstances never limit their dreams. This important initiative, fueled in part by generous donors, meets 100% of demonstrated financial need without loans , providing students the ability to graduate debt-free and focus on their ambitions and personal growth. In 2024, the program was expanded to provide a full-tuition scholarship for all households with income of $150K* or less. Since its launch in 2009, more than 15,400 undergraduate students have received need-based support through Opportunity Vanderbilt. *assuming typical assets    Vanderbilt scholarships create a legacy that spans generations | Dare to Grow Trustee Conner Searcy, BA'97, shares how scholarship and philanthropy changed the course of his life Vanderbilt empowers student success through scholarships | Sam Carton, BA'23| Dare to Grow: Atlanta Vanderbilt inspires courage to make a difference | Riley Eddins, Class of 2025 | Dare to Grow Student Impact \u201cI am profoundly grateful for your generous support which has not only lightened my financial burdens but has empowered me to pursue my educational and career aspirations with passion and dedication",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 58
-        }
-    },
-    {
-        "id": "059d9c8a-deee-4008-8c30-a76149297216",
-        "text": ". Your belief in my potential means the world to me, and I am committed to making the most of this incredible opportunity.\u201d \u2014Mia Cisija, Opportunity Vanderbilt recipient Class of 2025    Alumni Impact \"The education I received and the friends I made at Vanderbilt have done so much to positively shape my life. The Maggie Craig Memorial Scholarship was essential to letting me attend a great university without worrying about the long-term cost impact and setting me up to further pursue the education and career that I wanted.\" \u2014Trevan Locke, Opportunity Vanderbilt recipient Class of 2012 Trevan studied chemical and biomolecular engineering at Vanderbilt University and is now an assistant research director at Duke-Margolis. Vanderbilt scholarship recipients share their gratitude",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 59
-        }
-    },
-    {
-        "id": "d284e2d6-b057-4b16-9ad7-392895df431a",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 60
-        }
-    },
-    {
-        "id": "696293a9-0aef-4157-890a-cb7c1a586db3",
-        "text": "Scraped from: https://giving.vanderbilt.edu/giving-opportunities/\nDate scraped: 2025-02-17 02:45:26",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 61
-        }
-    },
-    {
-        "id": "5ab6b7ce-48b7-43f5-911e-eebbb2c7b3cf",
-        "text": "Initiatives to Support By coming together around a shared purpose and a drive for excellence, we are achieving more than we ever thought possible. With a focus on three critical areas, you can continue to drive bold new levels of growth that are transforming lives\u2014and will define Vanderbilt as the great university of the 21st century. Access & Empowerment  Help Vanderbilt become a destination for the most talented and ambitious students and faculty across the globe. With your support we can attract this high level of talent through Opportunity Vanderbilt , scholarships, experiential learning and recruitment efforts. Growth & Innovation  Catalyze vital work across our labs, archives and studios by investing in students, faculty and staff that prioritize research, discovery and creative expression. As a visionary philanthropist, you will further our commitment to innovation. Radical Collaboration  Invest in our interdisciplinary model and help Vanderbilt strengthen how we solve complex problems and bring together disparate viewpoints. Gifts that aim to bolster our One Vanderbilt community allow us to maintain our commitment to Radical Collaboration. The potential of our Dare to Grow campaign is limitless. And we are grateful to have you\u2014our dedicated community of supporters\u2014alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 62
-        }
-    },
-    {
-        "id": "fe8dfc39-7a04-48c1-8a3b-816b019b3e25",
-        "text": ". And we are grateful to have you\u2014our dedicated community of supporters\u2014alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century. Join the thousands of donors who have already contributed and make a gift to support any area of the university. Be a Part of Our Impact  Your contributions to these areas of support can drive bold new levels of growth that will shape our next 150 years.",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 63
-        }
-    },
-    {
-        "id": "a9b19e57-76a9-4e7d-a1dd-aab2f7894297",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 64
-        }
-    },
-    {
-        "id": "42d3587c-0fe7-4a81-b1c2-9f30b78ae9db",
-        "text": "Scraped from: https://giving.vanderbilt.edu/plannedgiving/\nDate scraped: 2025-02-17 02:45:30",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 65
-        }
-    },
-    {
-        "id": "0d4c96f9-a2cf-4d60-942c-1146722f9901",
-        "text": "Planned Giving Welcome to Planned Giving Create Your Legacy How to Give What to Give Invest in Our Endowment Life Stage Gift Planner\u2122 Reunion Giving Compare Gift Options Resources FAQ Request a Calculation Glossary Sample Bequest Language Recent Federal Changes Legacy Newsletter From the Blog Request an eBrochure Donors Sarratt Society Meet Our Donors Connect with Us Contact Us Planned Giving Team How to Give What to Give Invest in Our Endowment Life Stage Gift Planner\u2122 Reunion Giving Compare Gift Options FAQ Request a Calculation Glossary Sample Bequest Language Recent Federal Changes Legacy Newsletter From the Blog Request an eBrochure Sarratt Society Meet Our Donors Contact Us Planned Giving Team Welcome to Planned Giving Making a planned gift is a wonderful way to show your support and appreciation for Vanderbilt University and its mission while accommodating your own personal, financial, estate-planning, and philanthropic goals. With smart planning, you may actually increase the size of your estate and/or reduce the tax burden on your heirs. Just as important, you will know that you have made a meaningful contribution to Vanderbilt . We recommend that you familiarize yourself with various gift options by exploring How to Give and What to Give . Then compare gift options and/or calculate how these gifts could work for you. And of course, please contact us for assistance or to discuss your personal situation and objectives",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 66
-        }
-    },
-    {
-        "id": "3f545cdd-e131-4a51-ae7a-2af79ceb113b",
-        "text": ". Then compare gift options and/or calculate how these gifts could work for you. And of course, please contact us for assistance or to discuss your personal situation and objectives. Join Other Donors in the Sarratt Society  We invite you to join the Sarratt Society honoring our generous donors. Meet Our Donors  Read about why others have chosen to make a planned gift to Vanderbilt. Plan Your Gift at Any Life Stage  Learn the latest tips and news about planned giving \u00a9 Pentera, Inc. Planned giving content. All rights reserved. Disclaimer",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 67
-        }
-    },
-    {
-        "id": "8edece21-42ac-4eeb-9db6-aa259e4c7176",
-        "text": "================================================================================",
-        "metadata": {
-            "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
-            "date_scraped": "Unknown Date",
-            "chunk_number": 68
-        }
+  {
+    "id": "8c275ea9-acac-4964-919f-59171b363fd1",
+    "text": "Scraped from: scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt\nDate scraped: Unknown Date\n\nScraped from: https://giving.vanderbilt.edu/ways-to-give/\nDate scraped: 2025-02-17 00:29:00",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 1
     }
+  },
+  {
+    "id": "067f90f8-d2e1-4f48-8c74-ce2880f3464f",
+    "text": "Ways To Give Thank you for your interest in giving to Vanderbilt. Alumni, parents and friends give to Vanderbilt in a variety of ways including checks, credit cards, electronic fund transfers and gifts of stocks and securities or other assets. You can easily make your contribution to Vanderbilt by choosing any of the following giving options. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF’s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 2
+    }
+  },
+  {
+    "id": "f4ffc46f-434f-4db8-b792-9ecbb42e52ed",
+    "text": ". Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70½ or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 3
+    }
+  },
+  {
+    "id": "034fe44e-bf5f-486c-97ec-e8a4735228a5",
+    "text": ". Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt’s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 4
+    }
+  },
+  {
+    "id": "12c3fc73-9c0c-4d35-a3e6-20111bc2da3f",
+    "text": ". Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF’s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70½ or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 5
+    }
+  },
+  {
+    "id": "178d21a5-7d81-4ca3-ae3a-001ce2ece95f",
+    "text": ". Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt’s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 6
+    }
+  },
+  {
+    "id": "505439a8-2c99-48ea-a6e1-a4457ed4d1c5",
+    "text": ". You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Be a Part of Our Impact  Give. Go. Help. Share. Your contributions—as a supporter, volunteer and ambassador—transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21st century.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 7
+    }
+  },
+  {
+    "id": "c33b39b1-ab10-48a2-b109-7012b1b00d00",
+    "text": "Scraped from: https://giving.vanderbilt.edu/ways-to-give/\nDate scraped: 2025-02-17 02:45:07",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 9
+    }
+  },
+  {
+    "id": "e2174308-af12-41d5-be2a-631361456ac7",
+    "text": "Ways To Give Thank you for your interest in giving to Vanderbilt. Alumni, parents and friends give to Vanderbilt in a variety of ways including checks, credit cards, electronic fund transfers and gifts of stocks and securities or other assets. You can easily make your contribution to Vanderbilt by choosing any of the following giving options. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF’s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 10
+    }
+  },
+  {
+    "id": "9e9dd9c6-4c88-4f23-8cd7-cc5f57b16fd5",
+    "text": ". Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70½ or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 11
+    }
+  },
+  {
+    "id": "24e4f695-d421-4ac1-aea5-aefb6fd701cf",
+    "text": ". Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt’s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 12
+    }
+  },
+  {
+    "id": "7e5f965b-25b8-4caf-8225-4f8f008777f5",
+    "text": ". Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF’s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70½ or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 13
+    }
+  },
+  {
+    "id": "9c285448-a5e7-447f-8793-1dbb883f41f0",
+    "text": ". Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt’s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 14
+    }
+  },
+  {
+    "id": "4d4ecdb9-37b7-4d18-b3e4-7205db97b3a2",
+    "text": ". You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Be a Part of Our Impact  Give. Go. Help. Share. Your contributions—as a supporter, volunteer and ambassador—transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21st century.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 15
+    }
+  },
+  {
+    "id": "4ce12ab5-9387-4dd9-ba35-cc4d68fba801",
+    "text": "Scraped from: https://giving.vanderbilt.edu/contact-us/\nDate scraped: 2025-02-17 02:45:09",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 17
+    }
+  },
+  {
+    "id": "d969c14e-477e-48c3-92e7-46c7e88b40f3",
+    "text": "Contact Us Annual Giving For questions about annual giving to university schools and programs: annualgiving@vanderbilt.edu , (866) 882-3863 MAJOR GIVING TO UNIVERSITY SCHOOLS AND PROGRAMS For questions about major and endowed gifts, please contact the appropriate school or program below",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 18
+    }
+  },
+  {
+    "id": "0e88ca9e-1427-480e-8819-d381fc54c764",
+    "text": ". College of Arts and Science rachel.wierenga@vanderbilt.edu , (615) 343-3858 Blair School of Music addie.sullivan@vanderbilt.edu , (615) 343-7819 Divinity School kitty.a.norton@vanderbilt.edu , (615) 322-1197 School of Engineering garrett.munro@vanderbilt.edu , (615) 343-1654 Law School clay.cline@vanderbilt.edu , (615) 322-2562 School of Medicine taylor.h.wood@vanderbilt.edu , (615) 343-5648 School of Nursing teresa.rogers@vanderbilt.edu , (615) 322-4934 Owen Graduate School of Management kelli.j.edmond@vanderbilt.edu , (615) 322-5951 Peabody College david.chambliss@vanderbilt.edu , (615) 936-4533 Jean and Alexander Heard Libraries kimberly.boyer@vanderbilt.edu , (615) 343-8998 Athletics mark.carter@vanderbilt.edu , (615) 322-4114 ADDITIONAL PROGRAMS AND AREAS Alumni Relations alumni@vanderbilt.edu , (615) 322-2929 Gift Processing advance.giftupdate@vanderbilt.edu , (615) 322-2979 Opportunity Vanderbilt meghan.backes@vanderbilt.edu , (615) 343-3018 Parents and Family Programs sandra.robinson@vanderbilt.edu , (615) 343-0761 Parents and Grandparents Campaign amy.jarvis@vanderbilt.edu , (615) 343-3121 Philanthropic and Corporate Foundations amanda.alibrandi@vanderbilt.edu , (602) 705-9766 Planned Giving maria.c.kerford@vanderbilt.edu , (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Annual Giving For questions",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 19
+    }
+  },
+  {
+    "id": "460b2809-2da0-4337-af32-fbcc61b615c7",
+    "text": ", (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Annual Giving For questions about annual giving to university schools and programs: annualgiving@vanderbilt.edu , (866) 882-3863 MAJOR GIVING TO UNIVERSITY SCHOOLS AND PROGRAMS For questions about major and endowed gifts, please contact the appropriate school or program below",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 20
+    }
+  },
+  {
+    "id": "e0bd6df5-359d-45f9-bd31-28d73c4cfc6d",
+    "text": ". College of Arts and Science rachel.wierenga@vanderbilt.edu , (615) 343-3858 Blair School of Music addie.sullivan@vanderbilt.edu , (615) 343-7819 Divinity School kitty.a.norton@vanderbilt.edu , (615) 322-1197 School of Engineering garrett.munro@vanderbilt.edu , (615) 343-1654 Law School clay.cline@vanderbilt.edu , (615) 322-2562 School of Medicine taylor.h.wood@vanderbilt.edu , (615) 343-5648 School of Nursing teresa.rogers@vanderbilt.edu , (615) 322-4934 Owen Graduate School of Management kelli.j.edmond@vanderbilt.edu , (615) 322-5951 Peabody College david.chambliss@vanderbilt.edu , (615) 936-4533 Jean and Alexander Heard Libraries kimberly.boyer@vanderbilt.edu , (615) 343-8998 Athletics mark.carter@vanderbilt.edu , (615) 322-4114 ADDITIONAL PROGRAMS AND AREAS Alumni Relations alumni@vanderbilt.edu , (615) 322-2929 Gift Processing advance.giftupdate@vanderbilt.edu , (615) 322-2979 Opportunity Vanderbilt meghan.backes@vanderbilt.edu , (615) 343-3018 Parents and Family Programs sandra.robinson@vanderbilt.edu , (615) 343-0761 Parents and Grandparents Campaign amy.jarvis@vanderbilt.edu , (615) 343-3121 Philanthropic and Corporate Foundations amanda.alibrandi@vanderbilt.edu , (602) 705-9766 Planned Giving maria.c.kerford@vanderbilt.edu , (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Be a Part of Our Impact",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 21
+    }
+  },
+  {
+    "id": "782af2ff-b812-4290-bf94-e8916d3417b2",
+    "text": ", (615) 343-3113 Research Development and Support rds@vanderbilt.edu , (615) 343-4574 Undergraduate Reunion giving leslie.b.ruskaup@vanderbilt.edu , (615) 875-3244 Stewardship stewardship@vanderbilt.edu , (615) 343-6196 Be a Part of Our Impact  Your contributions to these campaign pathways can drive bold new levels of growth that will shape our next 150 years.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 22
+    }
+  },
+  {
+    "id": "c5a171bc-3a83-4b39-b5bf-972dfd06be41",
+    "text": "Scraped from: https://giving.vanderbilt.edu/impact-stories/\nDate scraped: 2025-02-17 02:45:11",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 24
+    }
+  },
+  {
+    "id": "959709f9-9256-4956-869f-fdd3377ea578",
+    "text": "Impact Stories Vanderbilt dares to grow. And you—our talented and courageous community of alumni, students, families, faculty, staff and friends—are part of this ambitious journey. Stories of impact demonstrate how your contributions create ripples that transform lives—and will define Vanderbilt as the great university of the 21st century. Dare to Grow campaign reaches $3.2B goal early, establishing launching pad for more far-reaching impact  Advancing breast reconstruction surgery Dedication to advancing breast reconstruction surgery for patients links Perdikis, Maxwell Give to live Charles Donald and Roberta Lemons Miller set a goal to make an impact Connections across a lifetime The power of relationships and shared experiences in alumni engagement Sharing blessings for a healthier tomorrow Dr, Kenneth Chastain and his late wife, Jan, are advancing innovative research A teaching legacy Bess Parks, PhD'78, endows a scholarship in elementary education in honor of her mother All Stories A Meaningful Investment Bob Frutchey, MBA’95, reflects on how his experience at Owen fueled his philanthropy Kevin and Gloria Churchwell Honor Parents through Undergraduate Scholarship The legacy of Mary Churchwell and Robert Churchwell Sr. was recently honored by the establishment of the Robert Sr. and Mary Churchwell Undergraduate Scholarship",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 25
+    }
+  },
+  {
+    "id": "1e3a7264-a127-49be-a8be-122b5a82cd09",
+    "text": ". was recently honored by the establishment of the Robert Sr. and Mary Churchwell Undergraduate Scholarship. Eight Students selected for new cohort of Ingram Scholars Six incoming first-year students and two rising sophomores have been selected for the Ingram Scholars Program Bold Gift Fuels Future of Vanderbilt Basketball $20 million matching gift supercharges basketball practice facility, seeks to inspire alumni to lead Vandy United’s Dare to Grow phase Vanderbilt to establish a college dedicated to computing, AI and data science Vanderbilt has begun work to establish a transformative college dedicated to computer science, AI, data science and related fields VUSN matching program to inspire philanthropy, drive research and work to ease health inequities In support of its commitment to fighting health inequities, Vanderbilt University School of Nursing has launched an ambitious campaign to raise and match $1 million to support health disparity research. Vanderbilt Launches McGee Applied Research Center for Narrative Studies The center will promote media literacy by providing resources to evaluate the objectivity of news coverage, digital media and other narratives",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 26
+    }
+  },
+  {
+    "id": "d1346a38-ab23-4c40-a7e6-3cec3c26f3f3",
+    "text": ". Vanderbilt Launches McGee Applied Research Center for Narrative Studies The center will promote media literacy by providing resources to evaluate the objectivity of news coverage, digital media and other narratives. Warren Center for Neuroscience Drug Discovery Launches Philanthropic Matching Vanderbilt enhances its commitment to translational neuroscience research with a one-to-one match for new endowed gifts to the Warren Center Lead Gift Launches Hawkins Field Enhancements Anonymous baseball alumnus’ matching pledge challenges fellow alumni to lead the way in reimagination of Vanderbilt baseball home Vandy United Begins Next Chapter After reaching its initial $300 Million Goal, Vandy United launches a new phase, building on its foundation with more facilities and operational enhancements. Vanderbilt University and MNPS launch partnership to boost college admissions from Nashville schools The program, which will launch with the admissions cycle for first-year students entering Vanderbilt in fall 2025, offers a direct cost scholarship to MNPS students who meet certain criteria. Transformational Gift Establishes Roberts Academy and Dyslexia Center A gift from Hal and Marjorie Hollis Roberts will establish a new academy for primary students with dyslexia and an innovative center focused on outreach and dyslexia research",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 27
+    }
+  },
+  {
+    "id": "f92a5a30-d0a7-45d1-85f6-51ed74e0ad94",
+    "text": ". Dare to Be First The inside story of Vanderbilt volleyball’s first recruiting class Berg Family Gift to Support the Arts at Vanderbilt The Landmark Gift Will Establish the Berg Global Artist-in-Residence Program to Bring Visiting Artists to Campus, and Two Berg Dean’s Faculty Fellowships in the College of Arts and Science Conway-Welch Family Foundation Gift to Honor Longtime Dean The Conway-Welch Second Degree in Nursing Scholarship is the First Major Gift Made Toward the Master of Nursing Program, Which Was Launched in 2023 to Help Address the Nationwide Shortage of Registered Nurses Opening ’Dores in Hollywood A New Scholarship Established by Rich Hull, BA’92, Supports Students Pursuing Internships in Hollywood Planned Giving Sparks Creativity in Owen's Deaner Scholarship Bryan Deaner, MBA’93, Invests in Future Generations Through Deaner Creativity Scholarship Ingram Scholars Program Celebrates 30 Years A Transformative Scholarship Program at Vanderbilt is Celebrating its 30th Anniversary Unprecedented Impact Jennifer and Billy Frist’s Historic Gift to Be Commemorated with Frist Athletics Village Immersion Vanderbilt Receives $6.8 Million Gift The Education Enhancement Fund Will Provide Funding to Students to Carry Out Creative and Ambitious Projects that Deepen Their Intellect and Broaden Their Horizons Enhanced Experiences Levy Gift Supports Undergraduate Internships Nashville Metro Council to Honor Vanderbilt’s Nichols Humanitarian Fund The Nichols Humanitarian Fund",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 28
+    }
+  },
+  {
+    "id": "867df344-595f-40a6-9449-319b8846430b",
+    "text": "and Ambitious Projects that Deepen Their Intellect and Broaden Their Horizons Enhanced Experiences Levy Gift Supports Undergraduate Internships Nashville Metro Council to Honor Vanderbilt’s Nichols Humanitarian Fund The Nichols Humanitarian Fund Provides Support for Vanderbilt Students to Pursue Humanitarian Immersive Experiences Locally and Globally From Vanderbilt to the U.S",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 29
+    }
+  },
+  {
+    "id": "ed3a32d9-9442-4082-96ae-99ce31c54e10",
+    "text": ". Debate Team Daniel Ardity, Class of 2024, Earned a Place on the U.S. Debate Team Driving Innovation Vanderbilt and Bridgestone Collaborate at Inaugural Innovation Accelerator Twelve at Vanderbilt are Among World’s Highly Cited Researchers Vanderbilt’s Twelve are Among Highly Cited Researchers Around the World Whose Publications Rank in the Top 1 Percent Vanderbilt Named Spoke in ARPA-H Investor Catalyst Hub Vanderbilt’s Partnership with the ARPANET-H Investor Catalyst Hub Will Accelerate the Delivery of Equitable Health Care Solutions to Communities In Need",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 30
+    }
+  },
+  {
+    "id": "e717010d-3a14-47ac-bd09-f898f1c8ef9b",
+    "text": ". ‘Nature’ Conference Fosters Radical Collaboration Researchers from around the globe gathered for the inaugural Nature conference “Bioengineering for Global Health” at Vanderbilt Vanderbilt Announces Inaugural Literary Prize The New Prize Comes as Vanderbilt Marks its Sesquicentennial by Honoring its Strong Connection to the Arts Fighting Infectious Diseases With AI-Focused Immersion Vanderbilt Project Karen Pu, Class of 2024, Is Expanding the Power of Computer Modeling to Identify Mutating Viruses—And Potentially Improve Vaccines Vanderbilt’s Radical Collaboration With Army Pathfinder Program Vanderbilt Is Moving Tech From the Lab to the Front Lines With Solutions Tailored to Real-World Army Challenges Vanderbilt Unveils Quantum Potential Radiolab Founder and Faculty Member Jad Abumrad Hosts This Marquee Video Series Featuring the Remarkable Research and Innovation Taking Place at Vanderbilt Vanderbilt Launches Center for Research on Inequality and Health The Center Brings Together Deep Scholarly Strengths in Population Health Science; LGBTQ+ Health Policy; Gun Violence; and Economic and Social Inequality—And Explores How They Impact Health",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 31
+    }
+  },
+  {
+    "id": "d940a782-e882-46b6-a5e9-0d543d0bccf3",
+    "text": ". Vanderbilt Strengthens Partnership with Posse Foundation Vanderbilt Will Add Two Additional Cohorts of Posse Scholars in 2024, Provide Full Tuition Scholarships up to the Cost of Attendance Vanderbilt Launches Innovation Catalyst Fund A New Internal Funding Program is Aimed at Moving Translational Research and Innovation Into Real-world Solutions More Quickly Vanderbilt Joins The Precisionists, Creates Careers for Neurodiverse Individuals The Precisionists Announced the Expansion of its Neurodiversity Employment Program in Nashville at an Event Hosted by Vanderbilt’s Frist Center for Autism and Innovation $52 Million NIH Grant Brings ELVIS to University, Medical Center Biomedical Scientists at VUMC Are Launching a Research Platform Devoted to Molecular Underpinnings of Early-Childhood Determinants of Health Growth Opportunity An Interview With Campaign Co-Chairs and Trustees Steven Madden and Mark Mays J. Michael Campbell Scholarship New VLS Scholarship Endowed in Honor of J",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 32
+    }
+  },
+  {
+    "id": "69c69c9b-e4ae-47d5-9f44-4ea4f3e70c2a",
+    "text": ". Michael Campbell Scholarship New VLS Scholarship Endowed in Honor of J. Michael Campbell ’68 (BE’65) Commitment to a Mission Bob Matthews, MD’86, Establishes Planned Gift to Honor Rugby Club’s Impact Black Holes In Our Universe Globally Recognized Astrophysicist Teaches Cutting-Edge Astronomy Concepts to Undergraduates From All Majors From Concept to Reality Sullivan family endows Ideator program at the Wond’ry Major Milestone Start of Vandy United construction marks new phase in $300 million campaign Vandy United Ushers in New Era at Hawkins Field Major Enhancements to Iconic Home of the Two-Time National Champion VandyBoys Will Create Unique Game Day Experience Skyscrapers for the Homeless Alumna Ariana Fowler credits Opportunity Vanderbilt for life-changing college experience Out Of This World Gift Extends Support For Vanderbilt’s Award-Winning Rocket Team Global Impact WATCH: Class of 2023 Students Make An Impact Around the Globe Passionate Curiosity Alumna Brianne Gross is an unlikely lacrosse star and a born engineer The Future of Free Speech Global Think Tank Justitia Opens First U.S",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 33
+    }
+  },
+  {
+    "id": "a4d9becb-8e46-4db6-a7a8-8dbe9fad1de6",
+    "text": ". Office at Vanderbilt, Expands the Future of Free Speech Project Innovative Programming Vanderbilt Hosts Summit on Modern Conflict and Emerging Threats Interdisciplinary Exploration Weaver Family Program in Law, Brain Sciences, and Behavior Established at VLS with $3.85 Million Endowment From Weaver Foundation Vandy United Progress Initial Goal Reached, Vandy United Begins Next Chapter Pulitzer Prize Winning Faculty Vanderbilt Social, Political Historian Jefferson Cowie Wins Pulitzer for ‘Freedom’s Dominion: a Saga of White Resistance To Federal Power’ Collaborative Community WATCH: Class of 2023 Students Collaborate, Form Connections Future of Learning and Generative AI New Initiative Will Enhance Research Connected To The Growing Use Of Artificial Intelligence Unique Collaboration Vanderbilt DSI and Women’s Basketball Team Collaborate Using Data Science to Improve Performance While Reducing Risk of Injury Immersion Vanderbilt Student Spotlight Vanderbilt student Shahar Harman discusses his international project with Immersion Vanderbilt and how the work shaped his experiences during college. Class of 2023 Profiles WATCH: Class of 2023 students build belonging, enrich Vanderbilt community VU-Initiated Startup Receives $30M Alumni-Led Zeno Power To Build Nuclear-Powered Satellite For The U.S",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 34
+    }
+  },
+  {
+    "id": "27d9360c-c3f5-47e6-ba4f-feb7fbc54202",
+    "text": ". Space Force Going Global Three Vanderbilt Graduates Awarded Keegan Travelling Fellowships Opening Doors to All Alumna Joyce Searcy aims to make Nashville’s libraries more accessible Key Resource McGee family gift establishes new center to study media narratives Music as a Pathway Blair Community Scholars Program to provide greater access to music education High-Impact Scholarship Hubbard family gift elevates Vanderbilt’s economic policy research Simple Act of Listening Endowed chair holder Major Jackson named host of celebrated poetry podcast Citizen Science Vanderbilt helps rural Tennessee county solve cancer outbreak mystery Comprehensive Perspective Innovative climate studies major launched Perfect Fit Law student Kristen Smith finds community, opportunities thanks to scholarship Closer to Cures Ancora Innovation collaboration accelerates drug discovery Collaborative Innovation Vanderbilt assumes leadership of NSF Mid-South Innovation Corps Hub Working Together for Social Impact Nashville Community Leaders Came Together at Vanderbilt to Discuss Power Dynamics in Collaborating for Social Impact TEAM TN Collaboration to Advance Next-Generation Transportation Vanderbilt, UT–Knoxville and more than 100 partner organizations join forces to develop mobility solutions Student Startup Bloom Health Wins $120K Investment Prize The Startup’s Mission is to Improve Standards for Women’s Health by Providing Women Around the World with Access to Reproductive Education Novel Device",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 35
+    }
+  },
+  {
+    "id": "a8abf021-74d2-4065-b196-77eda75f6d87",
+    "text": "forces to develop mobility solutions Student Startup Bloom Health Wins $120K Investment Prize The Startup’s Mission is to Improve Standards for Women’s Health by Providing Women Around the World with Access to Reproductive Education Novel Device Radically Improves Minimally Invasive Endoscopic Surgery A Medical Device Company Co-Founded by a Vanderbilt Engineering Professor Announces Successful First-in-Human Clinical Study Vanderbilt Generates More Than $96M in Licensing Revenue in FY23 By Continuing to Break Records for Licensing Revenue, Vanderbilt Demonstrates Our Growing Capacity for Making a Difference in the World Summer Bridge Program Helps First-Year Engineers Find Success The All-Expenses Paid Program Builds Skills, Fosters Sense of Belonging Ingram Scholars Program Recognizes Heuser's Service Ingram Scholars Combine Educational Pursuits With A Commitment To Community Service And Philanthropy Vanderbilt Partnership Boosts Financial Aid Packages for Veterans Eligible Veterans Can Attend Vanderbilt at a Significantly Reduced Cost Thanks to Yellow Ribbon GI Educational Enhancement Program Be a Part of Our Impact  Your contributions to these campaign pathways can drive bold new levels of growth that will shape our next 150 years.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 36
+    }
+  },
+  {
+    "id": "eec96862-8df1-46c2-baef-bc72a4faabf6",
+    "text": "Scraped from: https://giving.vanderbilt.edu/campaign-pathways/\nDate scraped: 2025-02-17 02:45:13",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 38
+    }
+  },
+  {
+    "id": "a3ecec9f-3232-4325-9070-deb61c080945",
+    "text": "Initiatives to Support By coming together around a shared purpose and a drive for excellence, we are achieving more than we ever thought possible. With a focus on three critical areas, you can continue to drive bold new levels of growth that are transforming lives—and will define Vanderbilt as the great university of the 21st century. Access & Empowerment  Help Vanderbilt become a destination for the most talented and ambitious students and faculty across the globe. With your support we can attract this high level of talent through Opportunity Vanderbilt , scholarships, experiential learning and recruitment efforts. Growth & Innovation  Catalyze vital work across our labs, archives and studios by investing in students, faculty and staff that prioritize research, discovery and creative expression. As a visionary philanthropist, you will further our commitment to innovation. Radical Collaboration  Invest in our interdisciplinary model and help Vanderbilt strengthen how we solve complex problems and bring together disparate viewpoints. Gifts that aim to bolster our One Vanderbilt community allow us to maintain our commitment to Radical Collaboration. The potential of our Dare to Grow campaign is limitless. And we are grateful to have you—our dedicated community of supporters—alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 39
+    }
+  },
+  {
+    "id": "24c9355d-9fe5-48e0-9441-89393d5c0550",
+    "text": ". And we are grateful to have you—our dedicated community of supporters—alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century. Join the thousands of donors who have already contributed and make a gift to support any area of the university. Be a Part of Our Impact  Your contributions to these areas of support can drive bold new levels of growth that will shape our next 150 years.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 40
+    }
+  },
+  {
+    "id": "1d5c53bf-a916-4c33-839a-51995f9378fb",
+    "text": "Scraped from: https://giving.vanderbilt.edu/events/\nDate scraped: 2025-02-17 02:45:15",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 42
+    }
+  },
+  {
+    "id": "a7ee18f2-704f-4195-afaa-690dccc6ae58",
+    "text": "Events Near You Join Vanderbilt leaders and members of the Vanderbilt community at events across the country to learn about the transformative vision and momentum of the Dare to Grow campaign. Bringing together alumni, parents and friends, these events showcase Vanderbilt’s exciting trajectory as we build our future and claim our place as the great university of this century. Upcoming Events Dare to Grow Boston April 1, 2025 Details coming soon—stay tuned! Dare to Grow London May 21, 2025 Details coming soon—stay tuned! Past Events Dare to Grow Los Angeles Tuesday, October 29 The Academy Museum of Motion Pictures was the perfect backdrop for an impactful evening, bringing together nearly 300 alumni, parents and friends to support Vanderbilt. It was a night to remember as Professor Michael P. Vandenbergh and doctoral candidate Mariah D. Caballero shared the ways Vanderbilt has fueled their environmental research. Trustee and Vanderbilt parent George B. Huber, BA’79, along with alumni Jeremy Padawer, MBA’01, and Olivia Logan, BS’23, shared their dare to grow stories, underscoring the power of a Vanderbilt education and reminding us that our investment in one another changes lives. Dare to Grow Washington, D.C. Monday, September 23 More than 350 alumni, parents and friends gathered for an exciting night of celebration and community in Washington, D.C., at the National Portrait Gallery",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 43
+    }
+  },
+  {
+    "id": "e4b7aa2c-c0ba-4393-92bd-863585bf75e1",
+    "text": ". Dare to Grow Washington, D.C. Monday, September 23 More than 350 alumni, parents and friends gathered for an exciting night of celebration and community in Washington, D.C., at the National Portrait Gallery. The evening featured insightful remarks from Vanderbilt faculty leaders General (Ret.) Paul Nakasone and Erin Calipari, alongside alumnus and trustee David Patterson, BA’81, MD’85. Exceptional alumni, Sam Feist, BA’91, Riti Hegde, BS’22, and Renee Iacona, PhD’98, MPH’99, also shared their stories, followed by a captivating performance by Ben Edquist, BMus’13, and Dean Melissa Rose. Dare to Grow Chicago Tuesday, September 17 More than 400 alumni, parents and friends joined Vanderbilt for a memorable evening at the Art Institute of Chicago. The event showcased Vanderbilt faculty leaders Holly Tucker and Jules White; distinguished trustee and Vanderbilt parent Nina Kohler; and inspirational graduates, Carter Hawkins, BS’07, Blake-Anthony Johnson, BMus’12, and Anana Upton, BS’21, MSN’23. Guests were also treated to a special message from Cubs shortstop and former VandyBoy Dansby Swanson, ’16. Dare to Grow San Francisco Monday, May 6 More than 280 Vanderbilt supporters came together for a night to remember at the de Young Museum in San Francisco",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 44
+    }
+  },
+  {
+    "id": "d2e8ed0f-ed20-41cf-95b2-aa1753b4ee9c",
+    "text": ". Dare to Grow San Francisco Monday, May 6 More than 280 Vanderbilt supporters came together for a night to remember at the de Young Museum in San Francisco. The program featured an exciting group of Vanderbilt alumni, staff, and faculty, including Chancellor Diermeier; Provost Raver; Vice Chancellor John Lutz; the School of Engineering’s Jonathan Sprinkle, MS’00, PhD’03, and Dan Work; Trustees Jeff Rothschild, BA’77, MS’79, and Shirley Collado, BS’94; along with alumni Tristan Gilbert, BE’20, MS’20, David Barzelay, BA’05 and NBA champion Festus Ezeli, BA’12; all set to the sound of Blair’s Jazz Combo. Dare to Grow Atlanta Monday, March 18 More than 450 alumni, families and friends joined us for an inspiring evening featuring Chancellor Diermeier, Provost Raver, Vice Chancellor John Lutz, Vanderbilt faculty leaders Sarah Igo and Ganesh Sitaraman; trustee Alex Taylor, BA’97; Double ‘Dore and Vandy parent Dr. Maria Aaron, BA’91, MD’95; and Sam Carton, BA’23, recipient of an Anonymous PAB Scholarship. One of the highlights of the evening was when Athletic Director and Vice Chancellor for Athletics Candice Lee, BS’00, MEd’02, EDd’12 brought out former student-athletes Grace Jackson, BA’20, MMARK’21; Casey Hayward, BA’13; and George Smith, BA’07, to lead guests in a fun field goal and soccer shot challenge. The stadium was an incredible setting and made for an unforgettable roadshow",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 45
+    }
+  },
+  {
+    "id": "735e8789-9952-49d9-8230-fcc236835174",
+    "text": ". The stadium was an incredible setting and made for an unforgettable roadshow. Dare to Grow Dallas March 4, 2024 More than 250 alumni, parents and friends gathered for an inspiring night of connection and camaraderie in Dallas at the Perot Museum of Nature and Science. Speakers included influential entrepreneur and Vanderbilt parent Mark Cuban; distinguished trustees Suzanne McGee, BS’86, Doug Parker, MBA’86, and Conner Searcy, BA’97; Vanderbilt faculty leaders Tiffiny Tung and Rangaraj Ramanujam; and inspirational recent graduates, Ethan Fournier, MSN’23, and Hannah Tsiao, BS’23. Dare to Grow Miami January 30, 2024 The impact of Vanderbilt University was on full display when South Florida-area alumni gathered at the Pérez Art Museum Miami in January. Speakers included faculty members María Magdalena Campos-Pons and Dr. James E. Crowe, alumni Peter Marshall, BA’14, and Jose Garrido, BS’03, as well as Bridget Conley, BA’21, who treated guests to a musical performance with Blair School Dean Melissa Rose, followed by Blair’s own Vanderbilt Latin Jazz. Dare to Grow Houston October 30, 2023 Alumni, parents and friends gathered at The Menil Collection in Houston to enjoy cocktails and spirited conversation amidst provocative art and to hear from some of Vanderbilt’s most inspiring people, from head baseball coach Tim Corbin to Houston’s own Kaylin Haverstock Weber, BA’96",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 46
+    }
+  },
+  {
+    "id": "eb3793c9-0bc1-45ab-a1db-917b7a372160",
+    "text": ". Dare to Grow New York City September 13, 2023 More than 300 guests came together at the Shed in Hudson Yards in Manhattan to hear about Vanderbilt’s vision for the future. Willie Geist, BA’97, emceed the evening, while Sydney Takemoto, BS’23, and Joe Ariel, BA’99, shared their inspiring stories. In addition, Jad Abumrad led a discussion on the Vanderbilt Way featuring faculty members Erin S. Calipari and Major Jackson . Be a Part of Our Impact  Give. Go. Help. Share. Your contributions—as a supporter, volunteer and ambassador—transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21 st century.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 47
+    }
+  },
+  {
+    "id": "3c442992-4807-412f-952b-2142951e6323",
+    "text": "Scraped from: https://giving.vanderbilt.edu/ways-%20to-give/\nDate scraped: 2025-02-17 02:45:18",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 49
+    }
+  },
+  {
+    "id": "160b99e1-55f4-452a-85f3-4d45aa0b9e42",
+    "text": "Ways To Give Thank you for your interest in giving to Vanderbilt. Alumni, parents and friends give to Vanderbilt in a variety of ways including checks, credit cards, electronic fund transfers and gifts of stocks and securities or other assets. You can easily make your contribution to Vanderbilt by choosing any of the following giving options. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF’s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 50
+    }
+  },
+  {
+    "id": "6565e69f-1980-4fbe-a72c-368523de7f57",
+    "text": ". Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70½ or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 51
+    }
+  },
+  {
+    "id": "bc525562-df6a-4845-8096-7309a5231b90",
+    "text": ". Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt’s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Give Online To make a one-time or recurring gift online, use our secure online gift form . Vanderbilt accepts Visa, MasterCard, American Express and Discover credit cards. Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 52
+    }
+  },
+  {
+    "id": "d9076272-7b1c-4067-9a32-d86c61bd105d",
+    "text": ". Give Online Now Donor Advised Fund Immediate tax deductions and tax-free growth on the contribution are often key benefits for those making gifts through a donor advised fund. DAF Direct enables donors to recommend grants to Vanderbilt University, directly from the DAF (as long as the DAF’s sponsoring organization is participating). To initiate a gift to Vanderbilt University from your Donor Advised Fund, please use the following tax-ID for the university: 62-0476822. Learn more here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Electronic Bank Form To set up an electronic bank draft, call Vanderbilt Gift and Donor Services at (800) 288-0082 or use our printable electronic bank draft form . Electronic Bank Draft Form Foundation Relations Foundation Relations is available to help you identify philanthropic and corporate foundation funding opportunities and assist you with the proposal process in collaboration with your leadership team. Contact Amanda Alibrandi, Director of Foundation Relations, at amanda.alibrandi@vanderbilt.edu for more information. IRA Charitable Rollover Donors age 70½ or older may give up to $100,000 directly from an IRA to qualified charities without paying federal income tax on the distribution. Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 53
+    }
+  },
+  {
+    "id": "bf8a1d1e-2653-4dd1-b950-ee9f6d92808f",
+    "text": ". Donors may choose to make a qualified charitable distribution from an IRA to make a gift to support Vanderbilt or to fulfill an existing pledge. Learn more about IRA Rollover gifts here or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Mail To mail your gift, print our giving form to include with your check, credit card payment or money order. Mail your gift to: Gift and Donor Services Vanderbilt University PMB 407727 2301 Vanderbilt Place Nashville, TN 37240-7727 Giving Form Matching Gifts Many employers have matching gift programs that could double or even triple your gift. Learn more about matching gifts here or call Vanderbilt Gift and Donor Services at (800) 288-0082. Learn More Here Planned Gifts Planned gifts are a wonderful way to show your support of Vanderbilt’s mission while accommodating your own personal, financial, estate-planning and philanthropic goals. To learn more, visit our website or contact the Office of Planned Giving at plannedgiving@vanderbilt.edu or (615) 343-3113. Learn More Here Stocks and Securities Gifts of appreciated stocks, bonds, or mutual fund shares can be a tax-advantaged way to provide support for Vanderbilt. Click here to inform Vanderbilt that you have transferred a gift of stock or securities or call (800) 288-0082. You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 54
+    }
+  },
+  {
+    "id": "29c64c40-339a-4c0a-b1fa-cc2e5386faea",
+    "text": ". You may also email stockgifts@vanderbilt.edu with any questions or notifications. (Please note: you must work with your broker to transfer stock. Completion of this notification form will not initiate a stock transfer.) Notification Form Telephone For any other giving questions, please call Gift and Donor Services at (800) 288-0082. Be a Part of Our Impact  Give. Go. Help. Share. Your contributions—as a supporter, volunteer and ambassador—transform lives and bring us closer to achieving our most ambitious vision: to be the great university of the 21st century.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 55
+    }
+  },
+  {
+    "id": "0c3b3087-f0b3-43cf-b64a-0dd306c874a5",
+    "text": "Scraped from: https://giving.vanderbilt.edu/support-opportunity-vanderbilt/\nDate scraped: 2025-02-17 02:45:24",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 57
+    }
+  },
+  {
+    "id": "bfe71bfb-3eaf-4dd4-90e5-86923dcfd36d",
+    "text": "Support Opportunity Vanderbilt Empower Dreams. Ignite Potential. Make History. At Vanderbilt, we believe that nothing should stand between a student and the transformative power of a world-class education. Opportunity Vanderbilt is a bold commitment to our extraordinary students, creating a future where financial circumstances never limit their dreams. This important initiative, fueled in part by generous donors, meets 100% of demonstrated financial need without loans , providing students the ability to graduate debt-free and focus on their ambitions and personal growth. In 2024, the program was expanded to provide a full-tuition scholarship for all households with income of $150K* or less. Since its launch in 2009, more than 15,400 undergraduate students have received need-based support through Opportunity Vanderbilt. *assuming typical assets    Vanderbilt scholarships create a legacy that spans generations | Dare to Grow Trustee Conner Searcy, BA'97, shares how scholarship and philanthropy changed the course of his life Vanderbilt empowers student success through scholarships | Sam Carton, BA'23| Dare to Grow: Atlanta Vanderbilt inspires courage to make a difference | Riley Eddins, Class of 2025 | Dare to Grow Student Impact “I am profoundly grateful for your generous support which has not only lightened my financial burdens but has empowered me to pursue my educational and career aspirations with passion and dedication",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 58
+    }
+  },
+  {
+    "id": "4c8e006f-7143-4ec3-9f6d-24227706dc4e",
+    "text": ". Your belief in my potential means the world to me, and I am committed to making the most of this incredible opportunity.” —Mia Cisija, Opportunity Vanderbilt recipient Class of 2025    Alumni Impact \"The education I received and the friends I made at Vanderbilt have done so much to positively shape my life. The Maggie Craig Memorial Scholarship was essential to letting me attend a great university without worrying about the long-term cost impact and setting me up to further pursue the education and career that I wanted.\" —Trevan Locke, Opportunity Vanderbilt recipient Class of 2012 Trevan studied chemical and biomolecular engineering at Vanderbilt University and is now an assistant research director at Duke-Margolis. Vanderbilt scholarship recipients share their gratitude",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 59
+    }
+  },
+  {
+    "id": "2457eebd-25fe-4b5b-9ab1-99ac13c5d412",
+    "text": "Scraped from: https://giving.vanderbilt.edu/giving-opportunities/\nDate scraped: 2025-02-17 02:45:26",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 61
+    }
+  },
+  {
+    "id": "8322804b-4307-45e3-8595-d1baa9256447",
+    "text": "Initiatives to Support By coming together around a shared purpose and a drive for excellence, we are achieving more than we ever thought possible. With a focus on three critical areas, you can continue to drive bold new levels of growth that are transforming lives—and will define Vanderbilt as the great university of the 21st century. Access & Empowerment  Help Vanderbilt become a destination for the most talented and ambitious students and faculty across the globe. With your support we can attract this high level of talent through Opportunity Vanderbilt , scholarships, experiential learning and recruitment efforts. Growth & Innovation  Catalyze vital work across our labs, archives and studios by investing in students, faculty and staff that prioritize research, discovery and creative expression. As a visionary philanthropist, you will further our commitment to innovation. Radical Collaboration  Invest in our interdisciplinary model and help Vanderbilt strengthen how we solve complex problems and bring together disparate viewpoints. Gifts that aim to bolster our One Vanderbilt community allow us to maintain our commitment to Radical Collaboration. The potential of our Dare to Grow campaign is limitless. And we are grateful to have you—our dedicated community of supporters—alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 62
+    }
+  },
+  {
+    "id": "9e63d72c-2ee7-45ed-984c-a13c854a1db6",
+    "text": ". And we are grateful to have you—our dedicated community of supporters—alongside us on this journey. Every gift creates a ripple that transforms lives and brings us closer to our most ambitious vision: to be the great university of the 21 st century. Join the thousands of donors who have already contributed and make a gift to support any area of the university. Be a Part of Our Impact  Your contributions to these areas of support can drive bold new levels of growth that will shape our next 150 years.",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 63
+    }
+  },
+  {
+    "id": "72124b50-8128-4ccc-a4b6-eb3c6901d575",
+    "text": "Scraped from: https://giving.vanderbilt.edu/plannedgiving/\nDate scraped: 2025-02-17 02:45:30",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 65
+    }
+  },
+  {
+    "id": "227463b5-ed9b-4dfa-8e30-db14b2c1a2d3",
+    "text": "Planned Giving Welcome to Planned Giving Create Your Legacy How to Give What to Give Invest in Our Endowment Life Stage Gift Planner™ Reunion Giving Compare Gift Options Resources FAQ Request a Calculation Glossary Sample Bequest Language Recent Federal Changes Legacy Newsletter From the Blog Request an eBrochure Donors Sarratt Society Meet Our Donors Connect with Us Contact Us Planned Giving Team How to Give What to Give Invest in Our Endowment Life Stage Gift Planner™ Reunion Giving Compare Gift Options FAQ Request a Calculation Glossary Sample Bequest Language Recent Federal Changes Legacy Newsletter From the Blog Request an eBrochure Sarratt Society Meet Our Donors Contact Us Planned Giving Team Welcome to Planned Giving Making a planned gift is a wonderful way to show your support and appreciation for Vanderbilt University and its mission while accommodating your own personal, financial, estate-planning, and philanthropic goals. With smart planning, you may actually increase the size of your estate and/or reduce the tax burden on your heirs. Just as important, you will know that you have made a meaningful contribution to Vanderbilt . We recommend that you familiarize yourself with various gift options by exploring How to Give and What to Give . Then compare gift options and/or calculate how these gifts could work for you. And of course, please contact us for assistance or to discuss your personal situation and objectives",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 66
+    }
+  },
+  {
+    "id": "e51b5470-2c9c-4d23-b843-0ceb352b4a80",
+    "text": ". Then compare gift options and/or calculate how these gifts could work for you. And of course, please contact us for assistance or to discuss your personal situation and objectives. Join Other Donors in the Sarratt Society  We invite you to join the Sarratt Society honoring our generous donors. Meet Our Donors  Read about why others have chosen to make a planned gift to Vanderbilt. Plan Your Gift at Any Life Stage  Learn the latest tips and news about planned giving © Pentera, Inc. Planned giving content. All rights reserved. Disclaimer",
+    "metadata": {
+      "source": "scraped_data/giving.vanderbilt.edu/giving.vanderbilt.edu_part1.txt",
+      "date_scraped": "Unknown Date",
+      "chunk_number": 67
+    }
+  }
 ]
