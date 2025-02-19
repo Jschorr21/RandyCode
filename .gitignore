@@ -4,7 +4,7 @@ chromaDB/
 fresh_venv/
 db/
 chroma_db/
-
+data_ingestion/data/scraped_data/
 
 
 .vscode/
