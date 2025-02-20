@@ -3,6 +3,7 @@ import pdfplumber
 import json
 import uuid
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+import hashlib
 
 class TextSplitter:
     """Handles text extraction, chunking, and saving for vector storage."""
@@ -62,7 +63,7 @@ class TextSplitter:
             # ✅ Ensure the first chunk contains metadata
             text_chunks = self.text_splitter.split_text(doc.page_content)
             for i, chunk in enumerate(text_chunks):
-                chunk_id = str(uuid.uuid4())  # Unique chunk ID
+                chunk_id = self.generate_chunk_id(chunk)
 
                 # ✅ First chunk includes metadata
                 if i == 0:
@@ -73,6 +74,18 @@ class TextSplitter:
                 ids.append(chunk_id)
 
         return documents, metadatas, ids
+    
+    def generate_chunk_id(self, chunk_text):
+        """
+        Generates a unique ID for a given text chunk based on its content.
+
+        Args:
+            chunk_text (str): The text of the chunk.
+
+        Returns:
+            str: A deterministic unique ID.
+        """
+        return hashlib.sha256(chunk_text.encode()).hexdigest()
     
     def chunk_pdf_text(self, text_list):
         """
@@ -91,7 +104,7 @@ class TextSplitter:
         for i, page_text in enumerate(text_list):
             chunks = self.text_splitter.split_text(page_text)
             for chunk in chunks:
-                chunk_id = str(uuid.uuid4())  # Generate unique ID
+                chunk_id = self.generate_chunk_id(chunk)
                 documents.append(chunk)
                 metadatas.append({"source": "catalog", "chunk_number": i + 1})  # Store page number as metadata
                 ids.append(chunk_id)

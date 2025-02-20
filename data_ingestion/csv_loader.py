@@ -16,7 +16,7 @@ class CSVLoader:
             next(reader)  # Skip header row
             for row in reader:
                 course_code = row[1].split(' -')[0]
-                metadata = {'course_code': course_code, 'subject_area': row[0]}
+                metadata = {'course_code': course_code, 'subject_area': row[0], 'id': course_code, 'source': 'courses'}
                 documents.append(Document(page_content=', '.join(row), metadata=metadata))
 
         return documents

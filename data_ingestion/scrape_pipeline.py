@@ -82,10 +82,10 @@ class ScrapePipeline:
 
         print("✅ Text chunking and embedding ready.")
 
-        if not self.vector_store.stores.get("WebsiteData"):
-            self.vector_store.add_new_store("WebsiteData")
+        if not self.vector_store.stores.get("websites"):
+            self.vector_store.add_new_store("websites")
 
-        self.vector_store.add_documents(website_documents, store_type="WebsiteData")
+        self.vector_store.add_documents(website_documents, store_type="websites")
 
 
 # Run pipeline
