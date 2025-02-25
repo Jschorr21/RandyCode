@@ -18,12 +18,7 @@ class S3Loader:
         self.prefix = prefix
 
     def load_documents(self):
-        """
-        Fetches all `.txt` files from S3 and returns them as raw LangChain Document objects.
-
-        Returns:
-            List[Document]: List of documents with file contents and metadata.
-        """
+        """Fetches all `.txt` files from S3 and returns them as raw LangChain Document objects."""
         response = self.s3_client.list_objects_v2(Bucket=self.bucket_name, Prefix=self.prefix)
 
         documents = []
@@ -36,7 +31,13 @@ class S3Loader:
             
             file_response = self.s3_client.get_object(Bucket=self.bucket_name, Key=file_key)
             content = file_response["Body"].read().decode("utf-8")
-            
+
+            # ✅ Debug print to check content before further processing
+            # print(f"📂 Loaded from S3 ({file_key}):\n{content[:500]}...\n")  # Print first 500 chars
+
             documents.append(Document(page_content=content, metadata={"source": file_key}))
 
         return documents
+    
+    
+
