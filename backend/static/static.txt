@@ -1,0 +1,15 @@
+.
+├── frontend
+│   ├── asset-manifest.json
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── static
+│       ├── css
+│       └── js
+└── static.txt
+
+5 directories, 8 files

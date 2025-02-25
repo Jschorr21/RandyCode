@@ -6,6 +6,7 @@ from langchain_pipeline.prompts import SYSTEM_PROMPT_TEMPLATE
 
 logging.basicConfig(level=logging.INFO)
 
+
 class ResponseGenerator:
     """Handles response generation using GPT-4."""
 
@@ -39,14 +40,18 @@ class ResponseGenerator:
         # ✅ Ensure retrieved_docs is a list and contains valid content
         if not retrieved_docs:
             print("⚠️ No retrieved documents found! Returning fallback response.")
-            return {"messages": ["I couldn't find relevant information. Please rephrase or ask another question."]}
-        
-        docs_content = "\n\n".join(doc.content for doc in tool_messages)
+            return {
+                "messages": [
+                    "I couldn't find relevant information. Please rephrase or ask another question."
+                ]
+            }
 
+        docs_content = "\n\n".join(doc.content for doc in tool_messages)
 
         # ✅ Extract content from ToolMessages properly
         docs_content = "\n\n".join(
-            doc.content if isinstance(doc, ToolMessage) else str(doc) for doc in retrieved_docs
+            doc.content if isinstance(doc, ToolMessage) else str(doc)
+            for doc in retrieved_docs
         )
         # print(docs_content)
 
@@ -57,7 +62,9 @@ class ResponseGenerator:
             or (message.type == "ai" and not message.tool_calls)
         ]
 
-        system_message_content = SYSTEM_PROMPT_TEMPLATE.format(context=docs_content, question=conversation_messages[-1].content)
+        system_message_content = SYSTEM_PROMPT_TEMPLATE.format(
+            context=docs_content, question=conversation_messages[-1].content
+        )
         prompt = [SystemMessage(system_message_content)] + conversation_messages
 
         # print(f"Prompt: {prompt}")

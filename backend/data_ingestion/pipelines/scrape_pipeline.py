@@ -11,11 +11,14 @@ from data_ingestion.text_splitter import TextSplitter
 from data_ingestion.json_loader import JSONLoader
 from data_ingestion.s3_loader import S3Loader
 
+
 class ScrapePipeline:
     def __init__(self):
         self.vector_store = VectorStore()
         self.text_splitter = TextSplitter()
-        self.json_root = os.path.join(os.path.dirname(__file__), "data", "scraped_data")  # JSON storage directory
+        self.json_root = os.path.join(
+            os.path.dirname(__file__), "data", "scraped_data"
+        )  # JSON storage directory
 
     def clean_json_file(self, json_path):
         """Removes chunks that contain only '=' characters from the JSON file."""
@@ -24,10 +27,16 @@ class ScrapePipeline:
                 chunks = json.load(f)
 
             # Filter out chunks where the "text" field contains only '=' (any number of them)
-            cleaned_chunks = [chunk for chunk in chunks if not re.fullmatch(r"=+", chunk.get("text", "").strip())]
+            cleaned_chunks = [
+                chunk
+                for chunk in chunks
+                if not re.fullmatch(r"=+", chunk.get("text", "").strip())
+            ]
 
             if len(cleaned_chunks) != len(chunks):
-                print(f"🧹 Cleaned {len(chunks) - len(cleaned_chunks)} chunks from {json_path}")
+                print(
+                    f"🧹 Cleaned {len(chunks) - len(cleaned_chunks)} chunks from {json_path}"
+                )
 
                 # Save the cleaned data back to the same JSON file
                 with open(json_path, "w", encoding="utf-8") as f:
@@ -60,12 +69,20 @@ class ScrapePipeline:
 
         website_documents = []
         for doc in raw_documents:
-            documents, metadatas, ids = self.text_splitter.chunk_scraped_text([doc])  # ✅ Fixed chunking
+            documents, metadatas, ids = self.text_splitter.chunk_scraped_text(
+                [doc]
+            )  # ✅ Fixed chunking
 
-            print(f"✅ Created {len(documents)} text chunks from {doc.metadata['source']}.")
+            print(
+                f"✅ Created {len(documents)} text chunks from {doc.metadata['source']}."
+            )
 
-            json_output_path = os.path.join(self.json_root, f"{doc.metadata['source']}.json")
-            self.text_splitter.save_chunks_to_json(documents, metadatas, ids, output_file=json_output_path)
+            json_output_path = os.path.join(
+                self.json_root, f"{doc.metadata['source']}.json"
+            )
+            self.text_splitter.save_chunks_to_json(
+                documents, metadatas, ids, output_file=json_output_path
+            )
 
         # ✅ Clean the extracted JSON data
         print("🧹 Cleaning JSON files before ingestion...")

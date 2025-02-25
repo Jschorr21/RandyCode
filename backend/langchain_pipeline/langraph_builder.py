@@ -5,7 +5,9 @@ from langchain_pipeline.response_generator import ResponseGenerator
 import logging
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import MemorySaver
+
 logging.basicConfig(level=logging.INFO)
+
 
 class LangGraphBuilder:
     """Builds the LangChain LangGraph state graph."""

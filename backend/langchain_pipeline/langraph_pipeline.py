@@ -4,6 +4,7 @@ from langchain_pipeline.agent_graph import AgentGraph
 
 logging.basicConfig(level=logging.INFO)
 
+
 class LangGraphPipeline:
     """Orchestrates RAG system execution."""
 
@@ -28,13 +29,16 @@ class LangGraphPipeline:
             graph = self.agent_graph.build_agent_graph()
             response = graph.invoke(
                 {"messages": [{"role": "user", "content": input_message}]},
-                config={"configurable": {"thread_id": "abc_123"}}  # ✅ Pass only here
+                config={"configurable": {"thread_id": "abc_123"}},  # ✅ Pass only here
             )
             print(f"\n\n 📝 Response: {response["messages"][-1].content}")
             # input_message = input("Enter your query: ")
         else:
             graph = self.langraph_builder.build_graph()
-            response = graph.invoke({"messages": [{"role": "user", "content": input_message}]}, config={"configurable": {"thread_id": "abc_456"}})  # ✅ Standard RAG
+            response = graph.invoke(
+                {"messages": [{"role": "user", "content": input_message}]},
+                config={"configurable": {"thread_id": "abc_456"}},
+            )  # ✅ Standard RAG
             print(f"\n\n 📝 Response: {response["messages"][-1].content}")
             # input_message = input("Enter your query: ")
 

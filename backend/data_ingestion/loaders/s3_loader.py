@@ -1,6 +1,7 @@
 import boto3
 from langchain_core.documents import Document
 
+
 class S3Loader:
     """Handles loading raw text files from S3."""
 
@@ -24,19 +25,25 @@ class S3Loader:
         Returns:
             List[Document]: List of documents with file contents and metadata.
         """
-        response = self.s3_client.list_objects_v2(Bucket=self.bucket_name, Prefix=self.prefix)
+        response = self.s3_client.list_objects_v2(
+            Bucket=self.bucket_name, Prefix=self.prefix
+        )
 
         documents = []
 
         for obj in response.get("Contents", []):
             file_key = obj["Key"]
-            
-            if not file_key.endswith(".txt"):  
+
+            if not file_key.endswith(".txt"):
                 continue  # ✅ Only process .txt files
-            
-            file_response = self.s3_client.get_object(Bucket=self.bucket_name, Key=file_key)
+
+            file_response = self.s3_client.get_object(
+                Bucket=self.bucket_name, Key=file_key
+            )
             content = file_response["Body"].read().decode("utf-8")
-            
-            documents.append(Document(page_content=content, metadata={"source": file_key}))
+
+            documents.append(
+                Document(page_content=content, metadata={"source": file_key})
+            )
 
         return documents

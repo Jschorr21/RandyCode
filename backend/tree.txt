@@ -1,0 +1,121 @@
+.
+├── api
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── admin.cpython-312.pyc
+│   │   ├── apps.cpython-312.pyc
+│   │   ├── models.cpython-312.pyc
+│   │   ├── urls.cpython-312.pyc
+│   │   └── views.cpython-312.pyc
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── backend
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── asgi.cpython-312.pyc
+│   │   ├── settings.cpython-312.pyc
+│   │   └── urls.cpython-312.pyc
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── backend.txt
+├── chat
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── admin.cpython-312.pyc
+│   │   ├── apps.cpython-312.pyc
+│   │   ├── consumers.cpython-312.pyc
+│   │   ├── models.cpython-312.pyc
+│   │   ├── routing.cpython-312.pyc
+│   │   ├── urls.cpython-312.pyc
+│   │   └── views.cpython-312.pyc
+│   ├── admin.py
+│   ├── apps.py
+│   ├── consumers.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   ├── models.py
+│   ├── routing.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── chroma_db
+│   ├── 1bc1ad67-beb4-44cc-87ef-2a0253715896
+│   │   ├── data_level0.bin
+│   │   ├── header.bin
+│   │   ├── index_metadata.pickle
+│   │   ├── length.bin
+│   │   └── link_lists.bin
+│   ├── 5ed4e50e-8893-48e1-af59-228eac3ba858
+│   │   ├── data_level0.bin
+│   │   ├── header.bin
+│   │   ├── index_metadata.pickle
+│   │   ├── length.bin
+│   │   └── link_lists.bin
+│   ├── chroma.sqlite3
+│   └── ed03591a-5592-4a7d-a8f4-266efa2753bb
+│       ├── data_level0.bin
+│       ├── header.bin
+│       ├── index_metadata.pickle
+│       ├── length.bin
+│       └── link_lists.bin
+├── data_ingestion
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── csv_loader.cpython-312.pyc
+│   │   ├── json_loader.cpython-312.pyc
+│   │   ├── s3_loader.cpython-312.pyc
+│   │   ├── text_splitter.cpython-312.pyc
+│   │   └── vector_store.cpython-312.pyc
+│   ├── data
+│   │   ├── Undergraduate_Catalog_2024-25.pdf
+│   │   ├── catalog.json
+│   │   ├── chunks.json
+│   │   ├── scraped_data
+│   │   └── subject_courses.csv
+│   ├── loaders
+│   │   ├── csv_loader.py
+│   │   ├── json_loader.py
+│   │   └── s3_loader.py
+│   ├── pipelines
+│   │   ├── catalog_pipeline.py
+│   │   ├── courses_pipeline.py
+│   │   └── scrape_pipeline.py
+│   ├── text_splitter.py
+│   └── vector_store.py
+├── db.sqlite3
+├── langchain_pipeline
+│   ├── __pycache__
+│   │   ├── agent_graph.cpython-312.pyc
+│   │   ├── langraph_builder.cpython-312.pyc
+│   │   ├── langraph_pipeline.cpython-312.pyc
+│   │   ├── prompts.cpython-312.pyc
+│   │   ├── response_generator.cpython-312.pyc
+│   │   └── retrieval.cpython-312.pyc
+│   ├── agent_graph.py
+│   ├── langraph_builder.py
+│   ├── langraph_pipeline.py
+│   ├── prompts.py
+│   ├── response_generator.py
+│   └── retrieval.py
+├── main.py
+├── manage.py
+├── static
+│   └── frontend
+│       └── build
+└── tree.txt
+
+26 directories, 93 files

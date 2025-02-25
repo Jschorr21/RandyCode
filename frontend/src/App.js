@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // ✅ Establish WebSocket connection when component mounts
-    const ws = new WebSocket("ws://127.0.0.1:8000/ws");
+    const ws = new WebSocket("ws://127.0.0.1:8000/ws/chat/");
 
     ws.onopen = () => {
       console.log("✅ WebSocket Connected");

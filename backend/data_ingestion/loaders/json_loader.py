@@ -2,6 +2,7 @@ import json
 import os
 from langchain.schema import Document
 
+
 class JSONLoader:
     """Loads course chunks from JSON and converts them into LangChain Documents."""
 
@@ -10,7 +11,7 @@ class JSONLoader:
 
     def load_documents(self):
         """Reads JSON and converts it into a list of Document objects."""
-        
+
         # ✅ Extract filename without extension
         source_filename = os.path.basename(self.file_path).replace(".json", "")
 
@@ -23,13 +24,14 @@ class JSONLoader:
                 metadata={
                     "id": chunk["id"],
                     "chunk_number": chunk["metadata"]["chunk_number"],
-                    "source": source_filename  # ✅ Use the filename dynamically
-                }
+                    "source": source_filename,  # ✅ Use the filename dynamically
+                },
             )
             for chunk in chunk_data
         ]
 
         return documents
+
 
 # Usage:
 if __name__ == "__main__":

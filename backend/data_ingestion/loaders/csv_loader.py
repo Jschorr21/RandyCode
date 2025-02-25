@@ -1,6 +1,8 @@
 import csv
 from langchain.schema import Document
 import os
+
+
 class CSVLoader:
     """Loads course data from CSV and converts it into LangChain Documents."""
 
@@ -11,15 +13,23 @@ class CSVLoader:
         """Reads CSV file and converts rows into LangChain Document objects."""
         documents = []
 
-        with open(self.file_path, newline='', encoding='utf-8') as csvfile:
+        with open(self.file_path, newline="", encoding="utf-8") as csvfile:
             reader = csv.reader(csvfile)
             next(reader)  # Skip header row
             for row in reader:
-                course_code = row[1].split(' -')[0]
-                metadata = {'course_code': course_code, 'subject_area': row[0], 'id': course_code, 'source': 'courses'}
-                documents.append(Document(page_content=', '.join(row), metadata=metadata))
+                course_code = row[1].split(" -")[0]
+                metadata = {
+                    "course_code": course_code,
+                    "subject_area": row[0],
+                    "id": course_code,
+                    "source": "courses",
+                }
+                documents.append(
+                    Document(page_content=", ".join(row), metadata=metadata)
+                )
 
         return documents
+
 
 # Usage:
 if __name__ == "__main__":

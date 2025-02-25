@@ -39,9 +39,11 @@ class CatalogPipeline:
     #     return documents
 
     def run(self):
-        
+
         # Step 1: Extract & chunk PDF text
-        pdf_path = os.path.join(os.path.dirname(__file__), "data", "Undergraduate_Catalog_2024-25.pdf")
+        pdf_path = os.path.join(
+            os.path.dirname(__file__), "data", "Undergraduate_Catalog_2024-25.pdf"
+        )
         print(f"📥 Extracting text from PDF: {pdf_path}")
         text_list = self.text_splitter.extract_text_from_pdf(pdf_path)
         print(f"✅ Extracted {len(text_list)} pages of text.")
@@ -50,7 +52,9 @@ class CatalogPipeline:
         print(f"✅ Chunked {len(documents)} text chunks.")
 
         # Save extracted chunks to JSON
-        self.text_splitter.save_chunks_to_json(documents, metadatas, ids, "catalog.json")
+        self.text_splitter.save_chunks_to_json(
+            documents, metadatas, ids, "catalog.json"
+        )
 
         # Step 2: Load catalog data from JSON
         json_path = os.path.join(os.path.dirname(__file__), "data", "catalog.json")
@@ -63,6 +67,7 @@ class CatalogPipeline:
 
         # Step 3: Store in vector database
         self.vector_store.add_documents(catalog_documents, store_type="catalog")
+
 
 # Run pipeline
 if __name__ == "__main__":

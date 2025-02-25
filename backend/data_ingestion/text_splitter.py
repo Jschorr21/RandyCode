@@ -5,13 +5,14 @@ import uuid
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import hashlib
 
+
 class TextSplitter:
     """Handles text extraction, chunking, and saving for vector storage."""
 
     def __init__(self, chunk_size=1500, chunk_overlap=250):
         """
         Initializes the text splitter with chunking parameters.
-        
+
         Args:
             chunk_size (int): Max number of characters per chunk.
             chunk_overlap (int): Overlap between chunks.
@@ -21,7 +22,7 @@ class TextSplitter:
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap,
-            separators=["\n\n", "\n", ". ", " ", ""]
+            separators=["\n\n", "\n", ". ", " ", ""],
         )
 
     def extract_text_from_pdf(self, pdf_path):
@@ -37,7 +38,9 @@ class TextSplitter:
         text_by_page = []
         with pdfplumber.open(pdf_path) as pdf:
             for page in pdf.pages:
-                text = page.extract_text() or ""  # Extract text or set empty string if none
+                text = (
+                    page.extract_text() or ""
+                )  # Extract text or set empty string if none
                 text_by_page.append(text)
         return text_by_page
 
@@ -70,11 +73,17 @@ class TextSplitter:
                     chunk = f"Scraped from: {file_name}\nDate scraped: {date_scraped}\n\n{chunk}"
 
                 documents.append(chunk)
-                metadatas.append({"source": file_name, "date_scraped": date_scraped, "chunk_number": i + 1})
+                metadatas.append(
+                    {
+                        "source": file_name,
+                        "date_scraped": date_scraped,
+                        "chunk_number": i + 1,
+                    }
+                )
                 ids.append(chunk_id)
 
         return documents, metadatas, ids
-    
+
     def generate_chunk_id(self, chunk_text):
         """
         Generates a unique ID for a given text chunk based on its content.
@@ -86,7 +95,7 @@ class TextSplitter:
             str: A deterministic unique ID.
         """
         return hashlib.sha256(chunk_text.encode()).hexdigest()
-    
+
     def chunk_pdf_text(self, text_list):
         """
         Splits text into overlapping chunks with metadata.
@@ -106,7 +115,9 @@ class TextSplitter:
             for chunk in chunks:
                 chunk_id = self.generate_chunk_id(chunk)
                 documents.append(chunk)
-                metadatas.append({"source": "catalog", "chunk_number": i + 1})  # Store page number as metadata
+                metadatas.append(
+                    {"source": "catalog", "chunk_number": i + 1}
+                )  # Store page number as metadata
                 ids.append(chunk_id)
 
         return documents, metadatas, ids
@@ -123,7 +134,9 @@ class TextSplitter:
         """
         # Ensure 'data' directory exists
         data_folder = os.path.join(os.path.dirname(__file__), "data")
-        os.makedirs(data_folder, exist_ok=True)  # Create 'data' folder if it doesn't exist
+        os.makedirs(
+            data_folder, exist_ok=True
+        )  # Create 'data' folder if it doesn't exist
 
         # Construct full path for output file
         output_path = os.path.join(data_folder, output_file)
@@ -140,14 +153,17 @@ class TextSplitter:
 
         print(f"✅ Extracted {len(documents)} chunks. Saved to {output_path}.")
 
+
 # Usage Example
 if __name__ == "__main__":
-    pdf_path = os.path.join(os.path.dirname(__file__), "data", "Undergraduate_Catalog_2024-25.pdf")  # Ensure the PDF path is correct
+    pdf_path = os.path.join(
+        os.path.dirname(__file__), "data", "Undergraduate_Catalog_2024-25.pdf"
+    )  # Ensure the PDF path is correct
     splitter = TextSplitter()
-    
+
     # Extract text
     text_list = splitter.extract_text_from_pdf(pdf_path)
-    
+
     # Chunk text
     documents, metadatas, ids = splitter.chunk_text(text_list)
 
