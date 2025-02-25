@@ -31,7 +31,7 @@ async def websocket_endpoint(websocket: WebSocket):
         while True:
             data = await websocket.receive_json()
             user_message = data.get("user_message", "")
-            use_agent = True
+            use_agent = data.get("use_agent", True)
 
             logging.info(f"📩 Received message: {user_message}")
 
