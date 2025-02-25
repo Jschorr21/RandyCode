@@ -1,0 +1,59 @@
+.
+├── chat
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── chroma_db
+│   ├── 1bc1ad67-beb4-44cc-87ef-2a0253715896
+│   ├── 5ed4e50e-8893-48e1-af59-228eac3ba858
+│   ├── chroma.sqlite3
+│   └── ed03591a-5592-4a7d-a8f4-266efa2753bb
+├── data_ingestion
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── catalog_pipeline.py
+│   ├── courses_pipeline.py
+│   ├── csv_loader.py
+│   ├── data
+│   ├── json_clean.ipynb
+│   ├── json_loader.py
+│   ├── s3_loader.py
+│   ├── scrape_pipeline.py
+│   ├── text_splitter.py
+│   └── vector_store.py
+├── design
+├── file_structure.txt
+├── frontend
+│   ├── README.md
+│   ├── node_modules
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   └── src
+├── langchain_pipeline
+│   ├── __pycache__
+│   ├── agent_graph.py
+│   ├── langraph_builder.py
+│   ├── langraph_pipeline.py
+│   ├── prompts.py
+│   ├── response_generator.py
+│   └── retrieval.py
+├── main.py
+├── package-lock.json
+├── randy
+│   ├── manage.py
+│   └── randy
+├── requirements.txt
+├── test.py
+└── venv
+    ├── bin
+    ├── include
+    ├── lib
+    ├── pyvenv.cfg
+    └── share
+
+23 directories, 34 files
