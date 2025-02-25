@@ -41,4 +41,5 @@ logs/
 
 json_clean.ipynb
 
-data_ingestion/data/scraped_data/*
+data_ingestion/data/scraped_data/*g
+RAG_copy.py
