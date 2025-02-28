@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -36,6 +35,7 @@ INSTALLED_APPS = [
     "channels",
     "chat",
     "api",
+    "react",
     "langchain_pipeline",
     "data_ingestion",
     "django.contrib.admin",

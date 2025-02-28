@@ -11,7 +11,7 @@ def frontend_view(request):
     
     try:
         with open(frontend_path, "r") as f:
-            return HttpResponse(f.read())
+            return HttpResponse(f.read(), content_type="text/html")
     except FileNotFoundError:
         return HttpResponse("React build not found. Please run 'npm run build'.", status=404)
 

@@ -19,12 +19,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
+from react.views import serve_react
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("api.urls")),  # ✅ Set `api/` as the default route
     path("chat/", include("chat.urls")),    # ✅ REST API
+    re_path(r"^(?P<path>.*)$", serve_react, {"document_root": settings.REACT_APP_BUILD_PATH}),
 ]
 
 # ✅ Serve static files in development mode
