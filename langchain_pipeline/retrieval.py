@@ -18,20 +18,29 @@ def retrieve(query: str):
     if not catalog_docs and not courses_docs:
         print("❌ No relevant documents found.")
         return {"content": "I couldn't find any relevant information in the database.", "sources": []}
+    
+    def format_docs(docs, source_label):
+        return [
+            f"Source: {source_label}\nContent: {doc.page_content}"
+            for doc in docs
+        ]
 
-    retrieved_docs = catalog_docs + courses_docs + website_docs
-    serialized_content = "\n\n".join(
-        f"Source: {doc.metadata.get('source', 'Unknown')}\nContent: {doc.page_content}"
-        for doc in retrieved_docs
-    )
-
+    def format_website_docs(docs):
+        return [
+            f"Source: Vanderbilt Websites\nURL: {doc.metadata.get('source', 'Unknown')}\nContent: {doc.page_content}"
+            for doc in docs
+        ]
+    catalog_content = format_docs(catalog_docs, "Vanderbilt Undergraduate Catalog")
+    courses_content = format_docs(courses_docs, "Vanderbilt Course Descriptions")
+    websites_content = format_website_docs(website_docs)
+    
+    serialized_content = "\n\n".join(catalog_content + courses_content + websites_content)
     sources = list(set(
         f"{doc.metadata.get('source', 'Unknown')} (Page {doc.metadata.get('page', 'N/A')})"
-        for doc in retrieved_docs
+        for doc in catalog_docs + courses_docs + website_docs
     ))
-
-    print(f"📂 Retrieved {len(retrieved_docs)} documents.")
-
+    
+    print(f"📂 Retrieved {len(catalog_docs + courses_docs + website_docs)} documents.")
     return serialized_content, sources
 
         

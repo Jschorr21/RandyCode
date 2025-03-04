@@ -11,7 +11,7 @@ class LangGraphPipeline:
         self.langraph_builder = LangGraphBuilder()
         self.agent_graph = AgentGraph()
 
-    def run_pipeline(self, input_message, use_agent=True):
+    def run_pipeline(self, input_message, use_agent=True, user_id="jake"):
         """
         Runs the RAG pipeline.
 
@@ -27,10 +27,13 @@ class LangGraphPipeline:
         if use_agent:
             graph = self.agent_graph.build_agent_graph()
             response = graph.invoke(
-                {"messages": [{"role": "user", "content": input_message}]},
+                {"user_id": user_id, "messages": [{"role": "user", "content": input_message}]},
                 config={"configurable": {"thread_id": "abc_123"}}  # ✅ Pass only here
             )
-            print(f"\n\n 📝 Response: {response["messages"][-1].content}")
+            print("\n\n 📝 Full Response:")
+            for msg in response["messages"]:
+                print(f"- {msg['role']}: {msg['content']}")
+
             # input_message = input("Enter your query: ")
         else:
             graph = self.langraph_builder.build_graph()

@@ -43,3 +43,7 @@ json_clean.ipynb
 
 data_ingestion/data/scraped_data/*g
 RAG_copy.py
+
+catalog_play.ipynb
+catalog_semantic.py
+catalog_chunks_semantic.json
