@@ -47,15 +47,22 @@ function App() {
           </p>
         ))}
       </div>
-      <input
-        type="text"
-        value={userMessage}
-        onChange={(e) => setUserMessage(e.target.value)}
-        placeholder="Type a message..."
-        style={{ width: "80%", padding: "10px", }}
-        onSubmit={sendMessage}
-      />
-      <button onClick={sendMessage} style={{ padding: "10px" }}>Send</button>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault(); // Prevents page refresh
+          sendMessage();
+        }}
+      >
+        <input
+          type="text"
+          value={userMessage}
+          onChange={(e) => setUserMessage(e.target.value)}
+          placeholder="Type a message..."
+          style={{ width: "80%", padding: "10px" }}
+        />
+        <button type="submit" style={{ padding: "10px" }}>Send</button>
+      </form>
+
     </div>
   );
 }

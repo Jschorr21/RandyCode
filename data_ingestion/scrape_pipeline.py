@@ -2,7 +2,7 @@ import sys
 import os
 import json
 import re
-
+import traceback
 # Add the root directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
@@ -65,27 +65,69 @@ class ScrapePipeline:
             print(f"✅ Created {len(documents)} text chunks from {doc.metadata['source']}.")
 
             json_output_path = os.path.join(self.json_root, f"{doc.metadata['source']}.json")
+
+            # ✅ Ensure `scraped_data/` does not appear twice
+            if "scraped_data/scraped_data" in json_output_path:
+                json_output_path = json_output_path.replace("scraped_data/scraped_data", "scraped_data")
+
+
             self.text_splitter.save_chunks_to_json(documents, metadatas, ids, output_file=json_output_path)
 
         # ✅ Clean the extracted JSON data
         print("🧹 Cleaning JSON files before ingestion...")
         self.clean_all_json_files()
-
+        seen_files = set()
         # ✅ Load cleaned JSON files into memory for vector storage
-        for subdir, _, files in os.walk(self.json_root):
+        for subdir, _, files in os.walk(self.json_root, followlinks=False):
+            
             for file in files:
                 if file.endswith(".json"):
+                    # print(f"📝 Before extending: {len(website_documents)}")
                     json_path = os.path.join(subdir, file)
+                    print(f"🔍 Visiting file: {json_path}")
+
+                    if json_path in seen_files:
+                        print("skipping dupe visit")
+                        continue
+                    seen_files.add(json_path)
                     json_loader = JSONLoader(json_path)
                     public_documents = json_loader.load_documents()
                     website_documents.extend(public_documents)
+                    # print(f"📝 After extending: {len(website_documents)} (Added {len(public_documents)})")
+
 
         print("✅ Text chunking and embedding ready.")
 
+        # ✅ Ensure the vector store exists
         if not self.vector_store.stores.get("websites"):
             self.vector_store.add_new_store("websites")
 
-        self.vector_store.add_documents(website_documents, store_type="websites")
+        # ✅ Retrieve existing document IDs before inserting new ones
+        existing_docs = self.vector_store.stores["websites"].get(include=["metadatas"]).get("metadatas", [])
+        existing_ids = {meta["id"] for meta in existing_docs if "id" in meta}
+
+        # ✅ Deduplicate chunks before insertion
+        unique_documents = []
+        seen_chunk_ids = set()
+
+        for doc in website_documents:
+            doc_id = doc.metadata["id"]
+
+            # Avoid inserting duplicates by checking both stored and already-seen IDs
+            if doc_id not in existing_ids and doc_id not in seen_chunk_ids:
+                unique_documents.append(doc)
+                seen_chunk_ids.add(doc_id)
+            # else:
+                # print(f"🚫 Skipping duplicate chunk {doc_id}")
+
+        # 🚀 Ensure add_documents() is called only once
+        print(f"✅ Attempting to insert {len(unique_documents)} new chunks (Skipping {len(website_documents) - len(unique_documents)} duplicates)")
+
+        if unique_documents:
+            self.vector_store.add_documents(unique_documents, store_type="websites")
+        else:
+            print("🚫 No new chunks to insert.")
+
 
 
 # Run pipeline

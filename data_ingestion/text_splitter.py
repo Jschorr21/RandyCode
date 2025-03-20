@@ -4,6 +4,7 @@ import json
 import uuid
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import hashlib
+import re
 
 class TextSplitter:
     """Handles text extraction, chunking, and saving for vector storage."""
@@ -36,9 +37,9 @@ class TextSplitter:
         """
         text_by_page = []
         with pdfplumber.open(pdf_path) as pdf:
-            for page in pdf.pages:
+            for i, page in enumerate(pdf.pages):
                 text = page.extract_text() or ""  # Extract text or set empty string if none
-                text_by_page.append(text)
+                text_by_page.append((i + 1, text))  # Store as (page_number, text)
         return text_by_page
 
     def chunk_scraped_text(self, text_list):
@@ -75,24 +76,20 @@ class TextSplitter:
 
         return documents, metadatas, ids
     
+    import re
+
     def generate_chunk_id(self, chunk_text):
-        """
-        Generates a unique ID for a given text chunk based on its content.
+        # ✅ Normalize text by removing spaces, newlines, and special characters
+        normalized_text = re.sub(r'\s+', ' ', chunk_text.strip()).lower()
+        return hashlib.sha256(normalized_text.encode()).hexdigest()
 
-        Args:
-            chunk_text (str): The text of the chunk.
-
-        Returns:
-            str: A deterministic unique ID.
-        """
-        return hashlib.sha256(chunk_text.encode()).hexdigest()
     
     def chunk_pdf_text(self, text_list):
         """
         Splits text into overlapping chunks with metadata.
 
         Args:
-            text_list (list): List of page-wise text extracted from a document.
+            text_list (list): List of tuples (page_number, text) extracted from a document.
 
         Returns:
             tuple: (documents, metadatas, ids) for ChromaDB storage.
@@ -101,44 +98,46 @@ class TextSplitter:
         metadatas = []
         ids = []
 
-        for i, page_text in enumerate(text_list):
+        for page_number, page_text in text_list:
             chunks = self.text_splitter.split_text(page_text)
             for chunk in chunks:
                 chunk_id = self.generate_chunk_id(chunk)
                 documents.append(chunk)
-                metadatas.append({"source": "catalog", "chunk_number": i + 1})  # Store page number as metadata
+                metadatas.append({"source": "catalog", "page_number": page_number})  # Store page number as metadata
                 ids.append(chunk_id)
 
         return documents, metadatas, ids
 
     def save_chunks_to_json(self, documents, metadatas, ids, output_file):
-        """
-        Saves extracted chunks to a JSON file inside the data folder.
+        """Saves extracted chunks to a JSON file while preventing duplicate `scraped_data/` folders."""
 
-        Args:
-            documents (list): List of chunked text.
-            metadatas (list): Metadata (e.g., page numbers).
-            ids (list): Unique IDs for each chunk.
-            output_file (str): File path to save JSON.
-        """
-        # Ensure 'data' directory exists
-        data_folder = os.path.join(os.path.dirname(__file__), "data")
-        os.makedirs(data_folder, exist_ok=True)  # Create 'data' folder if it doesn't exist
+        base_folder = os.path.dirname(__file__)  # Base directory
+        data_folder = os.path.abspath(os.path.join(base_folder, "data"))  # Absolute path to `data/`
 
-        # Construct full path for output file
+        # ✅ Ensure `scraped_data/` is not duplicated in the file path
+        if "scraped_data/scraped_data" in output_file:
+            output_file = output_file.replace("scraped_data/scraped_data", "scraped_data")
+        elif "scraped_data/" not in output_file:
+            output_file = os.path.join("scraped_data", output_file)  # Ensure it belongs inside `scraped_data/`
+
+        # ✅ Construct the correct output path
         output_path = os.path.join(data_folder, output_file)
-        output_dir = os.path.dirname(output_path)  # Extract directory from full path
-        os.makedirs(output_dir, exist_ok=True)  # ✅ Create missing directories
+        output_dir = os.path.dirname(output_path)
 
-        # Save to JSON
+        # ✅ Create directory only if it doesn't exist
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir, exist_ok=True)
+
+        # ✅ Save JSON correctly
         chunk_data = [
-            {"id": ids[i], "text": documents[i], "metadata": metadatas[i]}
-            for i in range(len(documents))
-        ]
+    {"id": ids[i], "text": documents[i], "metadata": metadatas[i]}  
+    for i in range(len(documents))
+]
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(chunk_data, f, indent=4)
 
         print(f"✅ Extracted {len(documents)} chunks. Saved to {output_path}.")
+
 
 # Usage Example
 if __name__ == "__main__":

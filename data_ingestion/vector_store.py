@@ -73,34 +73,32 @@ class VectorStore:
 
         store = self.stores[store_type]
 
-        # Retrieve existing metadata (fetch only IDs, NOT full documents)
+        # ✅ Retrieve existing IDs from the store
         existing_metadatas = store.get(include=["metadatas"]).get("metadatas", [])
-        existing_ids = {meta["id"] for meta in existing_metadatas if "id" in meta}  # Store as a set for fast lookup
+        existing_ids = {meta["id"] for meta in existing_metadatas if "id" in meta}
+        #   print(f"📦 Existing document IDs in vector store: {existing_ids}")
 
         unique_documents = []
         for doc in documents:
-            if doc.metadata["id"] not in existing_ids:  # Faster lookup with a set
+            doc_id = doc.metadata["id"]
+            if doc_id not in existing_ids:
                 unique_documents.append(doc)
+            else:
+                print(f"🚫 Skipping duplicate chunk {doc_id}")
 
         if not unique_documents:
             print(f"✅ No new unique documents to add in '{store_type}'. Skipping insertion.")
             return
 
-        num_docs = store._collection.count()
-
-        # ✅ Process documents in batches to avoid exceeding ChromaDB's limit
+        # ✅ Batch process and add unique documents
         total_docs = len(unique_documents)
         print(f"📦 Adding {total_docs} unique documents to '{store_type}' in batches of {batch_size}...")
 
         for i in range(0, total_docs, batch_size):
-            batch = unique_documents[i:i + batch_size]  # Get a chunk of batch_size
+            batch = unique_documents[i:i + batch_size]
             store.add_documents(batch)
             print(f"✅ Added batch {i // batch_size + 1}/{(total_docs // batch_size) + 1} ({len(batch)} documents)")
 
-        num_new_docs = store._collection.count()
-        num_docs_added = num_new_docs - num_docs
-
-        print(f"✅ {num_docs_added} documents added to {store_type} store with {num_docs} existing documents.")
 
     def search(self, query, store_type, top_k=5):
         """

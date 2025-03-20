@@ -12,7 +12,7 @@ pipeline = LangGraphPipeline()
 
 class ChatRequest(BaseModel):
     user_message: str
-    use_agent: bool = False  # Default to not using the agent
+    use_agent: bool = True  # Default to not using the agent
 
 @app.get("/")
 async def root():
@@ -41,7 +41,7 @@ async def websocket_endpoint(websocket: WebSocket):
                 logging.info("🔴 WebSocket connection closed.")
                 break
 
-            response = pipeline.run_pipeline(user_message, use_agent)
+            response = pipeline.run_pipeline(user_message, False)
             await websocket.send_json({"response": response})  # ✅ Ensure message is sent immediately
 
     except Exception as e:

@@ -5,6 +5,7 @@ from langchain_pipeline.response_generator import ResponseGenerator
 import logging
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import MemorySaver
+from langchain_core.messages import ToolMessage
 logging.basicConfig(level=logging.INFO)
 
 class LangGraphBuilder:
@@ -16,9 +17,21 @@ class LangGraphBuilder:
         self.memory = MemorySaver()
 
     def query_or_respond(self, state: MessagesState):
-        """Generate tool call for retrieval or respond."""
+        """Generate tool calls for retrieval or respond, tracking retrieval count."""
         llm_with_tools = self.llm.bind_tools([retrieve])
+
+        # ✅ Count existing retrieval tool messages
+        previous_retrievals = sum(1 for message in state["messages"] if isinstance(message, ToolMessage))
+        
+        # ✅ Invoke LLM with tools
         response = llm_with_tools.invoke(state["messages"])
+
+        # ✅ Track the number of retrieve calls made in THIS query step
+        new_retrievals = sum(1 for message in response.additional_kwargs.get("messages", []) if message.type == "tool")
+        
+        # ✅ Store count in state
+        state["retrieve_count"] = new_retrievals - previous_retrievals
+
         return {"messages": [response]}
 
     def generate_response(self, state: MessagesState):
