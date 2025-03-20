@@ -16,8 +16,11 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
+from django.views.static import serve
+
 from django.conf import settings
 
 
@@ -25,8 +28,10 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("api.urls")),  # ✅ Set `api/` as the default route
     path("chat/", include("chat.urls")),    # ✅ REST API
+    re_path(r'^.*$', TemplateView.as_view(template_name="index.html")),
+
 ]
 
 # ✅ Serve static files in development mode
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

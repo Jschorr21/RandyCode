@@ -133,12 +133,14 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-# ✅ Tell Django where to collect static files for production
+# Tell Django where to collect all static files
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
+# Ensure Django knows where to look for React’s static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static/frontend"),  # ✅ Correct location for React static files
+    os.path.join(BASE_DIR, "frontend/build/static"),  # ✅ Correct path
 ]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
