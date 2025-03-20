@@ -38,7 +38,7 @@ class CatalogPipeline:
 
     #     return documents
 
-    def run(self):
+    def run(self, embed):
         
         # Step 1: Extract & chunk PDF text
         pdf_path = os.path.join(os.path.dirname(__file__), "data", "Undergraduate_Catalog_2024-25.pdf")
@@ -57,14 +57,14 @@ class CatalogPipeline:
         json_loader = JSONLoader(json_path)
         catalog_documents = json_loader.load_documents()
         print(f"✅ Loaded {len(catalog_documents)} JSON chunks.")
+        if embed:
+            if not self.vector_store.stores["catalog"]:
+                self.vector_store.add_new_store("catalog")
 
-        if not self.vector_store.stores["catalog"]:
-            self.vector_store.add_new_store("catalog")
-
-        # Step 3: Store in vector database
-        self.vector_store.add_documents(catalog_documents, store_type="catalog")
+            # Step 3: Store in vector database
+            self.vector_store.add_documents(catalog_documents, store_type="catalog")
 
 # Run pipeline
 if __name__ == "__main__":
     ingestion = CatalogPipeline()
-    ingestion.run()
+    ingestion.run(embed = False)

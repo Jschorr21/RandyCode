@@ -30,10 +30,8 @@ class LangGraphPipeline:
                 {"user_id": user_id, "messages": [{"role": "user", "content": input_message}]},
                 config={"configurable": {"thread_id": "abc_123"}}  # ✅ Pass only here
             )
-            print("\n\n 📝 Full Response:")
-            for msg in response["messages"]:
-                print(f"- {msg['role']}: {msg['content']}")
-
+            # print(f"\n\n 📝 Response: {response["messages"][-1].content}")
+            
             # input_message = input("Enter your query: ")
         else:
             graph = self.langraph_builder.build_graph()
