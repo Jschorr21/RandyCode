@@ -6,7 +6,7 @@ import uvicorn
 from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO)
-
+load_dotenv()
 app = FastAPI()
 pipeline = LangGraphPipeline()
 
@@ -50,6 +50,5 @@ async def websocket_endpoint(websocket: WebSocket):
 
 # ✅ Ensure FastAPI starts when running main.py
 if __name__ == "__main__":
-    load_dotenv()
     logging.info("🚀 Starting FastAPI WebSocket Server...")
     uvicorn.run(app, host="0.0.0.0", port=8001)
