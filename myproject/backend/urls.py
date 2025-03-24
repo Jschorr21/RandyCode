@@ -23,4 +23,5 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/chatapp/", include("chatapp.urls")),  # clean app-level routing
+    path("api/users/", include("users.urls")),  # ✅ Add this line
 ]

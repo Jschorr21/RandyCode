@@ -11,14 +11,17 @@ def chatbot_api_view(request):
     response = get_response_from_pipeline(user_message)
     return Response({"response": response})
 
-@api_view(["POST"])
-def store_message(request):
-    data = request.data
-    session_id = data.get("session_id")
-    user_message = data.get("user_message")
-    bot_response = data.get("bot_response")
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, permission_classes
 
-    session, _ = ChatSession.objects.get_or_create(session_id=session_id)
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def store_message(request):
+    session_id = request.data.get("session_id")
+    user_message = request.data.get("user_message")
+    bot_response = request.data.get("bot_response")
+
+    session, _ = ChatSession.objects.get_or_create(session_id=session_id, user=request.user)
     Message.objects.create(session=session, sender="user", text=user_message)
     Message.objects.create(session=session, sender="bot", text=bot_response)
 
