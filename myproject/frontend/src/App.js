@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     // ✅ Establish WebSocket connection when component mounts
-    const ws = new WebSocket("ws://127.0.0.1:8001/ws");
+    const ws = new WebSocket(`ws://${window.location.hostname}:8001/ws`);
 
     ws.onopen = () => {
       console.log("✅ WebSocket Connected");
@@ -45,7 +45,7 @@ function App() {
 
   const storeMessageInDjango = async (sessionId, userMessage, botResponse) => {
     try {
-      await fetch("http://127.0.0.1:8000/api/chatapp/store_message/", {
+      await fetch(`http://${window.location.hostname}:8000/api/chatapp/store_message/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
