@@ -1,14 +1,17 @@
 import logging
 from langchain_pipeline.langraph_builder import LangGraphBuilder
 from langchain_pipeline.agent_graph import AgentGraph
-
+from langchain_deepseek import ChatDeepSeek
+from langchain_openai import ChatOpenAI
 logging.basicConfig(level=logging.INFO)
 
 class LangGraphPipeline:
     """Orchestrates RAG system execution."""
 
     def __init__(self):
-        self.langraph_builder = LangGraphBuilder()
+
+        self.llm = ChatOpenAI(model_name="gpt-4o-mini")
+        self.langraph_builder = LangGraphBuilder(self.llm)
         self.agent_graph = AgentGraph()
 
     def run_pipeline(self, input_message, use_agent=True, user_id="jake"):
@@ -35,8 +38,10 @@ class LangGraphPipeline:
             # input_message = input("Enter your query: ")
         else:
             graph = self.langraph_builder.build_graph()
+            memory = self.langraph_builder.memory
             response = graph.invoke({"messages": [{"role": "user", "content": input_message}]}, config={"configurable": {"thread_id": "abc_456"}})  # ✅ Standard RAG
             print(f"\n\n 📝 Response: {response["messages"][-1].content}")
             # input_message = input("Enter your query: ")
+            state = memory.get({"configurable": {"thread_id": "abc_456"}})
 
-        return response["messages"][-1].content
+        return response["messages"][-1].content, state

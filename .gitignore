@@ -47,3 +47,7 @@ RAG_copy.py
 catalog_play.ipynb
 catalog_semantic.py
 catalog_chunks_semantic.json
+
+.deepeval
+.deepeval_telemetry.txt
+.deepeval-cache.json

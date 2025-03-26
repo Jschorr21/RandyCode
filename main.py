@@ -41,7 +41,7 @@ async def websocket_endpoint(websocket: WebSocket):
                 logging.info("🔴 WebSocket connection closed.")
                 break
 
-            response = pipeline.run_pipeline(user_message, False)
+            response, _  = pipeline.run_pipeline(user_message, False)
             await websocket.send_json({"response": response})  # ✅ Ensure message is sent immediately
 
     except Exception as e:

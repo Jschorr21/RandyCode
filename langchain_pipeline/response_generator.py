@@ -1,5 +1,6 @@
 import logging
 from langchain_openai import ChatOpenAI
+from langchain_deepseek import ChatDeepSeek
 from langchain_core.messages import SystemMessage, ToolMessage
 from langgraph.graph import MessagesState
 from langchain_pipeline.prompts import SYSTEM_PROMPT_TEMPLATE
@@ -10,10 +11,10 @@ logging.basicConfig(level=logging.INFO)
 class ResponseGenerator:
     """Handles response generation using GPT-4."""
 
-    def __init__(self, user_data_path="./user_profiles.json"):
-        """Initialize the response generator with the LLM model."""
-        self.llm = ChatOpenAI(model_name="gpt-4o-mini")
-        self.user_data_path=user_data_path
+    def __init__(self, llm, user_data_path="./user_profiles.json"):
+        """Initialize the response generator with the shared LLM model."""
+        self.llm = llm  # ✅ Use the shared LLM instance
+        self.user_data_path = user_data_path
         self.user_profiles = self.load_user_profiles()
     def load_user_profiles(self):
         """Load user profiles from a JSON file."""
