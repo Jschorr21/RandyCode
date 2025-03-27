@@ -8,9 +8,10 @@ class ChatSession(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="chats")
     session_id = models.CharField(max_length=255, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    title = models.CharField(max_length=255, default="Untitled Chat")
 
     def __str__(self):
-        return self.session_id
+        return self.title or self.session_id
 
 
 class Message(models.Model):

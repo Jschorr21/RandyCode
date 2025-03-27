@@ -1,0 +1,35 @@
+.
+├── README.md
+├── bun.lockb
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── favicon.ico
+│   ├── og-image.png
+│   └── placeholder.svg
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── components
+│   ├── contexts
+│   ├── hooks
+│   ├── index.css
+│   ├── integrations
+│   ├── lib
+│   ├── main.tsx
+│   ├── pages
+│   └── vite-env.d.ts
+├── supabase
+│   └── config.toml
+├── tailwind.config.ts
+├── tree.txt
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+10 directories, 23 files
