@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    'rest_framework_simplejwt',
     "corsheaders",
     "chatapp",
     "users",
@@ -53,8 +54,11 @@ REST_FRAMEWORK = {
 }
 
 
+
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React frontend
+    "http://localhost:8080",  # React frontend
 ]
 
 
