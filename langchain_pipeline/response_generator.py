@@ -5,7 +5,7 @@ from langchain_core.messages import SystemMessage, ToolMessage
 from langgraph.graph import MessagesState
 from langchain_pipeline.prompts import SYSTEM_PROMPT_TEMPLATE
 import json
-
+import re
 logging.basicConfig(level=logging.INFO)
 
 class ResponseGenerator:
@@ -16,6 +16,9 @@ class ResponseGenerator:
         self.llm = llm  # ✅ Use the shared LLM instance
         self.user_data_path = user_data_path
         self.user_profiles = self.load_user_profiles()
+    
+
+    
     def load_user_profiles(self):
         """Load user profiles from a JSON file."""
         try:
@@ -71,7 +74,14 @@ class ResponseGenerator:
         print(f"📂 Retrieved {len(latest_retrieved_docs)} document(s) in latest step.")
 
         # ✅ Step 3: Concatenate only the latest batch of retrievals
-        docs_content = "\n\n".join(doc.content for doc in latest_retrieved_docs if doc.content.strip())
+        def strip_docs_list_json(text):
+            return re.sub(r"\[DOCS_LIST_JSON_START].*?\[DOCS_LIST_JSON_END\]", "", text, flags=re.DOTALL).strip()
+
+        docs_content = "\n\n".join(
+            strip_docs_list_json(doc.content)
+            for doc in latest_retrieved_docs
+            if doc.content.strip()
+        )
 
         print(f"📜 Context length: {len(docs_content)} characters")
         
@@ -94,7 +104,7 @@ class ResponseGenerator:
         # ✅ Debugging: Print exactly what is sent to the LLM
         formatted_prompt = "\n\n".join(f"{msg.type.upper()}: {msg.content}" for msg in prompt)
 
-        print("\n\n📩 FINAL PROMPT SENT TO LLM:\n", formatted_prompt)
+        # print("\n\n📩 FINAL PROMPT SENT TO LLM:\n", formatted_prompt)
         print(f"\n\n📝 PROMPT SIZE: {len(formatted_prompt)} characters\n\n")
 
         # ✅ Call LLM with updated prompt
