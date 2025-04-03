@@ -4,6 +4,7 @@ from langchain_pipeline.retrieval import retrieve
 from langchain_pipeline.response_generator import ResponseGenerator
 import logging
 from langchain_openai import ChatOpenAI
+from langchain_deepseek import ChatDeepSeek
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import ToolMessage
 logging.basicConfig(level=logging.INFO)
@@ -11,9 +12,9 @@ logging.basicConfig(level=logging.INFO)
 class LangGraphBuilder:
     """Builds the LangChain LangGraph state graph."""
 
-    def __init__(self):
-        self.response_generator = ResponseGenerator()
-        self.llm = ChatOpenAI(model_name="gpt-4o-mini")
+    def __init__(self, llm):
+        self.response_generator = ResponseGenerator(llm)  # ✅ Pass the shared LLM instance
+        self.llm = llm  # ✅ Store the shared instance
         self.memory = MemorySaver()
 
     def query_or_respond(self, state: MessagesState):

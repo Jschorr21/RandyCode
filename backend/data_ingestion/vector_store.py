@@ -116,7 +116,8 @@ class VectorStore:
             raise ValueError(f"Store '{store_type}' does not exist.")
 
         store = self.stores[store_type]
-        return store.similarity_search(query, k=top_k)
+        return store.similarity_search_with_score(query, k=top_k)
+
 
 # Example Usage:
 if __name__ == "__main__":
