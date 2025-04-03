@@ -33,13 +33,13 @@ def retrieve(query: str):
     top_docs = sorted(all_docs_with_scores, key=lambda x: x[1])[:20]  # Top 15 most relevant
 
     # Print debug info
-    print(f"\n📊 Selected Top {len(top_docs)} Most Relevant Documents:")
-    for i, (doc, score, source_label) in enumerate(top_docs):
-        print(f"\n📄 Document {i + 1} | Score: {score:.4f}")
-        print(f"Source: {source_label}")
-        print(f"ID: {doc.metadata.get('id', 'No ID')}")
-        print(f"Content:\n{doc.page_content[:500]}...")  # Optional: trim content in console
-        print("-" * 80)
+    # print(f"\n📊 Selected Top {len(top_docs)} Most Relevant Documents:")
+    # for i, (doc, score, source_label) in enumerate(top_docs):
+    #     print(f"\n📄 Document {i + 1} | Score: {score:.4f}")
+    #     print(f"Source: {source_label}")
+    #     print(f"ID: {doc.metadata.get('id', 'No ID')}")
+    #     print(f"Content:\n{doc.page_content[:500]}...")  # Optional: trim content in console
+    #     print("-" * 80)
 
     # Format output for system
     def format_doc(doc, source_label):
