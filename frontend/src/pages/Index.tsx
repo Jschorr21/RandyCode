@@ -34,7 +34,7 @@ const Index = () => {
                 const updateChatTitle = async (chatId: string, title: string) => {
                   try {
                     const token = localStorage.getItem("access");
-                    const res = await fetch(`http://localhost:8000/api/chatapp/${chatId}/`, {
+                    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${chatId}/`, {
                       method: "PATCH",
                       headers: {
                         "Content-Type": "application/json",

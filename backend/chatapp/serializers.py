@@ -2,9 +2,12 @@ from rest_framework import serializers
 from .models import ChatSession, Message
 
 class MessageSerializer(serializers.ModelSerializer):
+    role = serializers.CharField(source="sender")
+    content = serializers.CharField(source="text")
+
     class Meta:
         model = Message
-        fields = ['id', 'sender', 'text', 'timestamp']
+        fields = ['id', 'role', 'content', 'timestamp']
 
 class ChatSessionSerializer(serializers.ModelSerializer):
     class Meta:

@@ -13,7 +13,7 @@ export const fetchWithAuth = async (input: RequestInfo, init?: RequestInit) => {
     if (res.status === 401) {
       const refresh = localStorage.getItem("refresh");
   
-      const refreshRes = await fetch("http://localhost:8000/api/token/refresh/", {
+      const refreshRes = await fetch("${import.meta.env.VITE_API_BASE_URL}/api/token/refresh/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ refresh }),

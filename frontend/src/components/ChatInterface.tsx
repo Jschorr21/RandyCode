@@ -54,13 +54,15 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
     if (!currentChatId || !user) return;
   
     try {
-      const res = await fetchWithAuth(`http://localhost:8000/api/chatapp/${currentChatId}/messages/`);
+      const res = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${currentChatId}/messages/`);
   
       if (!res.ok) throw new Error("Failed to fetch messages");
   
       const data = await res.json();
+      console.log("📦 Messages received from backend:", data);
       setMessages(data);
     } catch (error) {
+      console.error("❌ Error in fetchMessages:", error);
       toast({
         title: "Error fetching messages",
         description: "Please try again later",
@@ -76,7 +78,6 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
       return;
     }
   
-    const token = localStorage.getItem("access");
     const messageContent = uploadedFile
       ? `${message}\n[File: ${uploadedFile.name}]`
       : message;
@@ -105,7 +106,7 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
   
       // Create new chat session if necessary
       if (!chatId) {
-        const res = await fetchWithAuth("http://localhost:8000/api/chatapp/", {
+        const res = await fetchWithAuth("${import.meta.env.VITE_API_BASE_URL}/api/chatapp/", {
           method: "POST",
           body: JSON.stringify({ session_id: crypto.randomUUID() }),
         });
@@ -118,7 +119,7 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
       }
   
       // Get AI response
-      const chatbotRes = await fetchWithAuth("http://localhost:8000/api/chatapp/chatbot/", {
+      const chatbotRes = await fetchWithAuth("${import.meta.env.VITE_API_BASE_URL}/api/chatapp/chatbot/", {
         method: "POST",
         body: JSON.stringify({ message: messageContent }),
       });
@@ -127,7 +128,7 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
       const botResponse = chatbotData.response;
   
       // Store messages in backend
-      await fetchWithAuth("http://localhost:8000/api/chatapp/store_message/", {
+      await fetchWithAuth("${import.meta.env.VITE_API_BASE_URL}/api/chatapp/store_message/", {
         method: "POST",
         body: JSON.stringify({
           session_id: chatId,
@@ -215,7 +216,9 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
             </div>
           )}
 
-          {messages.map((msg) => (
+          {messages.map((msg) => {
+            console.log("🧾 Rendering message:", msg);
+            return (
             <div
               key={msg.id}
               className={cn(
@@ -242,7 +245,7 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
                 )}
               </div>
             </div>
-          ))}
+          )})}
           <div ref={bottomRef} />
 
         </div>

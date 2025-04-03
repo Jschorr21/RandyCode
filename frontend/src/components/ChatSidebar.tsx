@@ -36,7 +36,7 @@ const ChatSidebar = ({ onChatSelect, currentChatId, onToggleCollapse }: ChatSide
   const fetchChatHistories = async () => {
     try {
       const token = localStorage.getItem("access");
-      const res = await fetch("http://localhost:8000/api/chatapp/", {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -66,7 +66,7 @@ const ChatSidebar = ({ onChatSelect, currentChatId, onToggleCollapse }: ChatSide
   const deleteChat = async (chatId: string) => {
     try {
       const token = localStorage.getItem("access");
-      const res = await fetch(`http://localhost:8000/api/chatapp/${chatId}/`, {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${chatId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

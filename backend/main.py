@@ -1,9 +1,17 @@
+import os
+import django
+from dotenv import load_dotenv
+
+# ✅ Set Django environment variable and initialize Django before anything else
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings")
+django.setup()
+
+# ✅ Now it's safe to import Django-dependent modules
+import logging
 from fastapi import FastAPI, WebSocket
 from pydantic import BaseModel
 from langchain_pipeline.langraph_pipeline import LangGraphPipeline
-import logging
 import uvicorn
-from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO)
 load_dotenv()
@@ -41,7 +49,9 @@ async def websocket_endpoint(websocket: WebSocket):
                 logging.info("🔴 WebSocket connection closed.")
                 break
 
-            response = pipeline.run_pipeline(user_message, False)
+            session_id = data.get("session_id")  # add this line
+            response = pipeline.run_pipeline(user_message, use_agent=False, session_id=session_id)
+
             await websocket.send_json({"response": response})  # ✅ Ensure message is sent immediately
 
     except Exception as e:
