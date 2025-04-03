@@ -1,11 +1,13 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Upload, X, ArrowUp } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/contexts/AuthContext";
+import { fetchWithAuth } from "@/lib/fetchWithAuth"; // at the top
+
 
 interface Message {
   id: string;
@@ -31,6 +33,7 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
   const [uploadedFile, setUploadedFile] = useState<UploadedFile | null>(null);
   const { toast } = useToast();
   const { user } = useAuth();
+  const bottomRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (currentChatId) {
@@ -40,16 +43,18 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
     }
   }, [currentChatId]);
 
+  useEffect(() => {
+    if (bottomRef.current) {
+      bottomRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
+  
+
   const fetchMessages = async () => {
     if (!currentChatId || !user) return;
   
     try {
-      const token = localStorage.getItem("access");
-      const res = await fetch(`http://localhost:8000/api/chatapp/${currentChatId}/messages/`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const res = await fetchWithAuth(`http://localhost:8000/api/chatapp/${currentChatId}/messages/`);
   
       if (!res.ok) throw new Error("Failed to fetch messages");
   
@@ -66,33 +71,42 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
   
 
   const handleSendMessage = async () => {
-
-    console.log("Message:", message);
-    console.log("Uploaded file:", uploadedFile);
-    console.log("User:", user);
-
     if ((!message.trim() && !uploadedFile) || !user) {
       console.log("Blocked: no message or no user");
       return;
     }
-
   
     const token = localStorage.getItem("access");
     const messageContent = uploadedFile
       ? `${message}\n[File: ${uploadedFile.name}]`
       : message;
   
-    try {
-      let chatId = currentChatId;
+    let chatId = currentChatId;
   
-      // If no chat, create one
+    const userMessageObj = {
+      id: `${Date.now()}-user`,
+      role: "user",
+      content: messageContent,
+      created_at: new Date().toISOString(),
+    };
+  
+    const typingIndicator = {
+      id: `${Date.now()}-typing`,
+      role: "bot",
+      content: "Typing...",
+      created_at: new Date().toISOString(),
+    };
+  
+    try {
+      // Display user message and typing indicator immediately
+      setMessages((prev) => [...prev, userMessageObj, typingIndicator]);
+      setMessage("");
+      setUploadedFile(null);
+  
+      // Create new chat session if necessary
       if (!chatId) {
-        const res = await fetch("http://localhost:8000/api/chatapp/", {
+        const res = await fetchWithAuth("http://localhost:8000/api/chatapp/", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
           body: JSON.stringify({ session_id: crypto.randomUUID() }),
         });
   
@@ -104,25 +118,17 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
       }
   
       // Get AI response
-      const chatbotRes = await fetch("http://localhost:8000/api/chatapp/chatbot/", {
+      const chatbotRes = await fetchWithAuth("http://localhost:8000/api/chatapp/chatbot/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`, // ← add this
-        },
         body: JSON.stringify({ message: messageContent }),
       });
   
       const chatbotData = await chatbotRes.json();
       const botResponse = chatbotData.response;
   
-      // Store both user + bot messages
-      await fetch("http://localhost:8000/api/chatapp/store_message/", {
+      // Store messages in backend
+      await fetchWithAuth("http://localhost:8000/api/chatapp/store_message/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
         body: JSON.stringify({
           session_id: chatId,
           user_message: messageContent,
@@ -130,19 +136,20 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
         }),
       });
   
-      const newMessages = [
-        { id: `${Date.now()}-user`, role: "user", content: messageContent, created_at: new Date().toISOString() },
-        { id: `${Date.now()}-bot`, role: "bot", content: botResponse, created_at: new Date().toISOString() },
-      ];
-  
-      setMessages((prev) => [...prev, ...newMessages]);
+      // Replace typing indicator with real response
+      setMessages((prev) => [
+        ...prev.filter((m) => m.id !== typingIndicator.id),
+        {
+          id: `${Date.now()}-bot`,
+          role: "bot",
+          content: botResponse,
+          created_at: new Date().toISOString(),
+        },
+      ]);
   
       if (messages.length === 0) {
         onFirstMessage(chatId, messageContent.slice(0, 50) + (messageContent.length > 50 ? "..." : ""));
       }
-  
-      setMessage("");
-      setUploadedFile(null);
     } catch (error) {
       console.error("Error sending message:", error);
       toast({
@@ -150,6 +157,8 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
         description: "Please try again later",
         variant: "destructive",
       });
+      // Remove typing indicator on error
+      setMessages((prev) => prev.filter((m) => m.id !== typingIndicator.id));
     }
   };  
 
@@ -222,10 +231,20 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage }: Chat
                     : "bg-muted"
                 )}
               >
-                <p className="whitespace-pre-wrap">{msg.content}</p>
+                {msg.content === "Typing..." ? (
+                  <div className="flex gap-1 text-foreground">
+                    <span className="animate-bounce">.</span>
+                    <span className="animate-bounce delay-100">.</span>
+                    <span className="animate-bounce delay-200">.</span>
+                  </div>
+                ) : (
+                  <p className="whitespace-pre-wrap">{msg.content}</p>
+                )}
               </div>
             </div>
           ))}
+          <div ref={bottomRef} />
+
         </div>
       </div>
 

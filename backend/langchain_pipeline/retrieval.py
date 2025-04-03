@@ -1,46 +1,62 @@
 from data_ingestion.vector_store import VectorStore
 from langchain_core.tools import tool
 import logging 
+import json
+
 logging.basicConfig(level=logging.INFO)
 
 @tool(response_format="content_and_artifact")
 def retrieve(query: str):
-    """Retrieve information related to a query."""
+    """Retrieve relevant information to a query from Vanderbilt's catalog, course listings, and websites."""
     print(f"🔍 Searching for: {query}")
     vector_store = VectorStore()
 
-    catalog_docs = vector_store.search(query, "catalog", top_k=8)
-    courses_docs = vector_store.search(query, "courses", top_k=8)
-    website_docs = vector_store.search(query, "websites", top_k=8)
+    # Retrieve (doc, score) pairs
+    catalog_docs_with_scores = vector_store.search(query, "catalog", top_k=20)
+    courses_docs_with_scores = vector_store.search(query, "courses", top_k=20)
+    website_docs_with_scores = vector_store.search(query, "websites", top_k=20)
 
-    print(f"📌 Found {len(catalog_docs)} catalog docs, {len(courses_docs)} course docs, and {len(website_docs)} website docs.")
+    print(f"📌 Found {len(catalog_docs_with_scores)} catalog docs, "
+          f"{len(courses_docs_with_scores)} course docs, and "
+          f"{len(website_docs_with_scores)} website docs.")
 
-    if not catalog_docs and not courses_docs:
+    if not catalog_docs_with_scores and not courses_docs_with_scores and not website_docs_with_scores:
         print("❌ No relevant documents found.")
         return {"content": "I couldn't find any relevant information in the database.", "sources": []}
-    
-    def format_docs(docs, source_label):
-        return [
-            f"Source: {source_label}\nContent: {doc.page_content}"
-            for doc in docs
-        ]
 
-    def format_website_docs(docs):
-        return [
-            f"Source: Vanderbilt Websites\nURL: {doc.metadata.get('source', 'Unknown')}\nContent: {doc.page_content}"
-            for doc in docs
-        ]
-    catalog_content = format_docs(catalog_docs, "Vanderbilt Undergraduate Catalog")
-    courses_content = format_docs(courses_docs, "Vanderbilt Course Descriptions")
-    websites_content = format_website_docs(website_docs)
-    
-    serialized_content = "\n\n".join(catalog_content + courses_content + websites_content)
+    # Combine and sort all by score (lower = more relevant)
+    all_docs_with_scores = (
+        [(doc, score, "Vanderbilt Undergraduate Catalog") for doc, score in catalog_docs_with_scores] +
+        [(doc, score, "Vanderbilt Course Descriptions") for doc, score in courses_docs_with_scores] +
+        [(doc, score, "Vanderbilt Websites") for doc, score in website_docs_with_scores]
+    )
+    top_docs = sorted(all_docs_with_scores, key=lambda x: x[1])[:20]  # Top 15 most relevant
+
+    # Print debug info
+    print(f"\n📊 Selected Top {len(top_docs)} Most Relevant Documents:")
+    for i, (doc, score, source_label) in enumerate(top_docs):
+        print(f"\n📄 Document {i + 1} | Score: {score:.4f}")
+        print(f"Source: {source_label}")
+        print(f"ID: {doc.metadata.get('id', 'No ID')}")
+        print(f"Content:\n{doc.page_content[:500]}...")  # Optional: trim content in console
+        print("-" * 80)
+
+    # Format output for system
+    def format_doc(doc, source_label):
+        if source_label == "Vanderbilt Websites":
+            return f"Source: {source_label}\nURL: {doc.metadata.get('source', 'Unknown')}\nContent: {doc.page_content}"
+        return f"Source: {source_label}\nContent: {doc.page_content}"
+
+    formatted_docs = [format_doc(doc, source_label) for doc, _, source_label in top_docs]
+
+    serialized_content = "\n\n".join(formatted_docs)
     sources = list(set(
         f"{doc.metadata.get('source', 'Unknown')} (Page {doc.metadata.get('page', 'N/A')})"
-        for doc in catalog_docs + courses_docs + website_docs
+        for doc, _, _ in top_docs
     ))
-    
-    print(f"📂 Retrieved {len(catalog_docs + courses_docs + website_docs)} documents.")
-    return serialized_content, sources
 
-        
+    # For eval script
+    encoded = json.dumps(formatted_docs)
+    combined = f"[DOCS_LIST_JSON_START]{encoded}[DOCS_LIST_JSON_END]\n\n{serialized_content}"
+
+    return combined, {"sources": sources}
