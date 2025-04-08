@@ -107,6 +107,8 @@ class ResponseGenerator:
         # print("\n\n📩 FINAL PROMPT SENT TO LLM:\n", formatted_prompt)
         print(f"\n\n📝 PROMPT SIZE: {len(formatted_prompt)} characters\n\n")
 
+        print(f"Final prompt\n\n{formatted_prompt}")
+
         # ✅ Call LLM with updated prompt
         print("🧠 CALLING LLM")
         response = self.llm.invoke(prompt)

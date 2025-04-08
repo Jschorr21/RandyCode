@@ -8,7 +8,7 @@ from langchain_deepseek import ChatDeepSeek
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import ToolMessage
 logging.basicConfig(level=logging.INFO)
-from langchain_core.messages import SystemMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_pipeline.prompts import SYSTEM_PROMPT_TEMPLATE, DECISION_SYSTEM_PROMPT, NO_CONTEXT_SYSTEM_PROMPT  # Assuming you have this
 import re
 
@@ -23,38 +23,26 @@ class LangGraphBuilder:
     
 
     from langchain_core.messages import SystemMessage
+    
 
+    from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, ToolMessage
     def query_or_respond(self, state: MessagesState):
-        """Generate tool calls for retrieval or generate final response if no tool is needed."""
+        """Generate tool calls for retrieval or respond, tracking retrieval count."""
         llm_with_tools = self.llm.bind_tools([retrieve])
 
-        # Insert decision system prompt first
-        decision_prompt = SystemMessage(content=DECISION_SYSTEM_PROMPT)
-        decision_input = [decision_prompt] + state["messages"]
-        decision_response = llm_with_tools.invoke(decision_input)
+        # ✅ Count existing retrieval tool messages
+        previous_retrievals = sum(1 for message in state["messages"] if isinstance(message, ToolMessage))
+        
+        # ✅ Invoke LLM with tools
+        response = llm_with_tools.invoke(state["messages"])
+        
+        # ✅ Track the number of retrieve calls made in THIS query step
+        new_retrievals = sum(1 for message in response.additional_kwargs.get("messages", []) if message.type == "tool")
+        
+        # ✅ Store count in state
+        state["retrieve_count"] = new_retrievals - previous_retrievals
 
-        # Check if any tool calls were made
-        tool_calls = decision_response.tool_calls
-        if tool_calls:
-            # Use retrieve
-            return {"messages": [decision_response]}
-        else:
-            # Use the fallback no-context assistant identity prompt
-            print("⚠️ No tool calls — re-invoking with NO_CONTEXT_SYSTEM_PROMPT")
-
-            system_prompt = SystemMessage(NO_CONTEXT_SYSTEM_PROMPT)
-            conversation_messages = [
-                msg for msg in state["messages"]
-                if msg.type in ("human", "system") or (msg.type == "ai" and not msg.tool_calls)
-            ]
-            full_prompt = [system_prompt] + conversation_messages
-            print("\n🧠 LLM FINAL PROMPT (NO CONTEXT):")
-            for msg in full_prompt:
-                print(f"{msg.type.upper()}: {msg.content}\n")
-            response = self.llm.invoke(full_prompt)
-
-            return {"messages": [response]}
-
+        return {"messages": [response]}
 
 
 

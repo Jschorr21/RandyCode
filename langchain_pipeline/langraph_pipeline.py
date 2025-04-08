@@ -4,7 +4,7 @@ from langchain_pipeline.agent_graph import AgentGraph
 from langchain_deepseek import ChatDeepSeek
 from langchain_openai import ChatOpenAI
 logging.basicConfig(level=logging.INFO)
-
+from IPython.display import Image, display
 class LangGraphPipeline:
     """Orchestrates RAG system execution."""
 
@@ -38,6 +38,9 @@ class LangGraphPipeline:
             # input_message = input("Enter your query: ")
         else:
             graph = self.langraph_builder.build_graph()
+
+
+            display(Image(graph.get_graph().draw_mermaid_png()))
             memory = self.langraph_builder.memory
             response = graph.invoke({"messages": [{"role": "user", "content": input_message}]}, config={"configurable": {"thread_id": "abc_456"}})  # ✅ Standard RAG
             print(f"\n\n 📝 Response: {response["messages"][-1].content}")
