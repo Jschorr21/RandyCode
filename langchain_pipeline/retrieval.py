@@ -60,3 +60,4 @@ def retrieve(query: str):
     combined = f"[DOCS_LIST_JSON_START]{encoded}[DOCS_LIST_JSON_END]\n\n{serialized_content}"
 
     return combined, {"sources": sources}
+    # return serialized_content, sourcesr
