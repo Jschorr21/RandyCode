@@ -10,7 +10,7 @@ class LangGraphPipeline:
 
     def __init__(self):
 
-        self.llm = ChatOpenAI(model_name="gpt-4o-mini")
+        self.llm = ChatOpenAI(model_name="gpt-4.1-mini")
         self.langraph_builder = LangGraphBuilder(self.llm)
         self.agent_graph = AgentGraph()
 

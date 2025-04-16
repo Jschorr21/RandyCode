@@ -1,99 +1,280 @@
-RAG Evaluation Results - 2025-03-26 00:09:09.874818
+RAG Evaluation Results - 2025-04-15 19:12:43.986965
 
 Test Case 1
-Answer Relevancy: 0.57
-Reason: The score is 0.57 because several irrelevant statements addressed specific components of the AXLE curriculum without connecting them to its overall application for students. While these details are informative, they fail to answer the core question about how AXLE affects students' educational experience, preventing the score from being higher.
-
-Faithfulness: 0.92
-Reason: The score is 0.92 because the actual output incorrectly claims that the AXLE Writing Requirement has four components, while the retrieval context states that it only includes English 1100 or a demonstration of basic skills.
-
-Contextual Recall: 1.0
-Reason: The score is 1.00 because every aspect of the expected output seamlessly corresponds with the retrieval context, confirming AXLE's role in providing a well-rounded education through detailed course requirements and skills development.
-
-Contextual Relevancy: 0.49
-Reason: The score is 0.49 because while there are relevant statements such as 'AXLE is the acronym for Achieving eXcellence in Liberal Education.' and 'It is the core curriculum that all students in the College of Arts and Science must fulfill.', the majority of the retrieval context comprises incomplete or off-topic information that doesn't address the specifics about how AXLE applies to students. For example, many statements focus on counseling procedures and courses rather than explaining the curriculum directly, resulting in a lower relevancy score.
-
-Task Completion: 0.9
-Reason: The response provided a thorough overview of the AXLE curriculum, including key components and guidance for students, closely aligning with the user's goal of understanding the curriculum. However, it may not have covered every detail or requirement comprehensively.
-
-Correctness (GEval): 0.67
-Reason: The actual output accurately describes the AXLE curriculum and includes key components such as the Writing Requirement and the Liberal Arts Requirement. However, it omits mention of the Mathematics and Natural Sciences and the Major Requirement, leading to a slight detail omission compared to the expected output.
-
 Answer Relevancy: 1.0
-Reason: The score is 1.00 because the response provided relevant information regarding study abroad opportunities for Vanderbilt undergraduates without including any irrelevant statements.
+Reason: The score is 1.00 because there were no irrelevant statements in the output, providing direct and relevant information about study abroad opportunities for Vanderbilt undergraduates.
 
-Faithfulness: 0.91
-Reason: The score is 0.91 because the actual output inaccurately states that Vanderbilt has more than 120 approved study abroad programs, conflicting with the retrieval context, which indicates there are approximately thirty programs specifically for engineering or computer science courses.
+Faithfulness: 1.0
+Reason: The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context.
 
 Contextual Recall: 1.0
-Reason: The score is 1.00 because every aspect of the expected output perfectly aligns with the information provided in the node(s) in retrieval context, confirming the range and details of Vanderbilt's study abroad opportunities.
-
-Contextual Relevancy: 0.43
-Reason: The score is 0.43 because the retrieval context largely contains information unrelated to the input question about study abroad opportunities, emphasizing topics like honors programs, medical courses, and student research. Relevant statements such as 'Vanderbilt offers study programs for all undergraduate students' and 'Vanderbilt's Global Education Office offers approximately thirty programs' provide the necessary context, but they are significantly outnumbered by irrelevant content.
+Reason: The score is 1.00 because all sentences in the expected output directly correlate with the information from the first node in retrieval context, effectively capturing the essence of Vanderbilt's extensive study abroad offerings.
 
 Task Completion: 0.95
-Reason: The actual outcome provides comprehensive information about study abroad programs available for Vanderbilt undergraduates, detailing the variety of options and specific areas of study, which closely aligns with the user's inquiry.
+Reason: The actual outcome provides detailed information about a wide variety of study abroad programs available for Vanderbilt undergraduates, along with additional support information. However, it could be considered slightly less than perfect if it didn't specify the exact eligibility criteria or process to apply, which is often a vital part of finding study abroad options.
 
-Correctness (GEval): 0.85
-Reason: The actual output provides thorough details about study abroad programs, including specific offerings by school and financial aid, aligning closely with the expected output. It omits explicit mention of meeting with academic advisers, which would enhance completeness.
+Correctness (GEval): 0.63
+Reason: The actual output provides relevant information about study abroad opportunities, but lacks specific details mentioned in the expected output, such as 'Study Abroad Pathways' and 'No Language Prerequisites'. Additionally, the focus on 'Global Education Office' and its role differs slightly, leading to a mismatch in completeness.
 
-Answer Relevancy: 0.92
-Reason: The score is 0.92 because there was a mention of the Immersion Vanderbilt website, which, while relevant to the topic, did not directly address the specifics of the program's impact on graduation requirements. This slight deviation from the core question prevented a higher score, but the main aspects of the inquiry were ultimately well-covered, justifying the strong relevancy.
+Test Case 2
+Answer Relevancy: 1.0
+Reason: The score is 1.00 because there were no irrelevant statements in the actual output, indicating that the response was completely relevant and directly addressed the query about study abroad opportunities for Vanderbilt undergraduates.
 
-Faithfulness: 0.83
-Reason: The score is 0.83 because the actual output inaccurately claims that Immersion Vanderbilt is a graduation requirement for all undergraduates, while the context only specifies that at least one immersive experience is required, which is less stringent. Additionally, it misrepresents the requirement for the culminating project, suggesting a specific alignment with pathways that is not clearly stated in the context.
+Faithfulness: 0.86
+Reason: The score is 0.86 because the actual output incorrectly states that study abroad programs are available across seven continents and exceeds 120 approved programs, which contradicts the retrieval context that specifies over 40 countries.
 
 Contextual Recall: 1.0
-Reason: The score is 1.00 because every statement in the expected output is well-supported by the information found in node 1 of the retrieval context, confirming a perfect alignment.
+Reason: The score is 1.00 because every aspect of the expected output is directly supported by relevant nodes in the retrieval context, showcasing a comprehensive alignment of information related to Vanderbilt's study abroad offerings.
 
-Contextual Relevancy: 0.47
-Reason: The score is 0.47 because, although there are relevant details about Immersion Vanderbilt such as 'Immersion Vanderbilt is a requirement for all undergraduates' and 'Students must complete at least one immersive experience', the majority of the context is filled with unrelated statements regarding course specifics and processes that do not pertain to the impact of Immersion Vanderbilt on graduation requirements.
+Task Completion: 0.95
+Reason: The information provided clearly outlines the available study abroad opportunities for Vanderbilt undergraduates, detailing the number of programs, countries, credit implications, support services, and funding options, closely aligning with the user's goal.
+
+Correctness (GEval): 0.7
+Reason: The actual output covers many aspects of study abroad opportunities at Vanderbilt, similar to the expected output, but the number of programs mentioned and some specific phrasing differ, leading to a slight variance.
+
+Test Case 3
+Answer Relevancy: 1.0
+Reason: The score is 1.00 because the answer directly addresses the question regarding prerequisites for the business minor without including any irrelevant statements.
+
+Faithfulness: 0.86
+Reason: The score is 0.86 because the actual output incorrectly states that prerequisites can be taken in any order or simultaneously, which is not mentioned in the retrieval context, leading to a contradiction.
+
+Contextual Recall: 1.0
+Reason: The score is 1.00 because all elements of the expected output are directly supported by specific details in node 1 of the retrieval context, including the prerequisites, course options, and conditions for completion.
 
 Task Completion: 0.9
-Reason: The actual outcome provided a clear definition of Immersion Vanderbilt and its significance as a graduation requirement, closely aligning with the user's goal of understanding its impact on graduation requirements.
+Reason: The system identified key prerequisites for the Undergraduate Business Minor, which directly aligns with the user's inquiry. However, it could have provided more detailed context or guidance on how to proceed with the AP or IB credits.
 
-Correctness (GEval): 0.77
-Reason: The actual output accurately describes Immersion Vanderbilt and its components, but it omits details such as the note that completion is not required for the project to be based on the immersive experience and other specific project forms. There is minimal contradiction with the expected output.
+Correctness (GEval): 0.82
+Reason: The actual output contains most of the necessary details from the expected output but has slight differences in wording and presentation, leading to minor deviations in similarity.
 
-Answer Relevancy: 0.78
-Reason: The score is 0.78 because while there are relevant details about study abroad opportunities, the presence of several procedural and call-to-action statements detracts from the core information requested. The output includes information not directly related to the actual opportunities available, preventing a higher score.
+Test Case 4
+Answer Relevancy: 0.8
+Reason: The score is 0.80 because while the output provided useful insights on enrolling in courses, it included irrelevant statements about programming access that did not address how to enroll in a Criminal Law course. These irrelevant elements prevented the score from being higher.
 
-Faithfulness: 0.83
-Reason: The score is 0.83 because the actual output overstates the number of Vanderbilt-approved study abroad programs by claiming more than 120, while the retrieval context indicates there are approximately thirty. Additionally, while the output implies that the Blair School of Music coordinates multiple study abroad programs with music degrees, the context specifies only five such programs.
+Faithfulness: 0.86
+Reason: The score is 0.86 because the actual output incorrectly asserts ULAW 1000 as a prerequisite for other law courses when the retrieval context specifies that Introduction to Law and the Legal System is required instead.
 
 Contextual Recall: 1.0
-Reason: The score is 1.00 because every sentence in the expected output is fully supported by corresponding nodes in the retrieval context, such as the offerings from the Global Education Office and details about financial aid and academic advising.
+Reason: The score is 1.00 because every sentence in the expected output clearly aligns with the relevant information provided in node(s) in retrieval context, demonstrating a thorough understanding of the minor requirements and course information at Vanderbilt.
 
-Contextual Relevancy: 0.39
-Reason: The score is 0.39 because the retrieval context primarily discusses various unrelated academic programs and general information rather than directly addressing specific study abroad opportunities for Vanderbilt undergraduates. Relevant statements do exist, detailing 'Vanderbilt offers study programs for all undergraduate students...' and 'Blair: Five Vanderbilt study abroad programs are coordinated...', but they are overshadowed by extensive irrelevant content discussing projects, honors programs, and internships.
-
-Task Completion: 1.0
-Reason: The system provided comprehensive information on study abroad opportunities specifically for Vanderbilt undergraduates, fully addressing the user's inquiry.
+Task Completion: 0.95
+Reason: The actual outcome provided comprehensive guidance on declaring the minor in Legal Studies and enrolling in the Criminal Law course while also offering course planning and access to supplemental resources, which aligns closely with the user's goal.
 
 Correctness (GEval): 0.78
-Reason: The actual output provides detailed information about study abroad opportunities and includes specific programs like Semester & Year Abroad and the Visage Program, which the expected output also mentions, albeit in a slightly different format. However, it omits the mention of the Immersion Vanderbilt requirement and the need to consult with an academic adviser, leading to a slight penalization.
+Reason: The actual output closely resembles the expected output with similar steps and content, but it misses mentioning the total course requirements for the minor.
 
-Answer Relevancy: 0.92
-Reason: The score is 0.92 because while the main requirements for the Computer Science major were addressed, there was an irrelevant mention of Introduction to Engineering, which pertains to a different major. This slightly lowers the relevancy, but overall, most of the provided information was pertinent to the question asked.
+Test Case 5
+Answer Relevancy: 0.36
+Reason: The score is 0.36 because the output included numerous irrelevant statements that addressed general mathematics and elective requirements instead of focusing specifically on the core requirements for the Computer Science major. The inclusion of these broader topics detracts from directly answering the input question, leading to a lower relevancy score.
 
-Faithfulness: 0.85
-Reason: The score is 0.85 because the actual output inaccurately claims that an Introduction to Engineering is a requirement, while the retrieval context does not mention it. Additionally, it states that the Computer Science Depth requirement is for 15 hours, which is not confirmed by the context that only categorizes it without specifying hours.
+Faithfulness: 0.93
+Reason: The score is 0.93 because the actual output incorrectly states the Mathematics requirement as 17-19 hours, whereas the retrieval context explicitly specifies a minimum of 18 hours.
 
-Contextual Recall: 1.0
-Reason: The score is 1.00 because every aspect of the expected output is fully supported by corresponding details in the retrieval context, confirming a perfect alignment with the information provided in all relevant nodes.
+Contextual Recall: 0.92
+Reason: The score is 0.92 because the majority of the original output aligns closely with the detailed requirements provided in multiple nodes in retrieval context, covering essential areas like Mathematics, Science, and Computer Science Core. However, the lack of specific context for additional guidance indicates a minor gap in match, impacting the score slightly.
 
-Contextual Relevancy: 0.53
-Reason: The score is 0.53 because while there are relevant statements like 'Curriculum Requirements for a B.S. in computer science requires a minimum of 120 hours' and 'Mathematics (17-19 hours) is a required component for the Computer Science major,' many statements in the retrieval context remain irrelevant, focusing instead on unrelated course substitutions, Liberal Arts Core, and other majors which do not clearly outline the specific requirements for the Computer Science Major.
+Task Completion: 0.95
+Reason: The actual outcome provides detailed information about the credit hour requirements and course distribution for the Computer Science Major at Vanderbilt University, closely aligning with the user's goal of understanding these requirements.
+
+Correctness (GEval): 0.63
+Reason: The actual output provides detailed requirements for the Computer Science major at Vanderbilt University but contains discrepancies in course listings and some required hours compared to the expected output.
+
+Test Case 6
+Answer Relevancy: 0.67
+Reason: The score is 0.67 because the output included irrelevant statements about working on projects and mentioning CS 2201 as a prerequisite without directly addressing the course coverage of CS 3259. These unrelated points detracted from the focus on the main question.
+
+Faithfulness: 0.67
+Reason: The score is 0.67 because there are discrepancies in the prerequisites stated for the course CS 3259, particularly with regard to the inclusion of MATH 2400 and the exclusion of other math courses, as well as the absence of CS 2201 from the prerequisite list, indicating a lack of alignment with the retrieval context.
+
+Contextual Recall: 0.83
+Reason: The score is 0.83 because while there is a strong alignment of course topics and prerequisites with the relevant nodes in retrieval context (notably topics listed in node 12), the absence of a direct link to supplemental information affects completeness.
 
 Task Completion: 1.0
-Reason: The actual outcome provides a comprehensive breakdown of the requirements for the Bachelor of Science in Computer Science Major at Vanderbilt University, fully aligning with the user's goal.
+Reason: The actual outcome provided a detailed overview of the course content and explicitly listed its prerequisites, perfectly aligning with the user's goal of determining both.
+
+Correctness (GEval): 0.81
+Reason: The actual output provides detailed information about CS 3259 similar to the expected output, including course content and prerequisites. However, it is missing the reference to the Vanderbilt Undergraduate Catalog.
+
+Test Case 7
+Answer Relevancy: 0.5
+Reason: The score is 0.50 because although some information was provided regarding prerequisites, it failed to directly address the question of whether BUS 1100 and BUS 1300 can be taken concurrently. The presence of irrelevant statements about prerequisites lowered the score, as they did not contribute to answering the primary query.
+
+Faithfulness: 0.33
+Reason: The score is 0.33 because the actual output incorrectly implies a required sequence of courses despite the context allowing concurrent enrollment, creates confusion regarding prerequisites for BUS 1100 by misrepresenting its relationships with ECON 1020, and fails to align with the stated prerequisites for BUS 1300, which only mentions BUS 1100.
+
+Contextual Recall: 1.0
+Reason: The score is 1.00 because every aspect of the expected output aligns perfectly with the information provided in the retrieval context, confirming the concurrent enrollment and prerequisite structure for both BUS 1100 and BUS 1300 as detailed in node(s) in retrieval context.
+
+Task Completion: 1.0
+Reason: The actual outcome confirms that the user can indeed take both BUS 1100 and BUS 1300 at the same time, fulfilling the user's goal perfectly.
+
+Correctness (GEval): 0.67
+Reason: The actual output provides similar information regarding concurrent enrollment and prerequisites but lacks some details from the expected output, such as the note on seeking approval for prerequisites and mentions an inaccurate prerequisite for BUS 1300. The core message is consistent, but some nuances are missing.
+
+Test Case 8
+Answer Relevancy: 0.94
+Reason: The score is 0.94 because while the response addressed the AXLE curriculum effectively, the mention of majors and credit hours was not directly relevant to how the curriculum applies to students. This slightly lowered the score, but the overall response was still largely on point and informative.
+
+Faithfulness: 0.75
+Reason: The score is 0.75 because the actual output inaccurately states that the First-Year Writing Seminar must be numbered 1111, which is not mentioned in the context. Additionally, it introduces an unwarranted deadline for completing one of the writing courses by the fourth semester, which is also not found in the context. Furthermore, the actual output lacks clarity on the specific course requirements for the liberal arts requirement, deviating from the details provided.
+
+Contextual Recall: 0.71
+Reason: The score is 0.71 because while many aspects of the AXLE curriculum are well-supported by the retrieval context, including the writing and liberal arts requirements (reflected in sentence numbers 1, 2, and 3, connected to node 1 and 3), there are still a few elements that lack clear backing from the sources provided, which contributes to a slightly lower recall score.
+
+Task Completion: 0.95
+Reason: The response effectively detailed the AXLE curriculum structure and its application to students, covering key aspects such as requirements and advising, though some additional context on specific student experiences could enhance understanding.
+
+Correctness (GEval): 0.8
+Reason: The actual output provides detailed information about the AXLE curriculum that closely aligns with the expected output, covering components like writing requirements and liberal arts requirements, though some specific phrasing differs.
+
+Test Case 9
+Answer Relevancy: 0.82
+Reason: The score is 0.82 because while much of the response was relevant to double majoring in Computer Science and Mathematics at Vanderbilt, it included some irrelevant statements regarding science and lab course requirements that do not directly address the question. These irrelevant elements pulled down the score slightly, but the core information about the double major paths remained strong.
+
+Faithfulness: 0.43
+Reason: The score is 0.43 because there are several unverified claims in the actual output regarding major requirements and procedures that are not supported by the retrieval context, including specific course requirements for both Computer Science and Mathematics, credit hour stipulations, and the necessity of adviser discussions for declaring majors.
+
+Contextual Recall: 1.0
+Reason: The score is 1.00 because all aspects of the expected output are fully supported by relevant details from the node(s) in retrieval context, ensuring a comprehensive and accurate guide on pursuing a double major in Computer Science and Mathematics at Vanderbilt.
+
+Task Completion: 1.0
+Reason: The actual outcome fully addresses the user's goal by providing comprehensive information on major requirements, the steps to declare a double major, and important advice about consulting academic advisers and utilizing official resources.
+
+Correctness (GEval): 0.69
+Reason: The actual output provides detailed requirements and steps for pursuing a double major, similar to the expected output, but lacks a clearer structure in the overarching outline and some academic standing details.
+
+Test Case 10
+Answer Relevancy: 1.0
+Reason: The score is 1.00 because there are no irrelevant statements in the actual output, and it directly addresses the input regarding the necessary requirements to graduate in the A&S college.
+
+Faithfulness: 0.83
+Reason: The score is 0.83 because there are inaccuracies in the claim regarding the credit hours needed for a second major and the requirements for completing credit hours in residence, both of which do not align with the details specified in the retrieval context.
+
+Contextual Recall: 1.0
+Reason: The score is 1.00 because every aspect of the graduation requirements outlined in the expected output is directly supported by the relevant nodes in the retrieval context, confirming its completeness and accuracy.
+
+Task Completion: 1.0
+Reason: The system successfully provided comprehensive details about all necessary requirements for graduation, fully aligning with the user's goal.
+
+Correctness (GEval): 0.48
+Reason: The actual output covers several requirements for graduation, but it lists 120 credit hours instead of the 126 required in the expected output, and misses specific course details such as Natural Science and Social Science requirements.
+
+Test Case 11
+Answer Relevancy: 0.8
+Reason: The score is 0.80 because although the explanation provided touches on degree requirements and well-roundedness, it fails to directly address the specific reason behind the limit on credit hours outside a student's home college.
+
+Faithfulness: 0.88
+Reason: The score is 0.88 because the actual output incorrectly states conditions surrounding credit transfers, suggesting a majority of credits must be from the home college, which is not supported by the retrieval context specifying only a minimum GPA requirement.
+
+Contextual Recall: 0.88
+Reason: The score is 0.88 because several key points in the expected output are well-supported by multiple nodes in the retrieval context, specifically regarding credit hour requirements and their impact on academic integrity and focus. However, there are some details that lack direct attribution, preventing a perfect score.
+
+Task Completion: 1.0
+Reason: The response directly addressed the user's goal by explaining the reasons behind Vanderbilt's limitation on credit hours, thus fully aligning with the intended outcome.
 
 Correctness (GEval): 0.62
-Reason: The actual output provides a detailed breakdown of the requirements, closely matching the expected output, but it omits the detailed listing of advanced science courses and the Writing Component requirement, resulting in a loss of specificity.
+Reason: The actual output shares some similar themes with the expected output, such as quality assurance and consistency, but it lacks specific details like the minimum credit hour requirements for degree programs mentioned in the expected output.
+
+Test Case 12
+Answer Relevancy: 0.5
+Reason: The score is 0.50 because while there are some relevant points made regarding credit hours and general advice, significant irrelevant statements detracted from the overall relevance. The output included unrelated information about AXLE requirements and general suggestions that do not directly address the inquiry about AP or IB credits, leading to the score being moderate rather than higher.
+
+Faithfulness: 0.86
+Reason: The score is 0.86 because there is a contradiction where the retrieval context clearly states that no advanced placement credit can fulfill AXLE requirements, yet the actual output claims that AP credit for CS 1101 can be used as a prerequisite, contradicting the established policy.
+
+Contextual Recall: 1.0
+Reason: The score is 1.00 because all components of the expected output are perfectly supported by the corresponding nodes in the retrieval context, ensuring comprehensive alignment and accuracy.
+
+Task Completion: 0.7
+Reason: The actual outcome provides information about AP credits granted for a specific exam but lacks comprehensive details about IB credits and their overall applicability to prerequisites. While some of the user's goal is met, there are still key aspects that remain unclear.
+
+Correctness (GEval): 0.61
+Reason: The actual output covers AP credit for CS 1101, but lacks details on AP Computer Science Principles and IB Mathematics as mentioned in the expected output. It also does not provide as comprehensive information on how IB credits are evaluated for Computer Science majors.
+
+Test Case 13
+Answer Relevancy: 1.0
+Reason: The score is 1.00 because the response directly addresses the question regarding the trade-offs between participating in a study abroad program versus an internship, with no irrelevant statements present.
+
+Faithfulness: 0.95
+Reason: The score is 0.95 because while internships are part of Immersion Vanderbilt, the actual output conflates their cultural experiences with those offered by study abroad programs, indicating a misunderstanding of the distinct nature of these experiences.
+
+Contextual Recall: 0.92
+Reason: The score is 0.92 because most of the insights in the expected output, including the benefits of study abroad and internships, align closely with nodes in the retrieval context, such as the emphasis on global exposure and professional experience. Only one statement about additional information does not connect to the nodes, which minimally affects the overall strength of alignment.
+
+Task Completion: 0.95
+Reason: The actual outcome provided a thorough comparison and addressed the user's request for understanding the trade-offs, nearly fulfilling the goal completely, but it could have included more specific examples or scenarios to illustrate the trade-offs further.
+
+Correctness (GEval): 0.73
+Reason: The actual output covers the trade-offs between study abroad and internships well, but lacks some specificity found in the expected output, such as clearer distinctions on personal growth and flexibility.
+
+Test Case 14
+Answer Relevancy: 1.0
+Reason: The score is 1.00 because there were no irrelevant statements in the actual output, indicating that the response was fully on-topic and directly addressed the input.
+
+Faithfulness: 1.0
+Reason: The score is 1.00 because there are no contradictions present, indicating perfect alignment between the actual output and the retrieval context. Great job!
+
+Contextual Recall: 1.0
+Reason: The score is 1.00 because every aspect of the expected output aligns perfectly with the nodes in retrieval context, illustrating the comprehensive and impactful nature of Immersion Vanderbilt as described in the original content.
+
+Task Completion: 0.9
+Reason: The actual outcome provides a clear description of what Immersion Vanderbilt is and mentions that it is a mandatory graduation requirement, aligning well with the user's goal of understanding its impact on graduation requirements.
+
+Correctness (GEval): 0.73
+Reason: The actual output covers most aspects of Immersion Vanderbilt, including its purpose and pathways, but lacks clarity in the integration of experiential learning and culminating projects compared to the expected output.
+
+Test Case 15
+Answer Relevancy: 0.75
+Reason: The score is 0.75 because the response included a statement about finding more information, which does not directly address the specific timing of Thanksgiving Break or commencement, lowering its relevancy.
+
+Faithfulness: 1.0
+Reason: The score is 1.00 because there are no contradictions present, indicating perfect alignment between the actual output and the retrieval context.
+
+Contextual Recall: 0.67
+Reason: The score is 0.67 because while the Thanksgiving Break and Commencement dates are clearly outlined in the expected output and correlate well with node 3 in the retrieval context, the suggestion to check with departments for updates lacks direct support from the context. This leads to a partial alignment.
+
+Task Completion: 1.0
+Reason: The actual outcome provided the exact dates for both Thanksgiving Break and commencement at Vanderbilt University, fully aligning with the user's goal.
+
+Correctness (GEval): 0.68
+Reason: The actual output provides accurate dates for Thanksgiving Break and Commencement but lacks the clear formatting and additional details found in the expected output, such as specific mention of academic year and emphasis on checking with the department.
+
+Test Case 16
+Answer Relevancy: 0.53
+Reason: The score is 0.53 because while the output includes some relevant comparisons, it is mostly filled with irrelevant statements that do not effectively address the differences between Army ROTC and Air Force ROTC. This diluted focus on general aspects of the programs lowers the score significantly, though it does contain partial information that keeps it above a passing mark.
+
+Faithfulness: 0.92
+Reason: The score is 0.92 because the actual output includes information about the Air Force ROTC program containing specific courses, which is not found in the retrieval context, indicating a slight misalignment.
+
+Contextual Recall: 0.95
+Reason: The score is 0.95 because the sentences clearly connect to multiple node(s) in the retrieval context, outlining distinct features of both the Army ROTC and AFROTC programs, with strong attributions to specific training, coursework, commissioning details, and benefits directly derived from the nodes. A slight reduction reflects minor unrelated content that may not fully align with the core ROTC program specifics.
+
+Task Completion: 1.0
+Reason: The response thoroughly compared the key differences between Army ROTC and Air Force ROTC, directly addressing the user's goal of understanding those distinctions.
+
+Correctness (GEval): 0.71
+Reason: The actual output provides detailed comparisons between Army ROTC and Air Force ROTC, similar to the expected output, but lacks specific mention of the AFROTC name, using 'Air Force ROTC' instead, and has minor discrepancies in phrasing and coursework descriptions that affect overall accuracy.
+
+Test Case 17
+Answer Relevancy: 1.0
+Reason: The score is 1.00 because the response was completely relevant to the question asked, providing a clear comparison of students who would benefit from the Legal Studies minor at Vanderbilt versus a traditional pre-law track, with no irrelevant statements present.
+
+Faithfulness: 0.88
+Reason: The score is 0.88 because the actual output inaccurately states that the Legal Studies minor includes specialized programming related to the admissions process and legal career paths, which is not mentioned in the retrieval context that highlights Vanderbilt Law School's offerings.
+
+Contextual Recall: 1.0
+Reason: The score is 1.00 because every component of the expected output is fully supported by the information provided in the retrieval context, specifically aligned with node 1, demonstrating a strong congruence between them.
+
+Task Completion: 0.9
+Reason: The response clearly explains the benefits of the Legal Studies minor and outlines how it differs from a traditional pre-law track, effectively addressing most aspects of the user's goal.
+
+Correctness (GEval): 0.63
+Reason: The actual output provides a comprehensive overview similar to the expected output, but it lacks emphasis on how law shapes society and includes fewer details on the interdisciplinary approach, leading to slight deviations from the expected structure.
 
 --------------------------------------------------
 
-Test Case 2
+Test Case 1
 ⚠️ Invalid test_result object: not a TestResult
 
 --------------------------------------------------

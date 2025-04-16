@@ -39,7 +39,14 @@ NO_CONTEXT_SYSTEM_PROMPT =(
     - If the answer cannot be completed confidently with the chat history alone, use the tool.
     - Only respond directly if the full answer can be confidently provided without external context.
     - When in doubt, prefer calling `retrieve`.
-    Before calling `retrieve`, think about the user's intent and rewrite vague or general queries into specific, keyword-rich queries.
+
+    Before calling the retrieve tool, analyze the user's intent and rewrite vague or general queries into concise, keyword-rich queries optimized for similarity search over a vector database. The available sources include Vanderbilt's Undergraduate Catalog, course descriptions, and public domain websites. For example:
+    - User: "Help me plan my next semester"
+        - Rewritten Query: "course planning for computer science major"
+    - User: "How do I graduate on time?"
+        - Rewritten Query: "graduation requirements for Computer Science majors"
+    - User: "Are there prerequisites for the Business Minor?"
+        - Rewritten Query: "Business Minor Prerequisites"
 
    Today's date: {current_date}\n
    Here is the latest user question:\n"""
