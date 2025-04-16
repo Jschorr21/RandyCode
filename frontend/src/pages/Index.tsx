@@ -11,7 +11,11 @@ const Index = () => {
   const [currentChatId, setCurrentChatId] = useState<string | null>(null);
   const [isSidebarClosed, setIsSidebarClosed] = useState(false);
   const { user } = useAuth();
-  const sidebarRef = useRef<{ moveChatToTop: (chatId: string) => void }>(null);
+  const sidebarRef = useRef<{
+    moveChatToTop: (chatId: string) => void;
+    refreshChatHistories: () => void;
+  }>(null);
+  
 
   return (
     <div className="flex min-h-screen bg-gray-50 transition-all duration-300 ease-in-out">
@@ -34,26 +38,9 @@ const Index = () => {
             <ChatInterface 
               currentChatId={currentChatId}
               setCurrentChatId={setCurrentChatId}
-              onFirstMessage={(chatId, message) => {
-                const updateChatTitle = async (chatId: string, title: string) => {
-                  try {
-                    const token = localStorage.getItem("access");
-                    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${chatId}/`, {
-                      method: "PATCH",
-                      headers: {
-                        "Content-Type": "application/json",
-                        Authorization: `Bearer ${token}`,
-                      },
-                      body: JSON.stringify({ title }),
-                    });
-              
-                    if (!res.ok) throw new Error("Failed to update title");
-                  } catch (err) {
-                    console.error("Error updating chat title:", err);
-                  }
-                };
-              
-                updateChatTitle(chatId, message.slice(0, 50) + (message.length > 50 ? "..." : ""));
+              onFirstMessage={(chatId) => {
+                sidebarRef.current?.refreshChatHistories(); // pulls new chat from backend
+                sidebarRef.current?.moveChatToTop(chatId);  // reorders visually
               }}
               sidebarRef={sidebarRef}              
             />

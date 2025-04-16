@@ -77,7 +77,7 @@ class LangGraphPipeline:
             all_messages = initial_messages + [{"role": "user", "content": input_message}]
 
 
-            response = graph.stream(
+            response = graph.invoke(
                 {"messages": all_messages},
                 config={"configurable": {"thread_id": thread_id}},
             )

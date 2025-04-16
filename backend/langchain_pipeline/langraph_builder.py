@@ -15,10 +15,10 @@ import re
 class LangGraphBuilder:
     """Builds the LangChain LangGraph state graph."""
 
-    def __init__(self, llm):
+    def __init__(self, llm, memory=None):
         self.response_generator = ResponseGenerator(llm)  # ✅ Pass the shared LLM instance
         self.llm = llm  # ✅ Store the shared instance
-        self.memory = MemorySaver()
+        self.memory = memory or MemorySaver()
 
     
 

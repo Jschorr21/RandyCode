@@ -1,0 +1,588 @@
+.
+├── backend
+│   ├── backend
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── chatapp
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   ├── utils
+│   │   └── views.py
+│   ├── chroma_db
+│   │   ├── 0371d338-6a8d-471c-be3c-4dd9ba24642c
+│   │   ├── 24c96ebb-91fc-46c7-8e0c-339c6ec733ee
+│   │   ├── 65f73603-9295-44f2-82b2-e19106e2ba80
+│   │   └── chroma.sqlite3
+│   ├── data_ingestion
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── catalog_pipeline.py
+│   │   ├── courses_pipeline.py
+│   │   ├── csv_loader.py
+│   │   ├── data
+│   │   ├── json_loader.py
+│   │   ├── s3_loader.py
+│   │   ├── scrape_pipeline.py
+│   │   ├── text_splitter.py
+│   │   └── vector_store.py
+│   ├── db.sqlite3
+│   ├── evaluate_rag_pipeline.py
+│   ├── langchain_pipeline
+│   │   ├── __pycache__
+│   │   ├── agent_graph.py
+│   │   ├── langraph_builder.py
+│   │   ├── langraph_pipeline.py
+│   │   ├── prompts.py
+│   │   ├── response_generator.py
+│   │   ├── retrieval.py
+│   │   └── user_profiles.json
+│   ├── main.py
+│   ├── manage.py
+│   ├── rag_eval_results.txt
+│   ├── rag_eval_test_data.csv
+│   ├── retrieval_test_plot.py
+│   ├── test.py
+│   └── users
+│       ├── __init__.py
+│       ├── __pycache__
+│       ├── admin.py
+│       ├── apps.py
+│       ├── migrations
+│       ├── models.py
+│       ├── tests.py
+│       ├── urls.py
+│       └── views.py
+├── frontend
+│   ├── README.md
+│   ├── bun.lockb
+│   ├── components.json
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── node_modules
+│   │   ├── @alloc
+│   │   ├── @babel
+│   │   ├── @esbuild
+│   │   ├── @eslint
+│   │   ├── @eslint-community
+│   │   ├── @floating-ui
+│   │   ├── @hookform
+│   │   ├── @humanfs
+│   │   ├── @humanwhocodes
+│   │   ├── @isaacs
+│   │   ├── @jridgewell
+│   │   ├── @nodelib
+│   │   ├── @pkgjs
+│   │   ├── @radix-ui
+│   │   ├── @remix-run
+│   │   ├── @rollup
+│   │   ├── @supabase
+│   │   ├── @swc
+│   │   ├── @tailwindcss
+│   │   ├── @tanstack
+│   │   ├── @types
+│   │   ├── @typescript-eslint
+│   │   ├── @ungap
+│   │   ├── @vitejs
+│   │   ├── acorn
+│   │   ├── acorn-jsx
+│   │   ├── ajv
+│   │   ├── ansi-regex
+│   │   ├── ansi-styles
+│   │   ├── any-promise
+│   │   ├── anymatch
+│   │   ├── arg
+│   │   ├── argparse
+│   │   ├── aria-hidden
+│   │   ├── autoprefixer
+│   │   ├── bail
+│   │   ├── balanced-match
+│   │   ├── binary-extensions
+│   │   ├── brace-expansion
+│   │   ├── braces
+│   │   ├── browserslist
+│   │   ├── callsites
+│   │   ├── camelcase-css
+│   │   ├── caniuse-lite
+│   │   ├── ccount
+│   │   ├── chalk
+│   │   ├── character-entities
+│   │   ├── character-entities-html4
+│   │   ├── character-entities-legacy
+│   │   ├── character-reference-invalid
+│   │   ├── chokidar
+│   │   ├── class-variance-authority
+│   │   ├── clsx
+│   │   ├── cmdk
+│   │   ├── color-convert
+│   │   ├── color-name
+│   │   ├── comma-separated-tokens
+│   │   ├── commander
+│   │   ├── concat-map
+│   │   ├── cross-spawn
+│   │   ├── cssesc
+│   │   ├── csstype
+│   │   ├── d3-array
+│   │   ├── d3-color
+│   │   ├── d3-ease
+│   │   ├── d3-format
+│   │   ├── d3-interpolate
+│   │   ├── d3-path
+│   │   ├── d3-scale
+│   │   ├── d3-shape
+│   │   ├── d3-time
+│   │   ├── d3-time-format
+│   │   ├── d3-timer
+│   │   ├── date-fns
+│   │   ├── debug
+│   │   ├── decimal.js-light
+│   │   ├── decode-named-character-reference
+│   │   ├── deep-is
+│   │   ├── dequal
+│   │   ├── detect-node-es
+│   │   ├── devlop
+│   │   ├── didyoumean
+│   │   ├── dlv
+│   │   ├── dom-helpers
+│   │   ├── eastasianwidth
+│   │   ├── electron-to-chromium
+│   │   ├── embla-carousel
+│   │   ├── embla-carousel-react
+│   │   ├── embla-carousel-reactive-utils
+│   │   ├── emoji-regex
+│   │   ├── esbuild
+│   │   ├── escalade
+│   │   ├── escape-string-regexp
+│   │   ├── eslint
+│   │   ├── eslint-plugin-react-hooks
+│   │   ├── eslint-plugin-react-refresh
+│   │   ├── eslint-scope
+│   │   ├── eslint-visitor-keys
+│   │   ├── espree
+│   │   ├── esquery
+│   │   ├── esrecurse
+│   │   ├── estraverse
+│   │   ├── estree-util-is-identifier-name
+│   │   ├── estree-walker
+│   │   ├── esutils
+│   │   ├── eventemitter3
+│   │   ├── extend
+│   │   ├── fast-deep-equal
+│   │   ├── fast-equals
+│   │   ├── fast-glob
+│   │   ├── fast-json-stable-stringify
+│   │   ├── fast-levenshtein
+│   │   ├── fastq
+│   │   ├── file-entry-cache
+│   │   ├── fill-range
+│   │   ├── find-up
+│   │   ├── flat-cache
+│   │   ├── flatted
+│   │   ├── foreground-child
+│   │   ├── fraction.js
+│   │   ├── fsevents
+│   │   ├── function-bind
+│   │   ├── get-nonce
+│   │   ├── glob
+│   │   ├── glob-parent
+│   │   ├── globals
+│   │   ├── graphemer
+│   │   ├── has-flag
+│   │   ├── hasown
+│   │   ├── hast-util-to-jsx-runtime
+│   │   ├── hast-util-whitespace
+│   │   ├── html-url-attributes
+│   │   ├── ignore
+│   │   ├── import-fresh
+│   │   ├── imurmurhash
+│   │   ├── inline-style-parser
+│   │   ├── input-otp
+│   │   ├── internmap
+│   │   ├── invariant
+│   │   ├── is-alphabetical
+│   │   ├── is-alphanumerical
+│   │   ├── is-binary-path
+│   │   ├── is-core-module
+│   │   ├── is-decimal
+│   │   ├── is-extglob
+│   │   ├── is-fullwidth-code-point
+│   │   ├── is-glob
+│   │   ├── is-hexadecimal
+│   │   ├── is-number
+│   │   ├── is-plain-obj
+│   │   ├── isexe
+│   │   ├── jackspeak
+│   │   ├── jiti
+│   │   ├── js-tokens
+│   │   ├── js-yaml
+│   │   ├── json-buffer
+│   │   ├── json-schema-traverse
+│   │   ├── json-stable-stringify-without-jsonify
+│   │   ├── jwt-decode
+│   │   ├── keyv
+│   │   ├── levn
+│   │   ├── lilconfig
+│   │   ├── lines-and-columns
+│   │   ├── locate-path
+│   │   ├── lodash
+│   │   ├── lodash.castarray
+│   │   ├── lodash.isplainobject
+│   │   ├── lodash.merge
+│   │   ├── longest-streak
+│   │   ├── loose-envify
+│   │   ├── lovable-tagger
+│   │   ├── lru-cache
+│   │   ├── lucide-react
+│   │   ├── magic-string
+│   │   ├── mdast-util-from-markdown
+│   │   ├── mdast-util-mdx-expression
+│   │   ├── mdast-util-mdx-jsx
+│   │   ├── mdast-util-mdxjs-esm
+│   │   ├── mdast-util-phrasing
+│   │   ├── mdast-util-to-hast
+│   │   ├── mdast-util-to-markdown
+│   │   ├── mdast-util-to-string
+│   │   ├── merge2
+│   │   ├── micromark
+│   │   ├── micromark-core-commonmark
+│   │   ├── micromark-factory-destination
+│   │   ├── micromark-factory-label
+│   │   ├── micromark-factory-space
+│   │   ├── micromark-factory-title
+│   │   ├── micromark-factory-whitespace
+│   │   ├── micromark-util-character
+│   │   ├── micromark-util-chunked
+│   │   ├── micromark-util-classify-character
+│   │   ├── micromark-util-combine-extensions
+│   │   ├── micromark-util-decode-numeric-character-reference
+│   │   ├── micromark-util-decode-string
+│   │   ├── micromark-util-encode
+│   │   ├── micromark-util-html-tag-name
+│   │   ├── micromark-util-normalize-identifier
+│   │   ├── micromark-util-resolve-all
+│   │   ├── micromark-util-sanitize-uri
+│   │   ├── micromark-util-subtokenize
+│   │   ├── micromark-util-symbol
+│   │   ├── micromark-util-types
+│   │   ├── micromatch
+│   │   ├── minimatch
+│   │   ├── minipass
+│   │   ├── ms
+│   │   ├── mz
+│   │   ├── nanoid
+│   │   ├── natural-compare
+│   │   ├── next-themes
+│   │   ├── node-releases
+│   │   ├── normalize-path
+│   │   ├── normalize-range
+│   │   ├── object-assign
+│   │   ├── object-hash
+│   │   ├── optionator
+│   │   ├── p-limit
+│   │   ├── p-locate
+│   │   ├── package-json-from-dist
+│   │   ├── parent-module
+│   │   ├── parse-entities
+│   │   ├── path-exists
+│   │   ├── path-key
+│   │   ├── path-parse
+│   │   ├── path-scurry
+│   │   ├── picocolors
+│   │   ├── picomatch
+│   │   ├── pify
+│   │   ├── pirates
+│   │   ├── postcss
+│   │   ├── postcss-import
+│   │   ├── postcss-js
+│   │   ├── postcss-load-config
+│   │   ├── postcss-nested
+│   │   ├── postcss-selector-parser
+│   │   ├── postcss-value-parser
+│   │   ├── prelude-ls
+│   │   ├── prop-types
+│   │   ├── property-information
+│   │   ├── punycode
+│   │   ├── queue-microtask
+│   │   ├── react
+│   │   ├── react-day-picker
+│   │   ├── react-dom
+│   │   ├── react-hook-form
+│   │   ├── react-is
+│   │   ├── react-markdown
+│   │   ├── react-remove-scroll
+│   │   ├── react-remove-scroll-bar
+│   │   ├── react-resizable-panels
+│   │   ├── react-router
+│   │   ├── react-router-dom
+│   │   ├── react-smooth
+│   │   ├── react-style-singleton
+│   │   ├── react-transition-group
+│   │   ├── read-cache
+│   │   ├── readdirp
+│   │   ├── recharts
+│   │   ├── recharts-scale
+│   │   ├── regenerator-runtime
+│   │   ├── remark-parse
+│   │   ├── remark-rehype
+│   │   ├── resolve
+│   │   ├── resolve-from
+│   │   ├── reusify
+│   │   ├── rollup
+│   │   ├── run-parallel
+│   │   ├── scheduler
+│   │   ├── semver
+│   │   ├── shebang-command
+│   │   ├── shebang-regex
+│   │   ├── signal-exit
+│   │   ├── sonner
+│   │   ├── source-map-js
+│   │   ├── space-separated-tokens
+│   │   ├── string-width
+│   │   ├── string-width-cjs
+│   │   ├── stringify-entities
+│   │   ├── strip-ansi
+│   │   ├── strip-ansi-cjs
+│   │   ├── strip-json-comments
+│   │   ├── style-to-js
+│   │   ├── style-to-object
+│   │   ├── sucrase
+│   │   ├── supports-color
+│   │   ├── supports-preserve-symlinks-flag
+│   │   ├── tailwind-merge
+│   │   ├── tailwindcss
+│   │   ├── tailwindcss-animate
+│   │   ├── text-table
+│   │   ├── thenify
+│   │   ├── thenify-all
+│   │   ├── tiny-invariant
+│   │   ├── to-regex-range
+│   │   ├── tr46
+│   │   ├── trim-lines
+│   │   ├── trough
+│   │   ├── ts-api-utils
+│   │   ├── ts-interface-checker
+│   │   ├── tslib
+│   │   ├── type-check
+│   │   ├── typescript
+│   │   ├── typescript-eslint
+│   │   ├── undici-types
+│   │   ├── unified
+│   │   ├── unist-util-is
+│   │   ├── unist-util-position
+│   │   ├── unist-util-stringify-position
+│   │   ├── unist-util-visit
+│   │   ├── unist-util-visit-parents
+│   │   ├── update-browserslist-db
+│   │   ├── uri-js
+│   │   ├── use-callback-ref
+│   │   ├── use-sidecar
+│   │   ├── util-deprecate
+│   │   ├── vaul
+│   │   ├── vfile
+│   │   ├── vfile-message
+│   │   ├── victory-vendor
+│   │   ├── vite
+│   │   ├── webidl-conversions
+│   │   ├── whatwg-url
+│   │   ├── which
+│   │   ├── word-wrap
+│   │   ├── wrap-ansi
+│   │   ├── wrap-ansi-cjs
+│   │   ├── ws
+│   │   ├── yaml
+│   │   ├── yocto-queue
+│   │   ├── zod
+│   │   └── zwitch
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── og-image.png
+│   │   └── placeholder.svg
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── components
+│   │   ├── contexts
+│   │   ├── hooks
+│   │   ├── index.css
+│   │   ├── integrations
+│   │   ├── lib
+│   │   ├── main.tsx
+│   │   ├── pages
+│   │   └── vite-env.d.ts
+│   ├── tailwind.config.ts
+│   ├── tree.txt
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── package-lock.json
+├── requirements.txt
+├── testing
+│   ├── catalog.pdf
+│   ├── langchain_test.ipynb
+│   ├── langchain_tutorial.py
+│   └── test.ipynb
+├── tree.txt
+└── venv
+    ├── bin
+    │   ├── Activate.ps1
+    │   ├── __pycache__
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── asadmin
+    │   ├── automat-visualize
+    │   ├── black
+    │   ├── blackd
+    │   ├── bundle_image
+    │   ├── cfadmin
+    │   ├── cftp
+    │   ├── chroma
+    │   ├── ckeygen
+    │   ├── coloredlogs
+    │   ├── conch
+    │   ├── coverage
+    │   ├── coverage-3.12
+    │   ├── coverage3
+    │   ├── cq
+    │   ├── cwutil
+    │   ├── daphne
+    │   ├── debugpy
+    │   ├── deepeval
+    │   ├── distro
+    │   ├── django-admin
+    │   ├── docutils
+    │   ├── dotenv
+    │   ├── dumppdf.py
+    │   ├── dynamodb_dump
+    │   ├── dynamodb_load
+    │   ├── elbadmin
+    │   ├── f2py
+    │   ├── fab
+    │   ├── fastapi
+    │   ├── fetch_file
+    │   ├── filetype
+    │   ├── fonttools
+    │   ├── git-filter-repo
+    │   ├── glacier
+    │   ├── httpx
+    │   ├── huggingface-cli
+    │   ├── humanfriendly
+    │   ├── instance_events
+    │   ├── instructor
+    │   ├── inv
+    │   ├── invoke
+    │   ├── ipython
+    │   ├── ipython3
+    │   ├── isympy
+    │   ├── jp.py
+    │   ├── jsondiff
+    │   ├── jsonpatch
+    │   ├── jsonpointer
+    │   ├── jupyter
+    │   ├── jupyter-kernel
+    │   ├── jupyter-kernelspec
+    │   ├── jupyter-migrate
+    │   ├── jupyter-run
+    │   ├── jupyter-troubleshoot
+    │   ├── keyring
+    │   ├── kill_instance
+    │   ├── langchain-server
+    │   ├── launch_instance
+    │   ├── list_instances
+    │   ├── llama-parse
+    │   ├── llamaindex-cli
+    │   ├── lss3
+    │   ├── mailmail
+    │   ├── markdown-it
+    │   ├── mturk
+    │   ├── nltk
+    │   ├── normalizer
+    │   ├── onnxruntime_test
+    │   ├── openai
+    │   ├── opentelemetry-bootstrap
+    │   ├── opentelemetry-instrument
+    │   ├── pdf2txt.py
+    │   ├── pdfplumber
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.12
+    │   ├── pkginfo
+    │   ├── py.test
+    │   ├── pyami_sendmail
+    │   ├── pyftmerge
+    │   ├── pyftsubset
+    │   ├── pygmentize
+    │   ├── pyhtmlizer
+    │   ├── pypdfium2
+    │   ├── pyproject-build
+    │   ├── pyrsa-decrypt
+    │   ├── pyrsa-encrypt
+    │   ├── pyrsa-keygen
+    │   ├── pyrsa-priv2pub
+    │   ├── pyrsa-sign
+    │   ├── pyrsa-verify
+    │   ├── pytest
+    │   ├── python -> python3.12
+    │   ├── python3 -> python3.12
+    │   ├── python3.12 -> /opt/homebrew/opt/python@3.12/bin/python3.12
+    │   ├── route53
+    │   ├── rst2html
+    │   ├── rst2html4
+    │   ├── rst2html5
+    │   ├── rst2latex
+    │   ├── rst2man
+    │   ├── rst2odt
+    │   ├── rst2pseudoxml
+    │   ├── rst2s5
+    │   ├── rst2xetex
+    │   ├── rst2xml
+    │   ├── s3put
+    │   ├── sdbadmin
+    │   ├── sqlformat
+    │   ├── striprtf
+    │   ├── tabulate
+    │   ├── taskadmin
+    │   ├── tkconch
+    │   ├── torchfrtrace
+    │   ├── torchrun
+    │   ├── tqdm
+    │   ├── transformers-cli
+    │   ├── trial
+    │   ├── ttx
+    │   ├── twine
+    │   ├── twist
+    │   ├── twistd
+    │   ├── typer
+    │   ├── uvicorn
+    │   ├── wamp
+    │   ├── watchfiles
+    │   ├── websocat
+    │   ├── wheel
+    │   ├── wsdump
+    │   ├── xbrnetwork
+    │   └── xbrnetwork-ui
+    ├── include
+    │   ├── python3.12
+    │   └── site
+    ├── lib
+    │   └── python3.12
+    ├── pyvenv.cfg
+    └── share
+        ├── jupyter
+        └── man
+
+375 directories, 211 files

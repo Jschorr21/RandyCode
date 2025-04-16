@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,7 +6,6 @@ import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/contexts/AuthContext";
 import { fetchWithAuth } from "@/lib/fetchWithAuth"; // at the top
-import ReactMarkdown from "react-markdown";
 
 
 interface Message {
@@ -25,8 +23,11 @@ interface UploadedFile {
 interface ChatInterfaceProps {
   currentChatId: string | null;
   setCurrentChatId: (chatId: string | null) => void;
-  onFirstMessage: (chatId: string, message: string) => void;
-  sidebarRef: React.RefObject<{ moveChatToTop: (chatId: string) => void }>;
+  onFirstMessage: (chatId: string) => void;
+  sidebarRef: React.MutableRefObject<{
+    moveChatToTop: (chatId: string) => void;
+    refreshChatHistories: () => void;
+  } | null>;
 }
 
 const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sidebarRef }: ChatInterfaceProps) => {
@@ -36,19 +37,11 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
   const { toast } = useToast();
   const { user } = useAuth();
   const bottomRef = useRef<HTMLDivElement | null>(null);
-  const [isSending, setIsSending] = useState(false);
-
 
   useEffect(() => {
     if (currentChatId) {
       fetchMessages();
     } else {
-      setMessages([]);
-    }
-  }, [currentChatId]);
-
-  useEffect(() => {
-    if (!currentChatId) {
       setMessages([]);
     }
   }, [currentChatId]);
@@ -60,16 +53,17 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
   }, [messages]);
   
 
-  const fetchMessages = async () => {
-    if (!currentChatId || !user) return;
+  const fetchMessages = async (idOverride?: string) => {
+    const id = idOverride || currentChatId;
+    // if (!currentChatId || !user) return;
   
     try {
-      const res = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${currentChatId}/messages/`);
+      const res = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${id}/messages/`);
   
       if (!res.ok) throw new Error("Failed to fetch messages");
   
       const data = await res.json();
-      console.log("[fetchMessages for]", currentChatId);
+      console.log("📦 Messages received from backend:", data);
       setMessages(data);
     } catch (error) {
       console.error("❌ Error in fetchMessages:", error);
@@ -82,109 +76,132 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
   };
   
 
-  const handleSendMessage = async (overrideMessage?: string) => {
-    if (isSending) return; // prevent double-call
-    setIsSending(true);
+  const handleSendMessage = async () => {
+    if ((!message.trim() && !uploadedFile) || !user) {
+      console.log("Blocked: no message or no user");
+      return;
+    }
+  
+    const messageContent = uploadedFile
+      ? `${message}\n[File: ${uploadedFile.name}]`
+      : message;
+  
+    let chatId = currentChatId;
+  
+    const userMessageObj = {
+      id: `${Date.now()}-user`,
+      role: "user",
+      content: messageContent,
+      created_at: new Date().toISOString(),
+    };
+  
+    const typingIndicator = {
+      id: `${Date.now()}-typing`,
+      role: "bot",
+      content: "Typing...",
+      created_at: new Date().toISOString(),
+    };
   
     try {
-      const messageToSend = overrideMessage ?? message;
-      if ((!messageToSend.trim() && !uploadedFile) || !user) return;
-  
-      const messageContent = uploadedFile
-        ? `${messageToSend}\n[File: ${uploadedFile.name}]`
-        : messageToSend;
-  
-      let chatId = currentChatId;
-      const isFirstMessage = messages.length === 0;
-  
-      // 💥 Only create chat ONCE
-      if (!chatId) {
-        const res = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/`, {
-          method: "POST",
-          body: JSON.stringify({ session_id: crypto.randomUUID() }),
-        });
-  
-        if (!res.ok) throw new Error("Failed to create chat");
-        const data = await res.json();
-        chatId = data.id;
-        setCurrentChatId(chatId);
-      }
-  
-      const userMessageObj: Message = {
-        id: `${Date.now()}-user`,
-        role: "user",
-        content: messageContent,
-        created_at: new Date().toISOString(),
-      };
-  
-      const typingMessageId = `${Date.now()}-bot`;
-      const typingIndicator: Message = {
-        id: typingMessageId,
-        role: "bot",
-        content: "",
-        created_at: new Date().toISOString(),
-      };
-  
+      // Display user message and typing indicator immediately
       setMessages((prev) => [...prev, userMessageObj, typingIndicator]);
       setMessage("");
       setUploadedFile(null);
+
   
-      // 🧠 Always use local `chatId`, never rely on currentChatId
-      const res = await fetchWithAuth(
-        `${import.meta.env.VITE_API_BASE_URL}/api/chatapp/chatbot/stream/`,
-        {
+      // Create new chat session if necessary
+      if (!chatId) {
+
+        const session_id = crypto.randomUUID(); // 👈 generate ONCE
+        
+        const res = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/`, {
           method: "POST",
-          body: JSON.stringify({ message: messageContent, session_id: chatId }),
-        }
-      );
+          body: JSON.stringify({ session_id }),
+        });
   
-      if (!res.body) throw new Error("No stream available");
+        if (!res.ok) throw new Error("Failed to create chat");
   
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder("utf-8");
-  
-      let botResponse = "";
-  
-      while (true) {
-        const { value, done } = await reader.read();
-        if (done) break;
-        const chunk = decoder.decode(value, { stream: true });
-        botResponse += chunk;
-  
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === typingMessageId ? { ...m, content: botResponse } : m
-          )
-        );
+        const data = await res.json();
+        chatId = session_id;
+        setCurrentChatId(chatId);
+        
+        await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/store_message/`, {
+          method: "POST",
+          body: JSON.stringify({
+            session_id: session_id,
+            user_message: messageContent,
+            bot_response: null, // or omit this field if your backend allows
+          }),
+        });
+
+        // ✅ Update title from message content
+        await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${chatId}/`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            title: messageContent.slice(0, 50) + (messageContent.length > 50 ? "..." : ""),
+          }),
+        });
+        
+        onFirstMessage(chatId);
+        
+
+        // await fetchMessages(chatId);  // <- pass it manually (you’ll need to tweak the function)
+      }
+      else {
+        await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/store_message/`, {
+          method: "POST",
+          body: JSON.stringify({
+            session_id: chatId,
+            user_message: messageContent,
+          }),
+        });        
       }
   
+      // Get AI response
+      const chatbotRes = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/chatbot/`, {
+        method: "POST",
+        body: JSON.stringify({ message: messageContent }),
+      });
+  
+      const chatbotData = await chatbotRes.json();
+      const botResponse = chatbotData.response;
+  
+      // Store messages in backend
       await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/store_message/`, {
         method: "POST",
         body: JSON.stringify({
           session_id: chatId,
-          user_message: messageContent,
+          user_message: null,
           bot_response: botResponse,
         }),
       });
   
-      sidebarRef.current?.moveChatToTop(chatId);
-      setMessages([]);
-      await fetchMessages();
+      // Replace typing indicator with real response
+      setMessages((prev) => [
+        ...prev.filter((m) => m.id !== typingIndicator.id),
+        {
+          id: `${Date.now()}-bot`,
+          role: "bot",
+          content: botResponse,
+          created_at: new Date().toISOString(),
+        },
+      ]);
   
+      if (!currentChatId) {
+        onFirstMessage(chatId); // no need to pass title, backend owns it
+      }      
     } catch (error) {
-      console.error("❌ Error sending message:", error);
+      console.error("Error sending message:", error);
       toast({
         title: "Error sending message",
         description: "Please try again later",
         variant: "destructive",
       });
-      setMessages((prev) => prev.filter((m) => m.role !== "bot")); // clean up bot
-    } finally {
-      setIsSending(false);
+      // Remove typing indicator on error
+      setMessages((prev) => prev.filter((m) => m.id !== typingIndicator.id));
     }
-  };
-  
-  
+  };  
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -221,54 +238,26 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
             <div className="text-center">
               <h1 className="text-4xl font-bold mb-8">What can I help with?</h1>
               <div className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  <Button
-                    variant="outline"
-                    onClick={() => {
-                      setMessage("Recommend me some liberal arts electives");
-                      handleSendMessage("Recommend me some liberal arts electives");
-                    }}
-                    className="w-full h-full text-center flex items-center justify-center whitespace-normal break-words transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1"
-                  >
-                    Recommend me some liberal arts electives
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <Button variant="outline" className="flex items-center gap-2">
+                    Create image
                   </Button>
-                  <Button
-                    variant="outline"
-                    onClick={() => {
-                      setMessage("What are the requirements for the computer science major?");
-                      handleSendMessage("What are the requirements for the computer science major?");
-                    }}
-                    className="w-full h-full text-center flex items-center justify-center whitespace-normal break-words transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1"
-                  >
-                    What are the requirements for the computer science major?
+                  <Button variant="outline" className="flex items-center gap-2">
+                    Summarize text
                   </Button>
-                  <Button
-                    variant="outline"
-                    onClick={() => {
-                      setMessage("What does CS 2100 cover and are the prerequisites?");
-                      handleSendMessage("What does CS 2100 cover and are the prerequisites?");
-                    }}
-                    className="w-full h-full text-center flex items-center justify-center whitespace-normal break-words transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1"
-                  >
-                    What does CS 2100 cover and are the prerequisites?
+                  <Button variant="outline" className="flex items-center gap-2">
+                    Make a plan
                   </Button>
-                  <Button
-                    variant="outline"
-                    onClick={() => {
-                      setMessage("When is the commencement ceremony this year?");
-                      handleSendMessage("When is the commencement ceremony this year?");
-                    }}
-                    className="w-full h-full text-center flex items-center justify-center whitespace-normal break-words transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1"
-                  >
-                    When is the commencement ceremony this year?
+                  <Button variant="outline" className="flex items-center gap-2">
+                    Analyze data
                   </Button>
                 </div>
-
               </div>
             </div>
           )}
 
           {messages.map((msg) => {
+            console.log("🧾 Rendering message:", msg);
             return (
             <div
               key={msg.id}
@@ -292,14 +281,7 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
                     <span className="animate-bounce delay-200">.</span>
                   </div>
                 ) : (
-                  msg.role === "bot" ? (
-                    <div className="prose max-w-none whitespace-pre-wrap custom-markdown">
-                      <ReactMarkdown>{msg.content}</ReactMarkdown>
-                    </div>
-
-                  ) : (
-                    <p className="whitespace-pre-wrap">{msg.content}</p>
-                  )
+                  <p className="whitespace-pre-wrap">{msg.content}</p>
                 )}
               </div>
             </div>

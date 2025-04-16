@@ -75,8 +75,11 @@ def store_message(request):
 
     session, _ = ChatSession.objects.get_or_create(session_id=session_id, user=request.user)
 
-    Message.objects.create(session=session, sender="user", text=user_message)
-    Message.objects.create(session=session, sender="bot", text=bot_response)
+    if user_message:
+        Message.objects.create(session=session, sender="user", text=user_message)
+
+    if bot_response:
+        Message.objects.create(session=session, sender="bot", text=bot_response)
 
     # ✅ Manually update last_updated
     session.last_updated = timezone.now()
@@ -84,3 +87,26 @@ def store_message(request):
 
     return Response({"status": "stored"})
 
+@api_view(["GET"])
+@permission_classes([IsAuthenticated])
+def get_messages_by_session(request, session_id):
+    session = ChatSession.objects.filter(session_id=session_id, user=request.user).first()
+    if not session:
+        return Response({"error": "Session not found"}, status=404)
+
+    messages = Message.objects.filter(session=session).order_by("timestamp")
+    return Response(MessageSerializer(messages, many=True).data)
+
+@api_view(["PATCH"])
+@permission_classes([IsAuthenticated])
+def update_chat_title(request, session_id):
+    session = ChatSession.objects.filter(session_id=session_id, user=request.user).first()
+    if not session:
+        return Response({"error": "Session not found"}, status=404)
+
+    title = request.data.get("title")
+    if title:
+        session.title = title
+        session.save(update_fields=["title"])
+
+    return Response({"status": "updated"})
