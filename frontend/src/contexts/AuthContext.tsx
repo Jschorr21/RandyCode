@@ -61,7 +61,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       localStorage.setItem('refresh', data.refresh);
 
       const decoded = jwtDecode<JWTPayload>(data.access);
-      setUser({ email: decoded.email });
+      setUser({ email: decoded.username });
 
       toast({
         title: 'Login successful',
@@ -84,6 +84,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     });
   };
 
+  registerLogout(logout); // ✅ expose it globally
+
   const value = { user, loading, login, logout };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
@@ -94,3 +96,12 @@ export const useAuth = () => {
   if (!context) throw new Error('useAuth must be used within AuthProvider');
   return context;
 };
+
+// Optional global logout for non-React contexts like fetchWithAuth.ts
+let externalLogout: () => void;
+
+export const registerLogout = (logoutFn: () => void) => {
+  externalLogout = logoutFn;
+};
+
+export const getExternalLogout = () => externalLogout;

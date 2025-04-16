@@ -1,3 +1,8 @@
+import { getExternalLogout } from "@/contexts/AuthContext";
+
+const logout = getExternalLogout();
+if (logout) logout();
+
 export const fetchWithAuth = async (input: RequestInfo, init?: RequestInit) => {
     let access = localStorage.getItem("access");
   
@@ -32,6 +37,7 @@ export const fetchWithAuth = async (input: RequestInfo, init?: RequestInit) => {
           },
         });
       } else {
+        logout()
         throw new Error("Token refresh failed");
       }
     }
