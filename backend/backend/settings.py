@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
+from datetime import timedelta
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,6 +35,14 @@ SESSION_COOKIE_AGE = 60 * 60 * 24 * 14  # seconds
 
 # Keep session alive as long as browser is open
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=14),
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True,
+}
+
 
 
 ALLOWED_HOSTS = [
