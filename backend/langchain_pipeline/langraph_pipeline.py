@@ -6,14 +6,17 @@ from langchain_openai import ChatOpenAI
 logging.basicConfig(level=logging.INFO)
 from langchain_core.messages import HumanMessage, AIMessage
 from chatapp.models import Message  # adjust to your app structure
+from langgraph.checkpoint.memory import MemorySaver
+
 
 class LangGraphPipeline:
     """Orchestrates RAG system execution."""
 
     def __init__(self):
 
-        self.llm = ChatOpenAI(model_name="gpt-4o-mini")
-        self.langraph_builder = LangGraphBuilder(self.llm)
+        self.llm = ChatOpenAI(model_name="gpt-4o-mini", streaming=True)
+        self.memory = MemorySaver()
+        self.langraph_builder = LangGraphBuilder(self.llm, memory=self.memory)
         self.agent_graph = AgentGraph()
 
     def hydrate_memory(self, memory, thread_id, messages):
@@ -31,7 +34,7 @@ class LangGraphPipeline:
                 formatted.append(HumanMessage(content=m["content"]))
             elif m["role"] == "bot":
                 formatted.append(AIMessage(content=m["content"]))
-        memory.put({"configurable": {"thread_id": thread_id}}, {"messages": formatted})
+        self.memory.put({"configurable": {"thread_id": thread_id}}, {"messages": formatted})
 
     def run_pipeline(self, input_message, use_agent=True, user_id="jake", session_id=None):
         """
@@ -44,7 +47,8 @@ class LangGraphPipeline:
         Returns:
             str: Final response.
         """
-        logging.info(f"🚀 Running {'Agent' if use_agent else 'Standard'} RAG Pipeline")
+
+        print(f"User message: {input_message}")
 
         if use_agent:
             graph = self.agent_graph.build_agent_graph()
@@ -57,18 +61,70 @@ class LangGraphPipeline:
             # input_message = input("Enter your query: ")
         else:
             thread_id = session_id or "default"
+
             graph = self.langraph_builder.build_graph()
             memory = self.langraph_builder.memory
+            
             # 🔁 Hydrate LangGraph memory from DB
             if session_id:
                 stored_messages = Message.objects.filter(session__session_id=session_id).order_by("created_at")
-                chat_history = [{"role": m.role, "content": m.content} for m in stored_messages]
-                self.hydrate_memory(memory, thread_id, chat_history)
+                chat_history = [{"role": m.sender, "content": m.text} for m in stored_messages]
+                if chat_history:
+                    self.hydrate_memory(memory, thread_id, chat_history)
 
-            # 🧠 Run the graph
-            response = graph.invoke(
-                {"messages": [{"role": "user", "content": input_message}]},
-                config={"configurable": {"thread_id": thread_id}}
+            hydrated = memory.get({"configurable": {"thread_id": thread_id}}) or {}
+            initial_messages = hydrated.get("messages", [])
+            all_messages = initial_messages + [{"role": "user", "content": input_message}]
+
+
+            response = graph.stream(
+                {"messages": all_messages},
+                config={"configurable": {"thread_id": thread_id}},
             )
 
+
         return response["messages"][-1].content
+        
+    def stream_pipeline(self, input_message, use_agent=True, user_id="jake", session_id=None):
+        if use_agent:
+            graph = self.agent_graph.build_agent_graph()
+            stream = graph.stream(
+                {"user_id": user_id, "messages": [{"role": "user", "content": input_message}]},
+                config={"configurable": {"thread_id": "abc_123"}}
+            )
+        else:
+            thread_id = session_id or "default"
+            graph = self.langraph_builder.build_graph()
+            memory = self.langraph_builder.memory
+
+            if session_id:
+                stored_messages = Message.objects.filter(session__session_id=session_id).order_by("created_at")
+                chat_history = [{"role": m.sender, "content": m.text} for m in stored_messages]
+                if chat_history:
+                    self.hydrate_memory(memory, thread_id, chat_history)
+
+            hydrated = memory.get({"configurable": {"thread_id": thread_id}}) or {}
+            initial_messages = hydrated.get("messages", [])
+            all_messages = initial_messages + [{"role": "user", "content": input_message}]
+
+            stream = graph.stream(
+                {"messages": all_messages},
+                config={"configurable": {"thread_id": thread_id}},
+            )
+
+        for chunk in stream:
+            # ✅ Try OpenAI-style delta
+            if "choices" in chunk:
+                delta = chunk["choices"][0]["delta"]
+                content = delta.get("content")
+                if content:
+                    yield content
+
+            # ✅ Try LangGraph agent-style
+            elif "agent" in chunk and "messages" in chunk["agent"]:
+                messages = chunk["agent"]["messages"]
+                if messages and hasattr(messages[0], "content"):
+                    content = messages[0].content
+                    if content:
+                        yield content
+

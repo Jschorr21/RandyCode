@@ -4,15 +4,19 @@ import ChatSidebar from "@/components/ChatSidebar";
 import ChatInterface from "@/components/ChatInterface";
 import TopNav from "@/components/TopNav";
 import { useAuth } from "@/contexts/AuthContext";
+import { useRef } from "react"; // already imported
+
 
 const Index = () => {
   const [currentChatId, setCurrentChatId] = useState<string | null>(null);
   const [isSidebarClosed, setIsSidebarClosed] = useState(false);
   const { user } = useAuth();
+  const sidebarRef = useRef<{ moveChatToTop: (chatId: string) => void }>(null);
 
   return (
     <div className="flex min-h-screen bg-gray-50 transition-all duration-300 ease-in-out">
       <ChatSidebar 
+        ref={sidebarRef}
         onChatSelect={setCurrentChatId} 
         currentChatId={currentChatId} 
         onToggleCollapse={setIsSidebarClosed} 
@@ -50,7 +54,8 @@ const Index = () => {
                 };
               
                 updateChatTitle(chatId, message.slice(0, 50) + (message.length > 50 ? "..." : ""));
-              }}              
+              }}
+              sidebarRef={sidebarRef}              
             />
           </div>
         </div>

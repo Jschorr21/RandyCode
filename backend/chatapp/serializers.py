@@ -12,4 +12,5 @@ class MessageSerializer(serializers.ModelSerializer):
 class ChatSessionSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatSession
-        fields = ['id', 'session_id', 'title', 'created_at']
+        fields = ['id', 'title', 'session_id', 'created_at', 'last_updated']
+

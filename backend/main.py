@@ -39,7 +39,7 @@ async def websocket_endpoint(websocket: WebSocket):
         while True:
             data = await websocket.receive_json()
             user_message = data.get("user_message", "")
-            use_agent = data.get("use_agent", True)
+            use_agent = data.get("use_agent", False)
 
             logging.info(f"📩 Received message: {user_message}")
 
@@ -50,6 +50,7 @@ async def websocket_endpoint(websocket: WebSocket):
                 break
 
             session_id = data.get("session_id")  # add this line
+            logging.info(f"SESSION ID:::::: {session_id}")
             response = pipeline.run_pipeline(user_message, use_agent=False, session_id=session_id)
 
             await websocket.send_json({"response": response})  # ✅ Ensure message is sent immediately
@@ -61,4 +62,4 @@ async def websocket_endpoint(websocket: WebSocket):
 # ✅ Ensure FastAPI starts when running main.py
 if __name__ == "__main__":
     logging.info("🚀 Starting FastAPI WebSocket Server...")
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=8001, log_level="info")

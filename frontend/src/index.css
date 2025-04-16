@@ -80,6 +80,15 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
+.custom-markdown ol {
+  padding-left: 1rem; /* reduce indent */
+}
+
+.custom-markdown li {
+  margin-bottom: 0.5rem; /* optional: tighten spacing */
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;

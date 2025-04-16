@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { forwardRef, useImperativeHandle, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, Plus, MoreVertical, Trash } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
@@ -15,6 +15,7 @@ interface ChatHistory {
   id: string;
   title: string;
   created_at: string;
+  last_updated?: string; // <- Add this
 }
 
 interface ChatSidebarProps {
@@ -23,11 +24,26 @@ interface ChatSidebarProps {
   onToggleCollapse: (isCollapsed: boolean) => void;
 }
 
-const ChatSidebar = ({ onChatSelect, currentChatId, onToggleCollapse }: ChatSidebarProps) => {
+const ChatSidebar = forwardRef(({ onChatSelect, currentChatId, onToggleCollapse }: ChatSidebarProps, ref) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [chatHistories, setChatHistories] = useState<ChatHistory[]>([]);
   const { user } = useAuth();
   const { toast } = useToast();
+  // ✅ This exposes a function to the parent via `ref`
+  useImperativeHandle(ref, () => ({
+    moveChatToTop(chatId: string) {
+      setChatHistories((prev) => {
+        const target = prev.find(chat => chat.id === chatId);
+        if (!target) return prev;
+        const rest = prev.filter(chat => chat.id !== chatId);
+        return [target, ...rest];
+      });
+      console.log("[Sidebar] Moving chat to top:", chatId);
+    },
+    refreshChatHistories() {
+      fetchChatHistories();
+    }
+  }));
 
   useEffect(() => {
     if (user) fetchChatHistories();
@@ -41,19 +57,25 @@ const ChatSidebar = ({ onChatSelect, currentChatId, onToggleCollapse }: ChatSide
           Authorization: `Bearer ${token}`,
         },
       });
-
+  
       if (!res.ok) throw new Error("Failed to fetch");
-
+  
       const data = await res.json();
-
+  
       if (!Array.isArray(data)) {
         console.error("Expected array but got:", data);
-        setChatHistories([]); // fallback to avoid crash
+        setChatHistories([]);
         return;
       }
-
-      setChatHistories(data); // ✅ safe to call .map()
-
+  
+      // Sort by last_updated (fallback to created_at if missing)
+      const sortedData = data.sort((a, b) => {
+        const dateA = new Date(a.last_updated || a.created_at).getTime();
+        const dateB = new Date(b.last_updated || b.created_at).getTime();
+        return dateB - dateA;
+      });
+  
+      setChatHistories(sortedData);
     } catch (error) {
       toast({
         title: "Error fetching chat history",
@@ -62,6 +84,7 @@ const ChatSidebar = ({ onChatSelect, currentChatId, onToggleCollapse }: ChatSide
       });
     }
   };
+  
 
   const deleteChat = async (chatId: string) => {
     try {
@@ -176,6 +199,6 @@ const ChatSidebar = ({ onChatSelect, currentChatId, onToggleCollapse }: ChatSide
       </div>
     </div>
   );
-};
+});
 
 export default ChatSidebar;

@@ -8,14 +8,16 @@ from langchain_deepseek import ChatDeepSeek
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import ToolMessage
 logging.basicConfig(level=logging.INFO)
+from langchain_core.messages import AIMessage
 
 class LangGraphBuilder:
     """Builds the LangChain LangGraph state graph."""
 
-    def __init__(self, llm):
+    def __init__(self, llm, memory=None):
         self.response_generator = ResponseGenerator(llm)  # ✅ Pass the shared LLM instance
         self.llm = llm  # ✅ Store the shared instance
-        self.memory = MemorySaver()
+        self.memory = memory or MemorySaver()
+        
 
     def query_or_respond(self, state: MessagesState):
         """Generate tool calls for retrieval or respond, tracking retrieval count."""
@@ -38,6 +40,14 @@ class LangGraphBuilder:
     def generate_response(self, state: MessagesState):
         """Generate a response using retrieved context."""
         return self.response_generator.generate(state)
+    
+
+    def stream_response_node(self, state: MessagesState):
+        # ✅ Use a real generator node
+        for chunk in self.response_generator.stream_generate(state):
+            if chunk:
+                yield {"messages": [AIMessage(content=chunk)]}
+
 
     def build_graph(self):
         """
@@ -51,7 +61,7 @@ class LangGraphBuilder:
 
         graph_builder.add_node("query_or_respond", self.query_or_respond)
         graph_builder.add_node("tools", tools)
-        graph_builder.add_node("generate", self.generate_response)
+        graph_builder.add_node("generate", self.stream_response_node)
 
         graph_builder.set_entry_point("query_or_respond")
         graph_builder.add_conditional_edges(

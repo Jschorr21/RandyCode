@@ -9,6 +9,7 @@ class ChatSession(models.Model):
     session_id = models.CharField(max_length=255, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=255, default="Untitled Chat")
+    last_updated = models.DateTimeField(auto_now=True)  # ✅ auto-updates on save
 
     def __str__(self):
         return self.title or self.session_id
