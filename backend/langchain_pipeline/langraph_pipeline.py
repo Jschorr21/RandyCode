@@ -14,7 +14,7 @@ class LangGraphPipeline:
 
     def __init__(self):
 
-        self.llm = ChatOpenAI(model_name="gpt-4o-mini", streaming=True)
+        self.llm = ChatOpenAI(model_name="gpt-4.1-mini", streaming=True)
         self.memory = MemorySaver()
         self.langraph_builder = LangGraphBuilder(self.llm, memory=self.memory)
         self.agent_graph = AgentGraph()
@@ -82,8 +82,9 @@ class LangGraphPipeline:
                 config={"configurable": {"thread_id": thread_id}},
             )
 
-
+            # state = memory.get({"configurable": {"thread_id": "abc_456"}})
         return response["messages"][-1].content
+        # return response["messages"][-1].content, state
         
     def stream_pipeline(self, input_message, use_agent=True, user_id="jake", session_id=None):
         if use_agent:

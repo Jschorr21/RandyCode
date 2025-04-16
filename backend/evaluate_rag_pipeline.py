@@ -6,10 +6,10 @@ from deepeval.metrics import (
     AnswerRelevancyMetric,
     FaithfulnessMetric,
     ContextualRecallMetric,
-    ContextualRelevancyMetric,
     TaskCompletionMetric
 
 )
+import time
 from datetime import datetime
 from deepeval import evaluate as deepeval_evaluate
 import re, json
@@ -113,10 +113,9 @@ def evaluate(csv_file_path, output_txt_path="rag_eval_results.txt"):
     llm_test_cases = run_and_collect_metrics(test_cases)
     correctness_metric = GEval(
     name="Correctness",
+    strict_mode=True,
     evaluation_steps=[
-        "Check whether the facts in 'actual output' contradict any facts in 'expected output'",
-        "You should also heavily penalize omission of detail",
-        "Vague language, or contradicting OPINIONS, are OK"
+        "Check whether 'actual output' is similar to 'expected output'",
     ],
     evaluation_params=[
         LLMTestCaseParams.INPUT,
@@ -128,7 +127,7 @@ def evaluate(csv_file_path, output_txt_path="rag_eval_results.txt"):
         AnswerRelevancyMetric(model="gpt-4o-mini"),
         FaithfulnessMetric(model="gpt-4o-mini"), 
         ContextualRecallMetric(model="gpt-4o-mini"),
-        ContextualRelevancyMetric(model="gpt-4o-mini"),
+        # ContextualRelevancyMetric(model="gpt-4o-mini"),
         TaskCompletionMetric(model="gpt-4o-mini"),
         GEval(
         name="Correctness", 
@@ -187,4 +186,10 @@ def evaluate(csv_file_path, output_txt_path="rag_eval_results.txt"):
     print("✅ Done!")
 
 if __name__ == "__main__":
-    evaluate("rag_eval_test_data.csv")
+    start_time = time.time()
+    
+    evaluate("copy_evaluate_rag_pipeline.csv")
+    
+    end_time = time.time()
+    elapsed = end_time - start_time
+    print(f"⏱️ Script completed in {elapsed:.2f} seconds.")

@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.INFO)
 
 @tool(response_format="content_and_artifact")
 def retrieve(query: str):
-    """Retrieve relevant information to a query from Vanderbilt's catalog, course listings, and websites."""
+    """Retrieve relevant information to a query from the Vanderbilt catalog, course listings, and websites."""
     print(f"🔍 Searching for: {query}")
     vector_store = VectorStore()
 
@@ -30,16 +30,16 @@ def retrieve(query: str):
         [(doc, score, "Vanderbilt Course Descriptions") for doc, score in courses_docs_with_scores] +
         [(doc, score, "Vanderbilt Websites") for doc, score in website_docs_with_scores]
     )
-    top_docs = sorted(all_docs_with_scores, key=lambda x: x[1])[:20]  # Top 15 most relevant
+    top_docs = sorted(all_docs_with_scores, key=lambda x: x[1])[:25]  # Top 15 most relevant
 
     # Print debug info
-    print(f"\n📊 Selected Top {len(top_docs)} Most Relevant Documents:")
-    for i, (doc, score, source_label) in enumerate(top_docs):
-        print(f"\n📄 Document {i + 1} | Score: {score:.4f}")
-        print(f"Source: {source_label}")
-        print(f"ID: {doc.metadata.get('id', 'No ID')}")
-        print(f"Content:\n{doc.page_content[:500]}...")  # Optional: trim content in console
-        print("-" * 80)
+    # print(f"\n📊 Selected Top {len(top_docs)} Most Relevant Documents:")
+    # for i, (doc, score, source_label) in enumerate(top_docs):
+    #     print(f"\n📄 Document {i + 1} | Score: {score:.4f}")
+    #     print(f"Source: {source_label}")
+    #     print(f"ID: {doc.metadata.get('id', 'No ID')}")
+    #     print(f"Content:\n{doc.page_content[:500]}...")  # Optional: trim content in console
+    #     print("-" * 80)
 
     # Format output for system
     def format_doc(doc, source_label):
@@ -60,3 +60,4 @@ def retrieve(query: str):
     combined = f"[DOCS_LIST_JSON_START]{encoded}[DOCS_LIST_JSON_END]\n\n{serialized_content}"
 
     return combined, {"sources": sources}
+    # return serialized_content, sourcesr
