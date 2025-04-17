@@ -1,21 +1,13 @@
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes, action
 from rest_framework.response import Response
-from .utils.langchain_bridge import get_response_from_pipeline
-from .models import ChatSession, Message
 from rest_framework import viewsets, permissions
-from rest_framework.decorators import action
-from .serializers import ChatSessionSerializer, MessageSerializer
-from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from .models import ChatSession
-from .serializers import ChatSessionSerializer  # you'll create this below
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import api_view, permission_classes
-from django.utils import timezone
 from django.http import StreamingHttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from .utils.langchain_bridge import LangGraphPipeline
+from django.utils import timezone
+from .models import ChatSession, Message
+from .serializers import ChatSessionSerializer, MessageSerializer
+from .utils.langchain_bridge import get_response_from_pipeline, LangGraphPipeline
 import json
 
 
@@ -24,7 +16,7 @@ class ChatSessionViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        return ChatSession.objects.filter(user=self.request.user).order_by('-created_at')
+        return ChatSession.objects.filter(user=self.request.user).order_by('-last_updated')
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
@@ -34,37 +26,37 @@ class ChatSessionViewSet(viewsets.ModelViewSet):
         session = self.get_object()
         messages = session.messages.all().order_by("timestamp")
         return Response(MessageSerializer(messages, many=True).data)
-    
-    def get_queryset(self):
-        return ChatSession.objects.filter(user=self.request.user).order_by('-last_updated')
-    
+
+
 @csrf_exempt
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
 def chatbot_stream_view(request):
     user_message = request.data.get("message")
-    session_id = request.data.get("session_id")  # Optional
+    chat_id = request.data.get("chat_id")  # renamed from session_id for clarity
 
-    if not user_message:
-        return Response({"error": "No message provided"}, status=400)
+    if not user_message or not chat_id:
+        return Response({"error": "Missing message or chat_id"}, status=400)
 
     pipeline = LangGraphPipeline()
 
     def event_stream():
-        for chunk in pipeline.stream_pipeline(user_message, session_id=session_id):
+        for chunk in pipeline.stream_pipeline(user_message, session_id=chat_id):
             yield chunk
 
     return StreamingHttpResponse(event_stream(), content_type="text/plain")
 
 
-@permission_classes([IsAuthenticated])
 @api_view(["POST"])
+@permission_classes([IsAuthenticated])
 def chatbot_api_view(request):
     user_message = request.data.get("message")
     if not user_message:
         return Response({"error": "No message provided"}, status=400)
+
     response = get_response_from_pipeline(user_message)
     return Response({"response": response})
+
 
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
@@ -87,6 +79,7 @@ def store_message(request):
 
     return Response({"status": "stored"})
 
+
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def get_messages_by_session(request, session_id):
@@ -96,6 +89,7 @@ def get_messages_by_session(request, session_id):
 
     messages = Message.objects.filter(session=session).order_by("timestamp")
     return Response(MessageSerializer(messages, many=True).data)
+
 
 @api_view(["PATCH"])
 @permission_classes([IsAuthenticated])

@@ -37,6 +37,17 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
   const { toast } = useToast();
   const { user } = useAuth();
   const bottomRef = useRef<HTMLDivElement | null>(null);
+  // const [sessionId, setSessionId] = useState<string>(() => {
+  //   // Retrieve from localStorage or generate once
+  //   return localStorage.getItem("session_id") || generateAndStoreSessionId();
+  // });
+  
+  // function generateAndStoreSessionId() {
+  //   const newId = crypto.randomUUID();
+  //   localStorage.setItem("session_id", newId);
+  //   return newId;
+  // }
+  
 
   useEffect(() => {
     if (currentChatId) {
@@ -59,6 +70,7 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
   
     try {
       const res = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/${id}/messages/`);
+      console.log("📨 Fetching messages for chat ID:", id);
   
       if (!res.ok) throw new Error("Failed to fetch messages");
   
@@ -111,24 +123,30 @@ const ChatInterface = ({ currentChatId, setCurrentChatId, onFirstMessage, sideba
   
       // Create new chat session if necessary
       if (!chatId) {
-
-        const session_id = crypto.randomUUID(); // 👈 generate ONCE
         
         const res = await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/`, {
           method: "POST",
-          body: JSON.stringify({ session_id }),
+          body: JSON.stringify({ sessionId : crypto.randomUUID() }),
         });
   
         if (!res.ok) throw new Error("Failed to create chat");
   
         const data = await res.json();
-        chatId = session_id;
+        chatId = data.id;
         setCurrentChatId(chatId);
+
+        console.log("📤 sending to store_message", {
+          session_id: chatId,
+          user_message: messageContent,
+        });
+        
+        console.log("🆕 chat created:", data);
+
         
         await fetchWithAuth(`${import.meta.env.VITE_API_BASE_URL}/api/chatapp/store_message/`, {
           method: "POST",
           body: JSON.stringify({
-            session_id: session_id,
+            session_id: chatId,
             user_message: messageContent,
             bot_response: null, // or omit this field if your backend allows
           }),
