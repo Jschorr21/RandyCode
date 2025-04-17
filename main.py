@@ -1,4 +1,4 @@
-from fastapi import FastAPI, WebSocket
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from pydantic import BaseModel
 from langchain_pipeline.langraph_pipeline import LangGraphPipeline
 import logging
@@ -16,39 +16,40 @@ class ChatRequest(BaseModel):
 
 @app.get("/")
 async def root():
-    """Root endpoint to handle 404 errors."""
     return {"message": "Welcome to the RAG chatbot API!"}
 
-@app.websocket("/ws")
-async def websocket_endpoint(websocket: WebSocket):
+@app.websocket("/ws/{chat_id}")
+async def websocket_endpoint(websocket: WebSocket, chat_id: str):
     """
-    WebSocket endpoint for a continuous chat session.
+    WebSocket endpoint for a continuous chat session, scoped by chat_id.
     """
     await websocket.accept()
-    logging.info("🔗 WebSocket connection established.")
+    logging.info(f"🔗 WebSocket connection established for chat {chat_id}.")
 
     try:
         while True:
             data = await websocket.receive_json()
             user_message = data.get("user_message", "")
-            use_agent = data.get("use_agent", True)
+            # use_agent = data.get("use_agent", True)
 
-            logging.info(f"📩 Received message: {user_message}")
+            logging.info(f"📩 Chat {chat_id} | Received: {user_message}")
 
             if user_message.lower() == "exit":
                 await websocket.send_json({"response": "Goodbye! Closing connection."})
                 await websocket.close()
-                logging.info("🔴 WebSocket connection closed.")
+                logging.info(f"🔴 Chat {chat_id} | WebSocket closed.")
                 break
 
-            response, _  = pipeline.run_pipeline(user_message, False)
-            await websocket.send_json({"response": response})  # ✅ Ensure message is sent immediately
+            response= pipeline.run_pipeline(user_message, use_agent=False, thread_id=chat_id)
+            await websocket.send_json({"response": response})
 
+    except WebSocketDisconnect:
+        logging.info(f"🔌 Chat {chat_id} | WebSocket disconnected by client.")
     except Exception as e:
-        logging.error(f"🚨 WebSocket Error: {str(e)}")
+        logging.error(f"🚨 Chat {chat_id} | Error: {str(e)}")
         await websocket.close()
 
-# ✅ Ensure FastAPI starts when running main.py
+# ✅ Launch server
 if __name__ == "__main__":
     load_dotenv()
     logging.info("🚀 Starting FastAPI WebSocket Server...")
